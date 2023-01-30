@@ -366,14 +366,20 @@ const lut = {
     [0.622156,0.417444,0.183348,0.646762,0.393095,0.352103,0.674787,0.365363,0.544299]]
 }
 
-var redColor = '#da2500';
-var greenColor = '#008f00';
-var blueColor = '#011993';
+//var redColor = '#da2500';
+//var greenColor = '#008f00';
+//var blueColor = '#011993';
+var redColor = '#FF0000';
+var greenColor = '#00FF00';
+var blueColor = '#0000FF';
 var greyColor = '#888888';
 var purpleColor = '#5c32a8';
-var magentaColor = '#fc0377';
-var cyanColor = '#42f5e6';
-var yellowColor = '#f5d442';
+//var magentaColor = '#fc0377';
+var magentaColor = '#FF00FF';
+//var cyanColor = '#42f5e6';
+var cyanColor = '#00FFFF';
+//var yellowColor = '#f5d442';
+var yellowColor = '#FFFF00';
 var brightYellowColor = '#fcd303'; 
 var orangeColor = '#DC7B2E';
 var blueGreenColor = '#63BFAB'; 
@@ -418,6 +424,9 @@ function RGB2sRGB(color) {
     else out[i] = parseInt(((1.055 * Math.pow(color[i], 1/2.4) - 0.055) * 255).toFixed());
   }
 
+  if (out[0] > 255 || out[1] > 255 || out[2] > 255 || out[0] < 0 || out[1] < 0 || out[2] < 0)
+    return '#000000';
+
   return rgbToHex(out);
 }
 
@@ -446,7 +455,7 @@ function plotRGB(plotId) {
   var indices = [[0, 1], [0, 2], [0, 3], [1, 4], [1, 5], [2, 4], [2, 6], [3, 5], [3, 6], [4, 7], [5, 7], [6, 7]];
   var names = ['O', 'R', 'G', 'B', 'R+G', 'R+B', 'G+B', 'R+G+B (W)'];
   var hoverInfo = [true, true, true, 'skip', 'skip', 'skip', 'skip', 'skip', 'skip', true, true, true];
-  var colors = ['#000000', redColor, greenColor, blueColor, yellowColor, cyanColor, magentaColor, '#000000'];
+  var colors = ['#000000', redColor, greenColor, blueColor, yellowColor, magentaColor, cyanColor, '#000000'];
   var modes = Array(3).fill('lines+markers+text').concat(Array(6).fill('lines')).concat(Array(3).fill('lines+markers+text'));
 
   // plot the RGB cube
@@ -466,7 +475,7 @@ function plotRGB(plotId) {
         color: '#000000',
       },
       marker: {
-        size: 6,
+        size: 3,
         opacity: 1,
         color: [colors[start], colors[end]],
       },
@@ -489,14 +498,16 @@ function plotRGB(plotId) {
       x: [tData[0], tData[3], tData[6]],
       y: [tData[1], tData[4], tData[7]],
       z: [tData[2], tData[5], tData[8]],
-      //x: newPoints[0],
-      //y: newPoints[1],
-      //z: newPoints[2],
       type: 'scatter3d',
       marker: {
-        size: 3,
+        size: 5,
         opacity: 1,
-        color: greyColor,
+        //color: greyColor,
+        color: [RGB2sRGB([tData[0], tData[1], tData[2]]), RGB2sRGB([tData[3], tData[4], tData[5]]), RGB2sRGB([tData[6], tData[7], tData[8]])],
+      },
+      line: {
+        width: 1,
+        color: '#000000',
       },
       //mode: 'markers',
       showlegend: true,
@@ -599,16 +610,20 @@ function updatePlot(theta, plotId) {
   ];
 
   var newLUT = math.concat(lut["PA"], lut["PB"], 0);
-  var x = [], y = [], z = [];
+  var x = [], y = [], z = [], newColors = [];
   for (var i = 0; i < newLUT.length; i++) {
     var tData = newLUT[i];
     var newPoints = math.multiply(rotMat, [[tData[0], tData[3], tData[6]], [tData[1], tData[4], tData[7]], [tData[2], tData[5], tData[8]]]);
     x.push(newPoints[0]);
     y.push(newPoints[1]);
     z.push(newPoints[2]);
+    newColors.push([RGB2sRGB([newPoints[0][0], newPoints[1][0], newPoints[2][0]]),
+                    RGB2sRGB([newPoints[0][1], newPoints[1][1], newPoints[2][1]]),
+                    RGB2sRGB([newPoints[0][2], newPoints[1][2], newPoints[2][2]])
+                   ]);
   }
 
-  var data_update = {'x': x, 'y': y, 'z': z};
+  var data_update = {'x': x, 'y': y, 'z': z, 'marker.color': newColors};
 
   var plot = document.getElementById(plotId);
   var updateList = Array.from(plot.data.keys()).slice(12)
@@ -616,7 +631,7 @@ function updatePlot(theta, plotId) {
 }
 
 function registerSlider(id) {
-  $('input[type=range]').change(function() {
+  $('input[type=range]').on('input', function() {
     //console.log(this.value);
     $('.form-label').html(this.value)
     updatePlot(this.value, 'rgbDiv')
