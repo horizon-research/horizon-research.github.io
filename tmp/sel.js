@@ -395,6 +395,7 @@ function registerSimMode() {
       $('#b13').prop('disabled', false);
       $('#submit').prop('disabled', false);
     }
+    updatePlot($('#customRange').val(), 'rgbDiv');
   });
 }
 
@@ -450,7 +451,7 @@ function registerSetSecondary(buttonId, baseId, textId, squareId, colorId, nameI
 registerSetSecondary('#b12', '#s11', '#t12', '#s12', '#h12', '#n12');
 registerSetSecondary('#b13', '#s11', '#t13', '#s13', '#h13', '#n13');
 
-$('#t12').val('0.2');
+$('#t12').val('-0.4');
 $('#t13').val('0.4');
 $('#b12').trigger('click');
 $('#b13').trigger('click');
