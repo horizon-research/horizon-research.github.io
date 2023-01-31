@@ -21,6 +21,7 @@ var t_line = [0.1428342021, -0.1413451732, 0.9796019256];
 var line = p_line;
 
 var color1, color2, color3;
+var name1, name2, name3;
 var sim = false;
 var type = 0; // 0 for P, 1 for D, 2 for T
 
@@ -346,26 +347,33 @@ function updatePlot(theta, plotId) {
 
   // update square colors
   if (sim) {
-    $('#h11').text('');
-    $('#h12').text('');
-    $('#h13').text('');
-    $('#n11').text('');
-    $('#n12').text('');
-    $('#n13').text('');
+  //  $('#h11').text('');
+  //  $('#h12').text('');
+  //  $('#h13').text('');
+  //  $('#n11').text('');
+  //  $('#n12').text('');
+  //  $('#n13').text('');
     $('#s11').css('background-color', simColors_sRGB[0]);
     $('#s12').css('background-color', simColors_sRGB[1]);
     $('#s13').css('background-color', simColors_sRGB[2]);
   } else {
-    $('#h11').text(rotColors_sRGB[0]);
-    $('#h12').text(rotColors_sRGB[1]);
-    $('#h13').text(rotColors_sRGB[2]);
-    $('#n11').text(sRGB2Name(rotColors_sRGB[0]));
-    $('#n12').text(sRGB2Name(rotColors_sRGB[1]));
-    $('#n13').text(sRGB2Name(rotColors_sRGB[2]));
+  //  $('#h11').text(rotColors_sRGB[0]);
+  //  $('#h12').text(rotColors_sRGB[1]);
+  //  $('#h13').text(rotColors_sRGB[2]);
+  //  $('#n11').text(sRGB2Name(rotColors_sRGB[0]));
+  //  $('#n12').text(sRGB2Name(rotColors_sRGB[1]));
+  //  $('#n13').text(sRGB2Name(rotColors_sRGB[2]));
     $('#s11').css('background-color', rotColors_sRGB[0]);
     $('#s12').css('background-color', rotColors_sRGB[1]);
     $('#s13').css('background-color', rotColors_sRGB[2]);
   }
+  // show names for the original colors (not dynamically updated with slider)
+  $('#h11').text('');
+  $('#h12').text('');
+  $('#h13').text('');
+  $('#n11').text(name1);
+  $('#n12').text(name2);
+  $('#n13').text(name3);
 }
 
 plotRGB('rgbDiv');
@@ -429,7 +437,7 @@ function registerSetMain(buttonId, squareId, colorId, nameId) {
   $(buttonId).on('click', function(evt) {
     var val = $('#color').val();
     $(squareId).css('background-color', val);
-    $(colorId).text(val);
+    //$(colorId).text(val);
     $(nameId).text(sRGB2Name(val));
   });
 }
@@ -443,7 +451,7 @@ function registerSetSecondary(buttonId, baseId, textId, squareId, colorId, nameI
 
     var val = RGB2sRGB([baseColor[0] + line[0] * scale, baseColor[1] + line[1] * scale, baseColor[2] + line[2] * scale]);
     $(squareId).css('background-color', val);
-    $(colorId).text(val);
+    //$(colorId).text(val);
     $(nameId).text(sRGB2Name(val));
   });
 }
@@ -461,6 +469,9 @@ function registerSubmit(buttonId, rangeId) {
     color1 = sRGB2RGB(rgb2hex($('#s11').css('background-color')));
     color2 = sRGB2RGB(rgb2hex($('#s12').css('background-color')));
     color3 = sRGB2RGB(rgb2hex($('#s13').css('background-color')));
+    name1 = sRGB2Name(rgb2hex($('#s11').css('background-color')));
+    name2 = sRGB2Name(rgb2hex($('#s12').css('background-color')));
+    name3 = sRGB2Name(rgb2hex($('#s13').css('background-color')));
 
     $(rangeId).val(0);
     $('.form-label').html('0');
