@@ -82,26 +82,42 @@
     <div class="d-grid gap-3 pt-3 mb-4 px-4 bg-light border rounded-3">
 
       <div class="row">
-        <div class="col-sm-3 d-flex align-items-center">
-            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-              <input type="radio" class="btn-check" name="pick" id="pickp" autocomplete="off" checked>
-              <label class="btn btn-outline-primary" for="pickp">Protanopia</label>
-            
-              <input type="radio" class="btn-check" name="pick" id="pickd" autocomplete="off">
-              <label class="btn btn-outline-primary" for="pickd">Deutanopia</label>
-            
-              <input type="radio" class="btn-check" name="pick" id="pickt" autocomplete="off">
-              <label class="btn btn-outline-primary" for="pickt">Tritanopia</label>
-            </div>
+        <div class="col-sm-4 d-flex align-items-center">
+          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="pick" id="pickp" autocomplete="off" checked>
+            <label class="btn btn-outline-primary" for="pickp">Protanopia</label>
+          
+            <input type="radio" class="btn-check" name="pick" id="pickd" autocomplete="off">
+            <label class="btn btn-outline-primary" for="pickd">Deutanopia</label>
+          
+            <input type="radio" class="btn-check" name="pick" id="pickt" autocomplete="off">
+            <label class="btn btn-outline-primary" for="pickt">Tritanopia</label>
+          </div>
         </div>
-        <div class="col-sm-9">
+        <div class="col-sm-8">
           <div id="rgbDiv"></div>
         </div>
       </div>
 
-      <div class="row d-flex justify-content-center">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="btn-group mx-4" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="sim" id="yes" autocomplete="off">
+            <label class="btn btn-outline-primary" for="yes">Show sim colors</label>
+          
+            <input type="radio" class="btn-check" name="sim" id="no" autocomplete="off" checked>
+            <label class="btn btn-outline-primary" for="no">Show actual colors</label>
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <label for="customRange" class="form-label">0</label>
+          <input type="range" class="form-range" min="-3.14" max="3.14" step="0.02" id="customRange">
+        </div>
+      </div>
+
+      <div class="row mb-4 d-flex justify-content-center">
         <div class="col-sm-2">
-          <form><input type="text" id="color" name="color" value="#2ecc71" /></form>
+          <form><input type="text" id="color" name="color" value="#abbcb4" /></form>
           <div id="colorpicker"></div>
         </div>
 
@@ -118,7 +134,7 @@
           <div class="square" id="s12"></div>
 
           <div class="input-group input-group-sm mt-3">
-            <input type="text" id="t12" class="form-control" placeholder="0.7" aria-label="t12">
+            <input type="text" id="t12" class="form-control" placeholder="0.2" aria-label="t12">
             <button class="btn btn-outline-secondary" type="button" id="b12">Set</button>
           </div>
         </div>
@@ -129,7 +145,7 @@
           <div class="square" id="s13"></div>
 
           <div class="input-group input-group-sm mt-3">
-            <input type="text" id="t13" class="form-control" placeholder="0.3" aria-label="t13">
+            <input type="text" id="t13" class="form-control" placeholder="0.4" aria-label="t13">
             <button class="btn btn-outline-secondary" type="button" id="b13">Set</button>
           </div>
         </div>
@@ -137,20 +153,8 @@
         <div class="col-sm-1 d-flex align-items-center">
           <button id="submit" class="btn btn-primary btn-sm mt-3">Update</button>
         </div>
-
       </div>
 
-      <div class="row">
-        <div class="col-sm-12">
-          <div id="rgbDiv"></div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12">
-          <label for="customRange" class="form-label">0</label>
-          <input type="range" class="form-range" min="-3.14" max="3.14" step="0.02" id="customRange">
-        </div>
-      </div>
     </div>
 
   <div class="b-example-divider"></div>
