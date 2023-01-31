@@ -1,17 +1,12 @@
-//var redColor = '#da2500';
-//var greenColor = '#008f00';
-//var blueColor = '#011993';
 var redColor = '#FF0000';
 var greenColor = '#00FF00';
 var blueColor = '#0000FF';
+var magentaColor = '#FF00FF';
+var cyanColor = '#00FFFF';
+var yellowColor = '#FFFF00';
+
 var greyColor = '#888888';
 var purpleColor = '#5c32a8';
-//var magentaColor = '#fc0377';
-var magentaColor = '#FF00FF';
-//var cyanColor = '#42f5e6';
-var cyanColor = '#00FFFF';
-//var yellowColor = '#f5d442';
-var yellowColor = '#FFFF00';
 var brightYellowColor = '#fcd303'; 
 var orangeColor = '#DC7B2E';
 var blueGreenColor = '#63BFAB'; 
@@ -19,7 +14,10 @@ var oRedColor = 'rgba(218, 37, 0, 0.3)';
 var oGreenColor = 'rgba(0, 143, 0, 0.3)';
 var oBlueColor = 'rgba(1, 25, 147, 0.5)';
 
-var norm = [0.9795006397, -0.2013704401, 0.005333160206];
+var p_norm = [0.9795006397, -0.2013704401, 0.005333160206];
+var d_norm = [-0.8959739281, 0.4425391762, -0.03727999099];
+var t_norm = [0.1428342021, -0.1413451732, 0.9796019256];
+var norm = p_norm;
 var color1, color2, color3;
 
 // https://docs.mathjax.org/en/v2.1-latest/typeset.html
@@ -33,29 +31,17 @@ QUEUE.Push(function () {
 // It converts 'rgb(255, 255, 255)' to '#FFFFFF'
 const rgb2hex = (rgb) => `#${rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/).slice(1).map(n => parseInt(n, 10).toString(16).padStart(2, '0')).join('')}`
 
-function unpack(rows, key, toNum) {
-  return rows.map(function(row) {
-      if (toNum == false) return row[key];
-      else return parseFloat(row[key]);
-    });
-}
-
-function range(start, end, stride) {
-  return Array((end - start) / stride + 1).fill().map((_, idx) => start + idx*stride)
-}
-
-var rgb2dkl = [[0.14376143, 0.16556473, 0.00228754], [-0.21244303, -0.7142423, -0.06559153], [ 0.2125915, 0.71517139, 0.07219711]];
-var dkl2rgb = math.inv(rgb2dkl);
-
-function componentToHex(c) {
-  var hex = c.toString(16);
-  return hex.length == 1 ? "0" + hex : hex;
-}
-
+// It converts an array [255, 255, 255] to '#FFFFFF'
 function rgbToHex(c) {
+  function componentToHex(c) {
+    var hex = c.toString(16);
+    return hex.length == 1 ? "0" + hex : hex;
+  }
+
   return "#" + componentToHex(c[0]) + componentToHex(c[1]) + componentToHex(c[2]);
 }
 
+// From linear RGB to sRGB in Hex
 function RGB2sRGB(color) {
   var out = [];
   for(var i = 0; i < 3; i++) {
@@ -69,15 +55,7 @@ function RGB2sRGB(color) {
   return rgbToHex(out);
 }
 
-// https://chir.ag/projects/ntc/
-function sRGB2Name(color) {
-  var n_match  = ntc.name(color);
-  //var n_rgb        = n_match[0]; // This is the RGB value of the closest matching color
-  var n_name       = n_match[1]; // This is the text string for the name of the match
-  //var n_exactmatch = n_match[2]; // True if exact color match, False if close-match
-  return n_name;
-}
-
+// From sRGB hex to linear RGB
 function sRGB2RGB(hex) {
   var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
   var color = [
@@ -95,19 +73,13 @@ function sRGB2RGB(hex) {
   return out;
 }
 
-function getVertices() {
-  var o = [0, 0, 0];
-  var r = math.multiply(rgb2dkl, math.transpose([1, 0, 0]));
-  var g = math.multiply(rgb2dkl, math.transpose([0, 1, 0]));
-  var b = math.multiply(rgb2dkl, math.transpose([0, 0, 1]));
-
-  var rg = math.add(r, g);
-  var rb = math.add(r, b);
-  var gb = math.add(g, b);
-
-  var rgb = math.add(math.add(r, g), b);
-
-  return math.transpose([o,r,g,b,rg,rb,gb,rgb]);
+// https://chir.ag/projects/ntc/
+function sRGB2Name(color) {
+  var n_match  = ntc.name(color);
+  //var n_rgb        = n_match[0]; // This is the RGB value of the closest matching color
+  var n_name       = n_match[1]; // This is the text string for the name of the match
+  //var n_exactmatch = n_match[2]; // True if exact color match, False if close-match
+  return n_name;
 }
 
 function plotRGB(plotId) {
@@ -164,9 +136,7 @@ function plotRGB(plotId) {
     marker: {
       size: 5,
       opacity: 1,
-      color: [0,
-              0,
-              0],
+      color: [0,0,0],
     },
     line: {
       width: 1,
@@ -176,7 +146,8 @@ function plotRGB(plotId) {
     showlegend: true,
     //name: i,
     opacity:0.8,
-    hovertemplate: 'R: %{x}' +
+    hovertemplate: '%{text}<br>' +
+      '<br>R: %{x}' +
       '<br>G: %{y}' +
       '<br>B: %{z}<extra></extra>',
   };
@@ -273,8 +244,13 @@ function updatePlot(theta, plotId) {
                RGB2sRGB([newPoints[0][1], newPoints[1][1], newPoints[2][1]]),
                RGB2sRGB([newPoints[0][2], newPoints[1][2], newPoints[2][2]])
               ];
+  newTexts = [RGB2sRGB([newPoints[0][0], newPoints[1][0], newPoints[2][0]]),
+              RGB2sRGB([newPoints[0][1], newPoints[1][1], newPoints[2][1]]),
+              RGB2sRGB([newPoints[0][2], newPoints[1][2], newPoints[2][2]])
+             ];
 
-  var data_update = {'x': [newPoints[0]], 'y': [newPoints[1]], 'z': [newPoints[2]], 'marker.color': [newColors]};
+  var data_update = {'x': [newPoints[0]], 'y': [newPoints[1]], 'z': [newPoints[2]],
+                     'marker.color': [newColors], 'text': [newTexts]};
 
   var plot = document.getElementById(plotId);
   Plotly.update(plot, data_update, {}, [12]);
@@ -295,13 +271,28 @@ function updatePlot(theta, plotId) {
 plotRGB('rgbDiv');
 
 function registerSlider(id) {
-  $('input[type=range]').on('input', function() {
+  //$('input[type=range]').on('input', function() {
+  $(id).on('input', function() {
     $('.form-label').html(this.value)
     updatePlot(this.value, 'rgbDiv')
   });
 }
 
-registerSlider("customRange");
+registerSlider('#customRange');
+
+function registerPickType() {
+  $('input[type=radio][name=pick]').change(function() {
+    if (this.id == 'pickp') {
+      norm = p_norm;
+    } else if (this.id == 'pickd') {
+      norm = d_norm;
+    } else if (this.id == 'pickt') {
+      norm = t_norm;
+    }
+  });
+}
+
+registerPickType();
 
 $(document).ready(function() {
   $('#colorpicker').farbtastic('#color');
@@ -338,19 +329,19 @@ $('#t13').val('0.2');
 $('#b12').trigger('click');
 $('#b13').trigger('click');
 
-function registerSubmit(buttonId, squareId) {
+function registerSubmit(buttonId, rangeId) {
   $(buttonId).on('click', function(evt) {
     color1 = sRGB2RGB(rgb2hex($('#s11').css('background-color')));
     color2 = sRGB2RGB(rgb2hex($('#s12').css('background-color')));
     color3 = sRGB2RGB(rgb2hex($('#s13').css('background-color')));
 
-    $('input[type=range]').val(0);
+    $(rangeId).val(0);
     $('.form-label').html('0');
     updatePlot(0, 'rgbDiv');
   });
 }
 
-registerSubmit('#submit');
+registerSubmit('#submit', '#customRange');
 $('#submit').trigger('click');
 
 
