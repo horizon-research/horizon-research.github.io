@@ -430,6 +430,15 @@ function RGB2sRGB(color) {
   return rgbToHex(out);
 }
 
+// https://chir.ag/projects/ntc/
+function sRGB2Name(color) {
+  var n_match  = ntc.name(color);
+  //var n_rgb        = n_match[0]; // This is the RGB value of the closest matching color
+  var n_name       = n_match[1]; // This is the text string for the name of the match
+  //var n_exactmatch = n_match[2]; // True if exact color match, False if close-match
+  return n_name;
+}
+
 function getVertices() {
   var o = [0, 0, 0];
   var r = math.multiply(rgb2dkl, math.transpose([1, 0, 0]));
@@ -483,9 +492,9 @@ function plotRGB(plotId) {
     };
     // hovertemplate overwrites hoverinfo, so add it later
     if (hoverInfo[i] == true) {
-      line.hovertemplate = '%{text}<br>L-M: %{x}' +
-        '<br>S-(L+M): %{y}' +
-        '<br>L+M: %{z}<extra></extra>';
+      line.hovertemplate = '%{text}<br>R: %{x}' +
+        '<br>G: %{y}' +
+        '<br>B: %{z}<extra></extra>';
     }
     traces.push(line);
   }
@@ -498,12 +507,17 @@ function plotRGB(plotId) {
       x: [tData[0], tData[3], tData[6]],
       y: [tData[1], tData[4], tData[7]],
       z: [tData[2], tData[5], tData[8]],
+      text: [i + '<br>' + sRGB2Name(RGB2sRGB([tData[0], tData[1], tData[2]])),
+             i + '<br>' + sRGB2Name(RGB2sRGB([tData[3], tData[4], tData[5]])),
+             i + '<br>' + sRGB2Name(RGB2sRGB([tData[6], tData[7], tData[8]]))],
       type: 'scatter3d',
       marker: {
         size: 5,
         opacity: 1,
         //color: greyColor,
-        color: [RGB2sRGB([tData[0], tData[1], tData[2]]), RGB2sRGB([tData[3], tData[4], tData[5]]), RGB2sRGB([tData[6], tData[7], tData[8]])],
+        color: [RGB2sRGB([tData[0], tData[1], tData[2]]),
+                RGB2sRGB([tData[3], tData[4], tData[5]]),
+                RGB2sRGB([tData[6], tData[7], tData[8]])],
       },
       line: {
         width: 1,
@@ -513,7 +527,8 @@ function plotRGB(plotId) {
       showlegend: true,
       name: i,
       opacity:0.8,
-      hovertemplate: 'R: %{x}' +
+      hovertemplate: 'Trace %{text}<br>' +
+        '<br>R: %{x}' +
         '<br>G: %{y}' +
         '<br>B: %{z}<extra></extra>',
     };
@@ -610,7 +625,7 @@ function updatePlot(theta, plotId) {
   ];
 
   var newLUT = math.concat(lut["PA"], lut["PB"], 0);
-  var x = [], y = [], z = [], newColors = [];
+  var x = [], y = [], z = [], newColors = [], newTexts = [];
   for (var i = 0; i < newLUT.length; i++) {
     var tData = newLUT[i];
     var newPoints = math.multiply(rotMat, [[tData[0], tData[3], tData[6]], [tData[1], tData[4], tData[7]], [tData[2], tData[5], tData[8]]]);
@@ -621,9 +636,13 @@ function updatePlot(theta, plotId) {
                     RGB2sRGB([newPoints[0][1], newPoints[1][1], newPoints[2][1]]),
                     RGB2sRGB([newPoints[0][2], newPoints[1][2], newPoints[2][2]])
                    ]);
+    newTexts.push([i + '<br>' + sRGB2Name(RGB2sRGB([newPoints[0][0], newPoints[1][0], newPoints[2][0]])),
+                   i + '<br>' + sRGB2Name(RGB2sRGB([newPoints[0][1], newPoints[1][1], newPoints[2][1]])),
+                   i + '<br>' + sRGB2Name(RGB2sRGB([newPoints[0][2], newPoints[1][2], newPoints[2][2]]))
+                  ]);
   }
 
-  var data_update = {'x': x, 'y': y, 'z': z, 'marker.color': newColors};
+  var data_update = {'x': x, 'y': y, 'z': z, 'marker.color': newColors, 'text': newTexts};
 
   var plot = document.getElementById(plotId);
   var updateList = Array.from(plot.data.keys()).slice(12)
@@ -640,7 +659,8 @@ function registerSlider(id) {
 
 registerSlider("customRange");
 
-
-
+$(document).ready(function() {
+  $('#colorpicker').farbtastic('#color');
+});
 
 

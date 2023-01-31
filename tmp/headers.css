@@ -36,3 +36,8 @@
   font-size: .8rem;
   border-radius: 2px;
 }
+
+.square {
+  background-color: #2ecc71;
+  height: 200px;
+}
