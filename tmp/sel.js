@@ -14,32 +14,55 @@ var oRedColor = 'rgba(218, 37, 0, 0.3)';
 var oGreenColor = 'rgba(0, 143, 0, 0.3)';
 var oBlueColor = 'rgba(1, 25, 147, 0.5)';
 
-// vectors for confusion lines
-var p_line = [0.9795006397, -0.2013704401, 0.005333160206];
-var d_line = [-0.8959739281, 0.4425391762, -0.03727999099];
-var t_line = [0.1428342021, -0.1413451732, 0.9796019256];
-var line = p_line;
-
 var color1, color2, color3;
 var name1, name2, name3;
 var sim = false;
 var type = 0; // 0 for P, 1 for D, 2 for T
 
-// normals of the projection planes
-var p_norm1 = [-1.9082658681515485, 2.117751626087778, -0.20939929937650947];
-var p_norm2 = [-1.8983441434416113, 2.04613441386516, -0.14772500661017962];
+// normals of the projection planes based on Brettel
+//var p_norm1 = [-1.9082658681515485, 2.117751626087778, -0.20939929937650947];
+//var p_norm2 = [-1.8983441434416113, 2.04613441386516, -0.14772500661017962];
+//var d_norm1 = p_norm1;
+//var d_norm2 = d_norm2;
+//var t_norm1 = [-0.8559262314423839, 1.1229313663856852, -0.26690712337317146];
+//var t_norm2 = [-0.07331466590406314, 0.22723495600946306, -0.15386703720552092];
+
+// normals of the projection plans based on Viénot's one-plane approach
+var p_norm1 = [0.00440804, -0.00891942, 0.01113385];
+var p_proj_mat = [[0, 2.02344377, -2.52580405], [0, 1, 0], [0, 0, 1]];
 var d_norm1 = p_norm1;
-var d_norm2 = d_norm2;
-var t_norm1 = [-0.8559262314423839, 1.1229313663856852, -0.26690712337317146];
-var t_norm2 = [-0.07331466590406314, 0.22723495600946306, -0.15386703720552092];
+var d_proj_mat = [[1, 0, 0], [0.49420696, 0, 1.24826995], [0, 0, 1]];
+var t_norm1 = [-0.00047773, 0.00281039, -0.03901461];
+var t_proj_mat = [[1, 0, 0], [0, 1, 0], [-0.01224491, 0.07203435, 0]];
+
 var norm = p_norm1;
 
-var hpe_xyz2lms = [[0.3897,0.689,-0.0787], [-0.2298,1.1834,0.0464], [0,0,1]];
-var hpe_xyz2lms_d65 = [[0.40,0.71,-0.08], [-0.23,1.17,0.05], [0.00,0.00,0.92]]; // D65 adapted
-var RGB2xyz = math.transpose([[0.4123151515,0.21,0.01932727273], [0.3576,0.72,0.1192], [0.1805,0.07,0.9506333333]]);
-var RGB2lms = math.multiply(hpe_xyz2lms, RGB2xyz);
+// RGB <--> LMS mats based on HPE
+//var hpe_xyz2lms = [[0.3897,0.689,-0.0787], [-0.2298,1.1834,0.0464], [0,0,1]];
+//var hpe_xyz2lms_d65 = [[0.40,0.71,-0.08], [-0.23,1.17,0.05], [0.00,0.00,0.92]]; // D65 adapted
+//var RGB2xyz = math.transpose([[0.4123151515,0.21,0.01932727273], [0.3576,0.72,0.1192], [0.1805,0.07,0.9506333333]]);
+//var RGB2lms = math.multiply(hpe_xyz2lms_d65, RGB2xyz);
+
+// RGB <--> LMS mats based on sRGB Viénot (recommended)
+var RGB2lms = [[17.88240413, 43.51609057,  4.11934969],
+               [3.45564232, 27.15538246,  3.86713084],
+               [0.02995656,  0.18430896,  1.46708614]];
 var lms2RGB = math.inv(RGB2lms);
 
+// vectors for confusion lines (derived from Sharma LUTs)
+//var p_line = [0.9795006397, -0.2013704401, 0.005333160206];
+//var d_line = [-0.8959739281, 0.4425391762, -0.03727999099];
+//var t_line = [0.1428342021, -0.1413451732, 0.9796019256];
+
+// vectors for confusion lines (derived using lms2RGB matrix)
+var p_line = math.multiply(lms2RGB, [1, 0, 0]);
+p_line = math.divide(p_line, math.norm(p_line));
+var d_line = math.multiply(lms2RGB, [0, 1, 0]);
+d_line = math.divide(d_line, math.norm(d_line));
+var t_line = math.multiply(lms2RGB, [0, 0, 1]);
+t_line = math.divide(t_line, math.norm(t_line));
+
+var line = p_line;
 
 // https://docs.mathjax.org/en/v2.1-latest/typeset.html
 var QUEUE = MathJax.Hub.queue; // shorthand for the queue
@@ -63,7 +86,7 @@ function rgbToHex(c) {
 }
 
 // if true, use the absolute rendering intent to clip
-var clip = false;
+var clip = true;
 
 // From linear RGB to sRGB in Hex
 function RGB2sRGB(color) {
@@ -123,22 +146,32 @@ function trit_project(normal, l, m) {
   return - (normal[1] * l + normal[2] * m) / normal[0];
 };
 
+//function project(colors_LMS) {
+//  if (type == 0) {
+//    return [[prot_project(norm, colors_LMS[1][0], colors_LMS[2][0]), colors_LMS[1][0], colors_LMS[2][0]],
+//            [prot_project(norm, colors_LMS[1][1], colors_LMS[2][1]), colors_LMS[1][1], colors_LMS[2][1]],
+//            [prot_project(norm, colors_LMS[1][2], colors_LMS[2][2]), colors_LMS[1][2], colors_LMS[2][2]]
+//    ];
+//  } else if (type == 1) {
+//    return [[colors_LMS[0][0], deut_project(norm, colors_LMS[0][0], colors_LMS[2][0]), colors_LMS[2][0]],
+//            [colors_LMS[0][1], deut_project(norm, colors_LMS[0][1], colors_LMS[2][1]), colors_LMS[2][1]],
+//            [colors_LMS[0][2], deut_project(norm, colors_LMS[0][2], colors_LMS[2][2]), colors_LMS[2][2]]
+//    ];
+//  } else {
+//    return [[colors_LMS[0][0], colors_LMS[1][0], deut_project(norm, colors_LMS[0][0], colors_LMS[1][0])],
+//            [colors_LMS[0][1], colors_LMS[1][1], deut_project(norm, colors_LMS[0][1], colors_LMS[1][1])],
+//            [colors_LMS[0][2], colors_LMS[1][2], deut_project(norm, colors_LMS[0][2], colors_LMS[1][2])]
+//    ];
+//  }
+//}
+
 function project(colors_LMS) {
   if (type == 0) {
-    return [[prot_project(norm, colors_LMS[1][0], colors_LMS[2][0]), colors_LMS[1][0], colors_LMS[2][0]],
-            [prot_project(norm, colors_LMS[1][1], colors_LMS[2][1]), colors_LMS[1][1], colors_LMS[2][1]],
-            [prot_project(norm, colors_LMS[1][2], colors_LMS[2][2]), colors_LMS[1][2], colors_LMS[2][2]]
-    ];
+    return math.multiply(p_proj_mat, colors_LMS);
   } else if (type == 1) {
-    return [[colors_LMS[0][0], deut_project(norm, colors_LMS[0][0], colors_LMS[2][0]), colors_LMS[2][0]],
-            [colors_LMS[0][1], deut_project(norm, colors_LMS[0][1], colors_LMS[2][1]), colors_LMS[2][1]],
-            [colors_LMS[0][2], deut_project(norm, colors_LMS[0][2], colors_LMS[2][2]), colors_LMS[2][2]]
-    ];
+    return math.multiply(d_proj_mat, colors_LMS);
   } else {
-    return [[colors_LMS[0][0], colors_LMS[1][0], deut_project(norm, colors_LMS[0][0], colors_LMS[1][0])],
-            [colors_LMS[0][1], colors_LMS[1][1], deut_project(norm, colors_LMS[0][1], colors_LMS[1][1])],
-            [colors_LMS[0][2], colors_LMS[1][2], deut_project(norm, colors_LMS[0][2], colors_LMS[1][2])]
-    ];
+    return math.multiply(t_proj_mat, colors_LMS);
   }
 }
 
@@ -341,8 +374,10 @@ function updatePlot(theta, plotId) {
 
   // update simulated colors in the 3D plot
   var rotPoints_LMS = math.multiply(RGB2lms, rotPoints_RGB);
-  var simColors_LMS = project(rotPoints_LMS);
-  var simPoints_RGB = math.multiply(lms2RGB, math.transpose(simColors_LMS));
+  //var simColors_LMS = project(rotPoints_LMS);
+  //var simPoints_RGB = math.multiply(lms2RGB, math.transpose(simColors_LMS));
+  var simPoints_LMS = project(rotPoints_LMS);
+  var simPoints_RGB = math.multiply(lms2RGB, simPoints_LMS);
   var simColors_RGB = math.transpose(simPoints_RGB);
   var simColors_sRGB = [RGB2sRGB(simColors_RGB[0]),
                         RGB2sRGB(simColors_RGB[1]),
