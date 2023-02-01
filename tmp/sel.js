@@ -14,32 +14,94 @@ var oRedColor = 'rgba(218, 37, 0, 0.3)';
 var oGreenColor = 'rgba(0, 143, 0, 0.3)';
 var oBlueColor = 'rgba(1, 25, 147, 0.5)';
 
-// vectors for confusion lines
-var p_line = [0.9795006397, -0.2013704401, 0.005333160206];
-var d_line = [-0.8959739281, 0.4425391762, -0.03727999099];
-var t_line = [0.1428342021, -0.1413451732, 0.9796019256];
-var line = p_line;
-
 var color1, color2, color3;
 var name1, name2, name3;
 var sim = false;
 var type = 0; // 0 for P, 1 for D, 2 for T
+// 0 for Brettel 1997 (two planes) and 1 for Viénot 1999 (one plane)
+var simMethod = 0;
 
-// normals of the projection planes
-var p_norm1 = [-1.9082658681515485, 2.117751626087778, -0.20939929937650947];
-var p_norm2 = [-1.8983441434416113, 2.04613441386516, -0.14772500661017962];
-var d_norm1 = p_norm1;
-var d_norm2 = d_norm2;
-var t_norm1 = [-0.8559262314423839, 1.1229313663856852, -0.26690712337317146];
-var t_norm2 = [-0.07331466590406314, 0.22723495600946306, -0.15386703720552092];
-var norm = p_norm1;
+function get_proj_mat() {
+  if (simMethod == 1) {
+    var p_norm1 = [0.00440804, -0.00891942, 0.01113385];
+    var p_proj_mat = [[0, -p_norm1[1]/p_norm1[0], -p_norm1[2]/p_norm1[0]], [0, 1, 0], [0, 0, 1]];
+    var d_norm1 = p_norm1;
+    var d_proj_mat = [[1, 0, 0], [-d_norm1[0]/d_norm1[1], 0, -d_norm1[2]/d_norm1[1]], [0, 0, 1]];
+    var t_norm1 = [-0.00047773, 0.00281039, -0.03901461];
+    var t_proj_mat = [[1, 0, 0], [0, 1, 0], [-t_norm1[0]/t_norm1[2], -t_norm1[1]/t_norm1[2], 0]];
 
-var hpe_xyz2lms = [[0.3897,0.689,-0.0787], [-0.2298,1.1834,0.0464], [0,0,1]];
-var hpe_xyz2lms_d65 = [[0.40,0.71,-0.08], [-0.23,1.17,0.05], [0.00,0.00,0.92]]; // D65 adapted
-var RGB2xyz = math.transpose([[0.4123151515,0.21,0.01932727273], [0.3576,0.72,0.1192], [0.1805,0.07,0.9506333333]]);
-var RGB2lms = math.multiply(hpe_xyz2lms, RGB2xyz);
+    return [p_proj_mat, d_proj_mat, t_proj_mat];
+  } else {
+    //var p_norm1 = [-1.9082658681515485, 2.117751626087778, -0.20939929937650947];
+    //var p_norm2 = [-1.8983441434416113, 2.04613441386516, -0.14772500661017962];
+    //var d_norm1 = p_norm1;
+    //var d_norm2 = d_norm2;
+    //var t_norm1 = [-0.8559262314423839, 1.1229313663856852, -0.26690712337317146];
+    //var t_norm2 = [-0.07331466590406314, 0.22723495600946306, -0.15386703720552092];
+
+    //var p_proj_mat1 = [[0, -p_norm1[1]/p_norm1[0], -p_norm1[2]/p_norm1[0]], [0, 1, 0], [0, 0, 1]];
+    //var d_proj_mat1 = [[1, 0, 0], [-d_norm1[0]/d_norm1[1], 0, -d_norm1[2]/d_norm1[1]], [0, 0, 1]];
+    //var t_proj_mat1 = [[1, 0, 0], [0, 1, 0], [-t_norm1[0]/t_norm1[2], -t_norm1[1]/t_norm1[2], 0]];
+
+    //var p_proj_mat2 = [[0, -p_norm2[1]/p_norm2[0], -p_norm2[2]/p_norm2[0]], [0, 1, 0], [0, 0, 1]];
+    //var d_proj_mat2 = [[1, 0, 0], [-d_norm2[0]/d_norm2[1], 0, -d_norm2[2]/d_norm2[1]], [0, 0, 1]];
+    //var t_proj_mat2 = [[1, 0, 0], [0, 1, 0], [-t_norm2[0]/t_norm2[2], -t_norm2[1]/t_norm2[2], 0]];
+
+    var p_proj_mat1 = [[0, 2.27376148, -5.92721645], [0, 1, 0], [0, 0, 1]]; // 475
+    var d_proj_mat1 = [[1, 0, 0], [0.43979987, 0, 2.60678902], [0, 0, 1]]; // 475
+    var t_proj_mat1 = [[1, 0, 0], [0, 1, 0], [-0.05574292, 0.15892917, 0]]; // 485
+
+    var p_proj_mat2 = [[0, 2.18595384, -4.10029338], [0, 1, 0], [0, 0, 1]]; // 575
+    var d_proj_mat2 = [[1, 0, 0], [0.4574662, 0, 1.87574564], [0, 0, 1]]; // 575
+    var t_proj_mat2 = [[1, 0, 0], [0, 1, 0], [-0.00254865, 0.0531321, 0]]; // 660
+
+    return [p_proj_mat1, d_proj_mat1, t_proj_mat1, p_proj_mat2, d_proj_mat2, t_proj_mat2];
+  }
+}
+
+var proj_mat = get_proj_mat();
+
+// https://daltonlens.org/understanding-cvd-simulation/
+function get_RGB2lms() {
+  var xyz2lms, RGB2xyz;
+
+  // XYZ <--> LMS mats based on Smith & Pokorny using Judd corrected XYZ (used by Brettel 1997 & Viénot 1999)
+  xyz2lms = [[0.15514, 0.54312, -0.03286], [-0.15514, 0.45684, 0.03286], [0, 0, 0.01608]];
+  RGB2xyz = [[40.9568, 35.5041, 17.9167], [21.3389, 70.6743, 7.9868], [1.86297, 11.462, 91.2367]];
+
+  // XYZ <--> LMS mats using HPE
+  // (used by https://ixora.io/projects/colorblindness/color-blindness-simulation-research/)
+  //var hpe_xyz2lms_eew = [[0.3897,0.689,-0.0787], [-0.2298,1.1834,0.0464], [0,0,1]]; // EEW normalized
+  //var hpe_xyz2lms_d65 = [[0.4002,0.7076,-0.0808], [-0.2263,1.1653,0.0457], [0,0,0.9182]]; // D65 adapted
+  //xyz2lms = hpe_xyz2lms_d65;
+  // this is D65 adapted
+  //RGB2xyz = [[0.4124564, 0.3575761, 0.1804375], [0.2126729, 0.7151522, 0.0721750], [0.0193339, 0.1191920, 0.9503041]];
+
+  var RGB2lms = math.multiply(xyz2lms, RGB2xyz);
+  return RGB2lms;
+}
+
+var RGB2lms = get_RGB2lms();
 var lms2RGB = math.inv(RGB2lms);
 
+function get_confusion_lines() {
+  // vectors for confusion lines (derived from Sharma LUTs)
+  //var p_line = [0.9795006397, -0.2013704401, 0.005333160206];
+  //var d_line = [-0.8959739281, 0.4425391762, -0.03727999099];
+  //var t_line = [0.1428342021, -0.1413451732, 0.9796019256];
+  
+  // vectors for confusion lines (derived using lms2RGB matrix)
+  var p_line = math.multiply(lms2RGB, [1, 0, 0]);
+  p_line = math.divide(p_line, math.norm(p_line));
+  var d_line = math.multiply(lms2RGB, [0, 1, 0]);
+  d_line = math.divide(d_line, math.norm(d_line));
+  var t_line = math.multiply(lms2RGB, [0, 0, 1]);
+  t_line = math.divide(t_line, math.norm(t_line));
+
+  return [p_line, d_line, t_line];
+}
+
+var confusion_lines = get_confusion_lines();
 
 // https://docs.mathjax.org/en/v2.1-latest/typeset.html
 var QUEUE = MathJax.Hub.queue; // shorthand for the queue
@@ -63,15 +125,21 @@ function rgbToHex(c) {
 }
 
 // From linear RGB to sRGB in Hex
-function RGB2sRGB(color) {
+// if |clip| true, use the absolute rendering intent to clip
+function RGB2sRGB(color, clip) {
   var out = [];
   for(var i = 0; i < 3; i++) {
     if (color[i] <= 0.0031308) out[i] = parseInt((12.92 * color[i] * 255).toFixed());
     else out[i] = parseInt(((1.055 * Math.pow(color[i], 1/2.4) - 0.055) * 255).toFixed());
-  }
 
-  if (out[0] > 255 || out[1] > 255 || out[2] > 255 || out[0] < 0 || out[1] < 0 || out[2] < 0)
-    return '#000000';
+    if (clip) {
+      if (out[i] < 0) out[i] = 0;
+      else if (out[i] > 255) out[i] = 255; 
+    } else {
+      if (out[i] < 0 || out[i] > 255)
+        return '#000000';
+    }
+  }
 
   return rgbToHex(out);
 }
@@ -103,34 +171,42 @@ function sRGB2Name(color) {
   return n_name;
 }
 
-function prot_project(normal, m, s) {
-  return - (normal[1] * m + normal[2] * s) / normal[0];
-};
-
-function deut_project(normal, l, s) {
-  return - (normal[1] * l + normal[2] * s) / normal[0];
-};
-
-function trit_project(normal, l, m) {
-  return - (normal[1] * l + normal[2] * m) / normal[0];
-};
-
 function project(colors_LMS) {
-  if (type == 0) {
-    return [[prot_project(norm, colors_LMS[1][0], colors_LMS[2][0]), colors_LMS[1][0], colors_LMS[2][0]],
-            [prot_project(norm, colors_LMS[1][1], colors_LMS[2][1]), colors_LMS[1][1], colors_LMS[2][1]],
-            [prot_project(norm, colors_LMS[1][2], colors_LMS[2][2]), colors_LMS[1][2], colors_LMS[2][2]]
-    ];
-  } else if (type == 1) {
-    return [[colors_LMS[0][0], deut_project(norm, colors_LMS[0][0], colors_LMS[2][0]), colors_LMS[2][0]],
-            [colors_LMS[0][1], deut_project(norm, colors_LMS[0][1], colors_LMS[2][1]), colors_LMS[2][1]],
-            [colors_LMS[0][2], deut_project(norm, colors_LMS[0][2], colors_LMS[2][2]), colors_LMS[2][2]]
-    ];
+  // in input each column is a color
+
+  if (simMethod == 1) {
+    // one plane
+    return math.multiply(proj_mat[type], colors_LMS);
   } else {
-    return [[colors_LMS[0][0], colors_LMS[1][0], deut_project(norm, colors_LMS[0][0], colors_LMS[1][0])],
-            [colors_LMS[0][1], colors_LMS[1][1], deut_project(norm, colors_LMS[0][1], colors_LMS[1][1])],
-            [colors_LMS[0][2], colors_LMS[1][2], deut_project(norm, colors_LMS[0][2], colors_LMS[1][2])]
-    ];
+    // two planes
+    var outColors1 = math.multiply(proj_mat[type], colors_LMS);
+    var outColors2 = math.multiply(proj_mat[type + 3], colors_LMS);
+    var outColors = [];
+
+    var whiteLMS = math.multiply(RGB2lms, [1, 1, 1]);
+    var wL = whiteLMS[0], wM = whiteLMS[1], wS = whiteLMS[2];
+
+    for (var i = 0; i < colors_LMS[0].length; i++) {
+      var L = colors_LMS[0][i];
+      var M = colors_LMS[1][i];
+      var S = colors_LMS[2][i];
+
+      if (type == 0) {
+        if (S/M < wS/wM) mask = 0;
+        else mask = 1;
+      } else if (type == 1) {
+        if (S/L < wS/wL) mask = 0;
+        else mask = 1;
+      } else {
+        if (M/L < wM/wL) mask = 0;
+        else mask = 1;
+      }
+
+      if (mask == 0) outColors.push(math.transpose(outColors2)[i]);
+      else outColors.push(math.transpose(outColors1)[i]);
+    }
+
+    return math.transpose(outColors);
   }
 }
 
@@ -141,9 +217,9 @@ function plotRGB(plotId) {
 
   // O: 0; R: 1; G: 2: B: 3
   // RG: 4; RB: 5; GB: 6; RGB: 7
-  var indices = [[0, 1], [0, 2], [0, 3], [1, 4], [1, 5], [2, 4], [2, 6], [3, 5], [3, 6], [4, 7], [5, 7], [6, 7]];
+  var indices = [[0, 1], [0, 2], [0, 3], [1, 4], [1, 5], [2, 4], [2, 6], [3, 5], [3, 6], [4, 7], [5, 7], [6, 7], [0, 7]];
   var names = ['O', 'R', 'G', 'B', 'R+G', 'R+B', 'G+B', 'R+G+B (W)'];
-  var hoverInfo = [true, true, true, 'skip', 'skip', 'skip', 'skip', 'skip', 'skip', true, true, true];
+  var hoverInfo = [true, true, true, 'skip', 'skip', 'skip', 'skip', 'skip', 'skip', true, true, true, 'skip'];
   var colors = ['#000000', redColor, greenColor, blueColor, yellowColor, magentaColor, cyanColor, '#000000'];
   var modes = Array(3).fill('lines+markers+text').concat(Array(6).fill('lines')).concat(Array(3).fill('lines+markers+text'));
 
@@ -319,9 +395,9 @@ function updatePlot(theta, plotId) {
 
   // Convention: in |Points| each color is a column and in |Colors| each color is a row
   var rotPoints_RGB = math.multiply(rotMat, math.transpose([color1, color2, color3]));
-  rotColors_sRGB = [RGB2sRGB([rotPoints_RGB[0][0], rotPoints_RGB[1][0], rotPoints_RGB[2][0]]),
-                    RGB2sRGB([rotPoints_RGB[0][1], rotPoints_RGB[1][1], rotPoints_RGB[2][1]]),
-                    RGB2sRGB([rotPoints_RGB[0][2], rotPoints_RGB[1][2], rotPoints_RGB[2][2]])
+  rotColors_sRGB = [RGB2sRGB([rotPoints_RGB[0][0], rotPoints_RGB[1][0], rotPoints_RGB[2][0]], true),
+                    RGB2sRGB([rotPoints_RGB[0][1], rotPoints_RGB[1][1], rotPoints_RGB[2][1]], true),
+                    RGB2sRGB([rotPoints_RGB[0][2], rotPoints_RGB[1][2], rotPoints_RGB[2][2]], true)
                    ];
 
   // update actual colors in the 3D plot
@@ -329,21 +405,40 @@ function updatePlot(theta, plotId) {
                      'marker.color': [rotColors_sRGB], 'text': [rotColors_sRGB]};
 
   var plot = document.getElementById(plotId);
-  Plotly.update(plot, data_update, {}, [12]);
+  Plotly.update(plot, data_update, {}, [13]);
 
   // update simulated colors in the 3D plot
   var rotPoints_LMS = math.multiply(RGB2lms, rotPoints_RGB);
-  var simColors_LMS = project(rotPoints_LMS);
-  var simPoints_RGB = math.multiply(lms2RGB, math.transpose(simColors_LMS));
+  var simPoints_LMS = project(rotPoints_LMS);
+  var simPoints_RGB = math.multiply(lms2RGB, simPoints_LMS);
   var simColors_RGB = math.transpose(simPoints_RGB);
-  var simColors_sRGB = [RGB2sRGB(simColors_RGB[0]),
-                        RGB2sRGB(simColors_RGB[1]),
-                        RGB2sRGB(simColors_RGB[2])
+
+  // reorder columns in simPoints_RGB
+  var tempColors = [];
+  var v1 = $('#t12').val();
+  var v2 = $('#t13').val();
+  if ((v1 > 0 && 0 > v2) || (v2 > 0 && 0 > v1)) {
+    tempColors[0] = simColors_RGB[1];
+    tempColors[1] = simColors_RGB[0];
+    tempColors[2] = simColors_RGB[2];
+  } else if ((v1 > v2 && v2 > 0) || (0 > v2 && v2 > v1)) {
+    tempColors[0] = simColors_RGB[1];
+    tempColors[1] = simColors_RGB[2];
+    tempColors[2] = simColors_RGB[0];
+  } else if ((v2 > v1 && v1 > 0) || (0 > v1 && v1 > v2)) {
+    tempColors = simColors_RGB;
+  }
+  simColors_RGB = tempColors;
+  simPoints_RGB = math.transpose(simColors_RGB);
+
+  var simColors_sRGB = [RGB2sRGB(simColors_RGB[0], true),
+                        RGB2sRGB(simColors_RGB[1], true),
+                        RGB2sRGB(simColors_RGB[2], true)
                        ];
 
   var data_update = {'x': [simPoints_RGB[0]], 'y': [simPoints_RGB[1]], 'z': [simPoints_RGB[2]],
                      'marker.color': [simColors_sRGB], 'text': [simColors_sRGB]};
-  Plotly.update(plot, data_update, {}, [13]);
+  Plotly.update(plot, data_update, {}, [14]);
 
   // update square colors
   if (sim) {
@@ -396,12 +491,14 @@ function registerSimMode() {
       $('#b12').prop('disabled', true);
       $('#b13').prop('disabled', true);
       $('#submit').prop('disabled', true);
+      $('input[type=radio][name=pick]').prop('disabled', true);
     } else {
       sim = false;
       $('#b11').prop('disabled', false);
       $('#b12').prop('disabled', false);
       $('#b13').prop('disabled', false);
       $('#submit').prop('disabled', false);
+      $('input[type=radio][name=pick]').prop('disabled', false);
     }
     updatePlot($('#customRange').val(), 'rgbDiv');
   });
@@ -413,17 +510,16 @@ function registerPickType() {
   $('input[type=radio][name=pick]').change(function() {
     if (this.id == 'pickp') {
       type = 0;
-      line = p_line;
-      norm = p_norm1;
     } else if (this.id == 'pickd') {
       type = 1;
-      line = d_line;
-      norm = d_norm1;
     } else if (this.id == 'pickt') {
       type = 2;
-      line = t_line;
-      norm = t_norm1;
     }
+
+    // automatically update colors and re-plot
+    //$('#b12').trigger('click');
+    //$('#b13').trigger('click');
+    //$('#submit').trigger('click');
   });
 }
 
@@ -449,7 +545,8 @@ function registerSetSecondary(buttonId, baseId, textId, squareId, colorId, nameI
     var baseColor = sRGB2RGB(rgb2hex($(baseId).css('background-color')));
     var scale = $(textId).val();
 
-    var val = RGB2sRGB([baseColor[0] + line[0] * scale, baseColor[1] + line[1] * scale, baseColor[2] + line[2] * scale]);
+    var line = confusion_lines[type];
+    var val = RGB2sRGB([baseColor[0] + line[0] * scale, baseColor[1] + line[1] * scale, baseColor[2] + line[2] * scale], false);
     $(squareId).css('background-color', val);
     //$(colorId).text(val);
     $(nameId).text(sRGB2Name(val));
