@@ -85,10 +85,10 @@
           <div class="col-sm-12 d-flex justify-content-center align-items-center">
             <div class="row">
               <div class="btn-group mb-2" role="group" aria-label="Basic radio toggle button group">
-                <input type="radio" class="btn-check" name="pick" id="pickp" autocomplete="off" checked>
+                <input type="radio" class="btn-check" name="pick" id="pickp" autocomplete="off">
                 <label class="btn btn-outline-primary" for="pickp">Protanopia</label>
               
-                <input type="radio" class="btn-check" name="pick" id="pickd" autocomplete="off">
+                <input type="radio" class="btn-check" name="pick" id="pickd" autocomplete="off" checked>
                 <label class="btn btn-outline-primary" for="pickd">Deutanopia</label>
               
                 <input type="radio" class="btn-check" name="pick" id="pickt" autocomplete="off">
@@ -103,7 +103,7 @@
               </div>
               <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
                 <input type="radio" class="btn-check" name="sim" id="yes" autocomplete="off">
-                <label class="btn btn-outline-primary" for="yes">Show sim colors</label>
+                <label class="btn btn-outline-primary" for="yes">Show simulated colors</label>
               
                 <input type="radio" class="btn-check" name="sim" id="no" autocomplete="off" checked>
                 <label class="btn btn-outline-primary" for="no">Show actual colors</label>
@@ -149,7 +149,7 @@
             <div id="colorpicker"></div>
           </div>
           <div class="col-sm-7 d-flex align-items-end justify-content-end">
-              <button id="submit" class="btn btn-success btn-lg mt-3">Update</button>
+            <button id="submit" class="btn btn-success btn-lg mt-3">Update</button>
           </div>
         </div>
 
@@ -157,9 +157,18 @@
       </div>
 
       <div class="pt-3 mb-4 px-4 bg-light border rounded-3">
+        <div class="row">
           <div id="rgbDiv"></div>
-          <label for="customRange" class="form-label" style="font-size:20px;">Rotation Angle (Degree): 0&#176;</label>
-          <input type="range" class="form-range" min="-3.14" max="3.14" step="0.02" id="customRange">
+        </div>
+        <div class="row">
+          <div class="col-sm-10">
+            <label for="customRange" class="form-label" style="font-size:20px;">Rotation Angle (Degree): 0&#176;</label>
+            <input type="range" class="form-range" min="-3.14" max="3.14" step="0.02" id="customRange">
+          </div>
+          <div class="col-sm-2 d-flex align-items-center">
+            <button id="reset" class="btn btn-primary">Reset</button>
+          </div>
+        </div>
       </div>
     </div>
   <div class="b-example-divider"></div>

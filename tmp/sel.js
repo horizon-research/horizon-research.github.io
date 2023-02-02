@@ -16,8 +16,9 @@ var oBlueColor = 'rgba(1, 25, 147, 0.5)';
 
 var color1, color2, color3;
 var name1, name2, name3;
+
 var sim = false;
-var type = 0; // 0 for P, 1 for D, 2 for T
+var type = 1; // 0 for P, 1 for D, 2 for T
 // 0 for Brettel 1997 (two planes) and 1 for Viénot 1999 (one plane)
 var simMethod = 0;
 
@@ -383,6 +384,24 @@ function plotRGB(plotId) {
   return plot;
 }
 
+function reorderColors(simColors_RGB) {
+  var tempColors = [];
+  var v1 = $('#t12').val();
+  var v2 = $('#t13').val();
+  if ((v1 > 0 && 0 > v2) || (v2 > 0 && 0 > v1)) {
+    tempColors[0] = simColors_RGB[1];
+    tempColors[1] = simColors_RGB[0];
+    tempColors[2] = simColors_RGB[2];
+  } else if ((v1 > v2 && v2 > 0) || (0 > v2 && v2 > v1)) {
+    tempColors[0] = simColors_RGB[1];
+    tempColors[1] = simColors_RGB[2];
+    tempColors[2] = simColors_RGB[0];
+  } else if ((v2 > v1 && v1 > 0) || (0 > v1 && v1 > v2)) {
+    tempColors = simColors_RGB;
+  }
+  return tempColors;
+}
+
 function updatePlot(theta, plotId) {
   var u = 1/Math.sqrt(3)
   var cos = Math.cos(theta)
@@ -413,32 +432,23 @@ function updatePlot(theta, plotId) {
   var simPoints_LMS = project(rotPoints_LMS);
   var simPoints_RGB = math.multiply(lms2RGB, simPoints_LMS);
   var simColors_RGB = math.transpose(simPoints_RGB);
-
-  // reorder columns in simPoints_RGB
-  var tempColors = [];
-  var v1 = $('#t12').val();
-  var v2 = $('#t13').val();
-  if ((v1 > 0 && 0 > v2) || (v2 > 0 && 0 > v1)) {
-    tempColors[0] = simColors_RGB[1];
-    tempColors[1] = simColors_RGB[0];
-    tempColors[2] = simColors_RGB[2];
-  } else if ((v1 > v2 && v2 > 0) || (0 > v2 && v2 > v1)) {
-    tempColors[0] = simColors_RGB[1];
-    tempColors[1] = simColors_RGB[2];
-    tempColors[2] = simColors_RGB[0];
-  } else if ((v2 > v1 && v1 > 0) || (0 > v1 && v1 > v2)) {
-    tempColors = simColors_RGB;
-  }
-  simColors_RGB = tempColors;
-  simPoints_RGB = math.transpose(simColors_RGB);
-
   var simColors_sRGB = [RGB2sRGB(simColors_RGB[0], true),
                         RGB2sRGB(simColors_RGB[1], true),
                         RGB2sRGB(simColors_RGB[2], true)
                        ];
 
-  var data_update = {'x': [simPoints_RGB[0]], 'y': [simPoints_RGB[1]], 'z': [simPoints_RGB[2]],
-                     'marker.color': [simColors_sRGB], 'text': [simColors_sRGB]};
+  // reorder columns in simPoints_RGB geometrically for nicer 3D plotting
+  // but we should keep the original simPoints_RGB so that we don't switch order in squares
+  var ro_simColors_RGB = reorderColors(simColors_RGB);
+  var ro_simPoints_RGB = math.transpose(ro_simColors_RGB);
+
+  var ro_simColors_sRGB = [RGB2sRGB(ro_simColors_RGB[0], true),
+                           RGB2sRGB(ro_simColors_RGB[1], true),
+                           RGB2sRGB(ro_simColors_RGB[2], true)
+                          ];
+
+  var data_update = {'x': [ro_simPoints_RGB[0]], 'y': [ro_simPoints_RGB[1]], 'z': [ro_simPoints_RGB[2]],
+                     'marker.color': [ro_simColors_sRGB], 'text': [ro_simColors_sRGB]};
   Plotly.update(plot, data_update, {}, [14]);
 
   // update square colors
@@ -472,8 +482,6 @@ function updatePlot(theta, plotId) {
   $('#n13').text(name3);
 }
 
-plotRGB('rgbDiv');
-
 function registerSlider(id) {
   //$('input[type=range]').on('input', function() {
   $(id).on('input', function() {
@@ -481,8 +489,6 @@ function registerSlider(id) {
     updatePlot(this.value, 'rgbDiv')
   });
 }
-
-registerSlider('#customRange');
 
 function registerSimMode() {
   $('input[type=radio][name=sim]').change(function() {
@@ -505,8 +511,6 @@ function registerSimMode() {
   });
 }
 
-registerSimMode();
-
 function registerPickType() {
   $('input[type=radio][name=pick]').change(function() {
     if (this.id == 'pickp') {
@@ -524,8 +528,6 @@ function registerPickType() {
   });
 }
 
-registerPickType();
-
 function registerPickSimMethod() {
   $('input[type=radio][name=method]').change(function() {
     if (this.id == 'm1') {
@@ -538,8 +540,6 @@ function registerPickSimMethod() {
     updatePlot($('#customRange').val(), 'rgbDiv');
   });
 }
-
-registerPickSimMethod();
 
 $(document).ready(function() {
   $('#colorpicker').farbtastic('#color');
@@ -570,14 +570,6 @@ function registerSetSecondary(buttonId, baseId, textId, squareId, colorId, nameI
   });
 }
 
-registerSetSecondary('#b12', '#s11', '#t12', '#s12', '#h12', '#n12');
-registerSetSecondary('#b13', '#s11', '#t13', '#s13', '#h13', '#n13');
-
-$('#t12').val('-0.4');
-$('#t13').val('0.4');
-$('#b12').trigger('click');
-$('#b13').trigger('click');
-
 function registerSubmit(buttonId, rangeId) {
   $(buttonId).on('click', function(evt) {
     color1 = sRGB2RGB(rgb2hex($('#s11').css('background-color')));
@@ -593,7 +585,31 @@ function registerSubmit(buttonId, rangeId) {
   });
 }
 
+function registerReset(resetId) {
+  $(resetId).on('click', function(evt) {
+    $('#customRange').val(0);
+    // need to explicitly trigger input event
+    $('#customRange').trigger('input');
+  });
+}
+
+plotRGB('rgbDiv');
+registerSlider('#customRange');
+registerSimMode();
+registerPickType();
+registerPickSimMethod();
+registerSetSecondary('#b12', '#s11', '#t12', '#s12', '#h12', '#n12');
+registerSetSecondary('#b13', '#s11', '#t13', '#s13', '#h13', '#n13');
 registerSubmit('#submit', '#customRange');
+registerReset('#reset');
+
+// set secondary colors
+$('#t12').val('-0.4');
+$('#t13').val('0.4');
+$('#b12').trigger('click');
+$('#b13').trigger('click');
+
+// update the plot
 $('#submit').trigger('click');
 
 
