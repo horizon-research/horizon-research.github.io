@@ -17,56 +17,63 @@ var oBlueColor = 'rgba(1, 25, 147, 0.5)';
 var color1, color2, color3;
 var name1, name2, name3;
 
-var sim = false;
-var type = 1; // 0 for P, 1 for D, 2 for T
-// 0 for Brettel 1997 (two planes) and 1 for Viénot 1999 (one plane)
-var simMethod = 0;
-
 function get_proj_mat() {
+  // https://daltonlens.org/understanding-cvd-simulation/
   if (simMethod == 1) {
-    var p_norm1 = [0.00440804, -0.00891942, 0.01113385];
-    var p_proj_mat = [[0, -p_norm1[1]/p_norm1[0], -p_norm1[2]/p_norm1[0]], [0, 1, 0], [0, 0, 1]];
+    // Viénot 1999 (one plane); an approximation of Brettel 1997 (two planes).
+    // for protanopia and deuteranopia they use the black-blue-yellow-white plane;
+    // for tritanopia the paper didn't say what to do here we simply use black-red-cyan-white plane.
+    var sRGBWhite = math.multiply(get_RGB2lms(), [1, 1, 1]);
+    var sRGBBlue = math.multiply(get_RGB2lms(), [0, 0, 1]);
+    var sRGBRed = math.multiply(get_RGB2lms(), [1, 0, 0]);
+    var sRGBYellow = math.multiply(get_RGB2lms(), [1, 1, 0]);
+    var sRGBCyan = math.multiply(get_RGB2lms(), [0, 1, 1]);
+
+    var p_norm1 = math.cross(sRGBBlue, sRGBYellow);
     var d_norm1 = p_norm1;
+    var t_norm1 = math.cross(sRGBRed, sRGBCyan);
+
+    var p_proj_mat = [[0, -p_norm1[1]/p_norm1[0], -p_norm1[2]/p_norm1[0]], [0, 1, 0], [0, 0, 1]];
     var d_proj_mat = [[1, 0, 0], [-d_norm1[0]/d_norm1[1], 0, -d_norm1[2]/d_norm1[1]], [0, 0, 1]];
-    var t_norm1 = [-0.00047773, 0.00281039, -0.03901461];
     var t_proj_mat = [[1, 0, 0], [0, 1, 0], [-t_norm1[0]/t_norm1[2], -t_norm1[1]/t_norm1[2], 0]];
 
     return [p_proj_mat, d_proj_mat, t_proj_mat];
   } else {
-    //var p_norm1 = [-1.9082658681515485, 2.117751626087778, -0.20939929937650947];
-    //var p_norm2 = [-1.8983441434416113, 2.04613441386516, -0.14772500661017962];
-    //var d_norm1 = p_norm1;
-    //var d_norm2 = d_norm2;
-    //var t_norm1 = [-0.8559262314423839, 1.1229313663856852, -0.26690712337317146];
-    //var t_norm2 = [-0.07331466590406314, 0.22723495600946306, -0.15386703720552092];
+    // Brettel 1997 (two planes).
+    // in LMS space (transformed from JV-modified XYZ)
+    var a475 = [0.0509384206, 0.0618970658, 0.015150576];
+    var a485 = [0.0818313433, 0.0880318619, 0.009429312];
+    var a575 = [0.6281339073, 0.2874094695, 0.000031687248];
+    var a660 = [0.05820210417, 0.002795455831, 0.00000019144848];
+    var aEEW = [14.30506543, 7.190126944, 0.3379046085];
+    var sRGBWhite = math.multiply(get_RGB2lms(), [1, 1, 1]);
+    var aWhite = aEEW; // (Brettel 97 uses EEW and Vienot 99 uses sRGBWhite)
 
-    //var p_proj_mat1 = [[0, -p_norm1[1]/p_norm1[0], -p_norm1[2]/p_norm1[0]], [0, 1, 0], [0, 0, 1]];
-    //var d_proj_mat1 = [[1, 0, 0], [-d_norm1[0]/d_norm1[1], 0, -d_norm1[2]/d_norm1[1]], [0, 0, 1]];
-    //var t_proj_mat1 = [[1, 0, 0], [0, 1, 0], [-t_norm1[0]/t_norm1[2], -t_norm1[1]/t_norm1[2], 0]];
+    var p_norm1 = math.cross(aWhite, a475);
+    var p_norm2 = math.cross(aWhite, a575);
+    var d_norm1 = p_norm1;
+    var d_norm2 = p_norm2;
+    var t_norm1 = math.cross(aWhite, a485);
+    var t_norm2 = math.cross(aWhite, a660);
 
-    //var p_proj_mat2 = [[0, -p_norm2[1]/p_norm2[0], -p_norm2[2]/p_norm2[0]], [0, 1, 0], [0, 0, 1]];
-    //var d_proj_mat2 = [[1, 0, 0], [-d_norm2[0]/d_norm2[1], 0, -d_norm2[2]/d_norm2[1]], [0, 0, 1]];
-    //var t_proj_mat2 = [[1, 0, 0], [0, 1, 0], [-t_norm2[0]/t_norm2[2], -t_norm2[1]/t_norm2[2], 0]];
+    // quite close to values calculated by https://daltonlens.org/understanding-cvd-simulation/
+    var p_proj_mat1 = [[0, -p_norm1[1]/p_norm1[0], -p_norm1[2]/p_norm1[0]], [0, 1, 0], [0, 0, 1]]; // 475
+    var d_proj_mat1 = [[1, 0, 0], [-d_norm1[0]/d_norm1[1], 0, -d_norm1[2]/d_norm1[1]], [0, 0, 1]]; // 475
+    var t_proj_mat1 = [[1, 0, 0], [0, 1, 0], [-t_norm1[0]/t_norm1[2], -t_norm1[1]/t_norm1[2], 0]]; // 485
 
-    var p_proj_mat1 = [[0, 2.27376148, -5.92721645], [0, 1, 0], [0, 0, 1]]; // 475
-    var d_proj_mat1 = [[1, 0, 0], [0.43979987, 0, 2.60678902], [0, 0, 1]]; // 475
-    var t_proj_mat1 = [[1, 0, 0], [0, 1, 0], [-0.05574292, 0.15892917, 0]]; // 485
-
-    var p_proj_mat2 = [[0, 2.18595384, -4.10029338], [0, 1, 0], [0, 0, 1]]; // 575
-    var d_proj_mat2 = [[1, 0, 0], [0.4574662, 0, 1.87574564], [0, 0, 1]]; // 575
-    var t_proj_mat2 = [[1, 0, 0], [0, 1, 0], [-0.00254865, 0.0531321, 0]]; // 660
+    var p_proj_mat2 = [[0, -p_norm2[1]/p_norm2[0], -p_norm2[2]/p_norm2[0]], [0, 1, 0], [0, 0, 1]]; // 575
+    var d_proj_mat2 = [[1, 0, 0], [-d_norm2[0]/d_norm2[1], 0, -d_norm2[2]/d_norm2[1]], [0, 0, 1]]; // 575
+    var t_proj_mat2 = [[1, 0, 0], [0, 1, 0], [-t_norm2[0]/t_norm2[2], -t_norm2[1]/t_norm2[2], 0]]; // 660
 
     return [p_proj_mat1, d_proj_mat1, t_proj_mat1, p_proj_mat2, d_proj_mat2, t_proj_mat2];
   }
 }
 
-var proj_mat = get_proj_mat();
-
-// https://daltonlens.org/understanding-cvd-simulation/
 function get_RGB2lms() {
   var xyz2lms, RGB2xyz;
 
   // XYZ <--> LMS mats based on Smith & Pokorny using Judd corrected XYZ (used by Brettel 1997 & Viénot 1999)
+  // http://cvrl.ioo.ucl.ac.uk/database/text/cones/sp.htm
   xyz2lms = [[0.15514, 0.54312, -0.03286], [-0.15514, 0.45684, 0.03286], [0, 0, 0.01608]];
   RGB2xyz = [[40.9568, 35.5041, 17.9167], [21.3389, 70.6743, 7.9868], [1.86297, 11.462, 91.2367]];
 
@@ -92,12 +99,12 @@ function get_confusion_lines() {
   //var t_line = [0.1428342021, -0.1413451732, 0.9796019256];
   
   // vectors for confusion lines (derived using lms2RGB matrix)
-  var p_line = math.multiply(lms2RGB, [1, 0, 0]);
-  p_line = math.divide(p_line, math.norm(p_line));
-  var d_line = math.multiply(lms2RGB, [0, 1, 0]);
-  d_line = math.divide(d_line, math.norm(d_line));
-  var t_line = math.multiply(lms2RGB, [0, 0, 1]);
-  t_line = math.divide(t_line, math.norm(t_line));
+  var p_line = normalize(math.multiply(lms2RGB, [1, 0, 0]));
+  //p_line = math.divide(p_line, math.norm(p_line));
+  var d_line = normalize(math.multiply(lms2RGB, [0, 1, 0]));
+  //d_line = math.divide(d_line, math.norm(d_line));
+  var t_line = normalize(math.multiply(lms2RGB, [0, 0, 1]));
+  //t_line = math.divide(t_line, math.norm(t_line));
 
   return [p_line, d_line, t_line];
 }
@@ -170,6 +177,10 @@ function sRGB2Name(color) {
   var n_name       = n_match[1]; // This is the text string for the name of the match
   //var n_exactmatch = n_match[2]; // True if exact color match, False if close-match
   return n_name;
+}
+
+function normalize(vec) {
+  return math.divide(vec, math.norm(vec));
 }
 
 function project(colors_LMS) {
@@ -386,8 +397,8 @@ function plotRGB(plotId) {
 
 function reorderColors(simColors_RGB) {
   var tempColors = [];
-  var v1 = $('#t12').val();
-  var v2 = $('#t13').val();
+  var v1 = parseFloat($('#t12').val());
+  var v2 = parseFloat($('#t13').val());
   if ((v1 > 0 && 0 > v2) || (v2 > 0 && 0 > v1)) {
     tempColors[0] = simColors_RGB[1];
     tempColors[1] = simColors_RGB[0];
@@ -531,10 +542,13 @@ function registerPickType() {
 function registerPickSimMethod() {
   $('input[type=radio][name=method]').change(function() {
     if (this.id == 'm1') {
+      // one plane
       simMethod = 1;
     } else {
+      // two planes
       simMethod = 0;
     }
+    proj_mat = get_proj_mat();
 
     // automatically update colors and re-plot
     updatePlot($('#customRange').val(), 'rgbDiv');
@@ -593,7 +607,9 @@ function registerReset(resetId) {
   });
 }
 
+// initial plot with no meaningful data
 plotRGB('rgbDiv');
+
 registerSlider('#customRange');
 registerSimMode();
 registerPickType();
@@ -603,13 +619,27 @@ registerSetSecondary('#b13', '#s11', '#t13', '#s13', '#h13', '#n13');
 registerSubmit('#submit', '#customRange');
 registerReset('#reset');
 
+// init color blindness type
+$('#pickd').prop("checked", true);
+var type = 1; // 0 for P, 1 for D, 2 for T
+
+// init simulation method
+// 0 for Brettel 1997 (two planes) and 1 for Viénot 1999 (one plane)
+$('#m2').prop("checked", true);
+var simMethod = 0;
+var proj_mat = get_proj_mat();
+
+// choose to show actual colors
+$('#no').prop("checked", true);
+var sim = false;
+
 // set secondary colors
 $('#t12').val('-0.4');
 $('#t13').val('0.4');
 $('#b12').trigger('click');
 $('#b13').trigger('click');
 
-// update the plot
+// update the plot with the initial setting
 $('#submit').trigger('click');
 
 
