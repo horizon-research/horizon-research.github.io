@@ -534,7 +534,8 @@ function registerPickSimMethod() {
       simMethod = 0;
     }
 
-    // TODO: automatically update colors and re-plot
+    // automatically update colors and re-plot
+    updatePlot($('#customRange').val(), 'rgbDiv');
   });
 }
 
