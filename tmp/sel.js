@@ -100,11 +100,8 @@ function get_confusion_lines() {
   
   // vectors for confusion lines (derived using lms2RGB matrix)
   var p_line = normalize(math.multiply(lms2RGB, [1, 0, 0]));
-  //p_line = math.divide(p_line, math.norm(p_line));
   var d_line = normalize(math.multiply(lms2RGB, [0, 1, 0]));
-  //d_line = math.divide(d_line, math.norm(d_line));
   var t_line = normalize(math.multiply(lms2RGB, [0, 0, 1]));
-  //t_line = math.divide(t_line, math.norm(t_line));
 
   return [p_line, d_line, t_line];
 }
@@ -396,9 +393,15 @@ function plotRGB(plotId) {
 }
 
 function reorderColors(simColors_RGB) {
+  var v1 = $('#t12').val();
+  var v2 = $('#t13').val();
+
+  if (v1[0] == '#' && v2[0] == '#') return simColors_RGB;
+
+  v1 = parseFloat(v1);
+  v2 = parseFloat(v2);
+
   var tempColors = [];
-  var v1 = parseFloat($('#t12').val());
-  var v2 = parseFloat($('#t13').val());
   if ((v1 > 0 && 0 > v2) || (v2 > 0 && 0 > v1)) {
     tempColors[0] = simColors_RGB[1];
     tempColors[1] = simColors_RGB[0];
@@ -574,13 +577,21 @@ $(document).ready(function() {
 function registerSetSecondary(buttonId, baseId, textId, squareId, colorId, nameId) {
   $(buttonId).on('click', function(evt) {
     var baseColor = sRGB2RGB(rgb2hex($(baseId).css('background-color')));
-    var scale = $(textId).val();
+    var text = $(textId).val();
+    var colorVal;
 
-    var line = confusion_lines[type];
-    var val = RGB2sRGB([baseColor[0] + line[0] * scale, baseColor[1] + line[1] * scale, baseColor[2] + line[2] * scale], false);
-    $(squareId).css('background-color', val);
+    if (text[0] == '#') {
+      colorVal = text;
+    } else {
+      // a scale value
+      var line = confusion_lines[type];
+      colorVal = RGB2sRGB([baseColor[0] + line[0] * text,
+                           baseColor[1] + line[1] * text,
+                           baseColor[2] + line[2] * text], false);
+    }
+    $(squareId).css('background-color', colorVal);
     //$(colorId).text(val);
-    $(nameId).text(sRGB2Name(val));
+    $(nameId).text(sRGB2Name(colorVal));
   });
 }
 
@@ -614,6 +625,7 @@ registerSlider('#customRange');
 registerSimMode();
 registerPickType();
 registerPickSimMethod();
+registerSetSecondary('#b11', '#s11', '#color', '#s11', '#h11', '#n11');
 registerSetSecondary('#b12', '#s11', '#t12', '#s12', '#h12', '#n12');
 registerSetSecondary('#b13', '#s11', '#t13', '#s13', '#h13', '#n13');
 registerSubmit('#submit', '#customRange');
