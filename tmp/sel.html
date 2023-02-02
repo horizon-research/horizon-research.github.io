@@ -79,84 +79,89 @@
       </a>
     </header>
 
-    <div class="d-grid gap-3 pt-3 mb-4 px-4 bg-light border rounded-3">
-
-      <div class="row">
-        <div class="col-sm-4 d-flex align-items-center">
-          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-            <input type="radio" class="btn-check" name="pick" id="pickp" autocomplete="off" checked>
-            <label class="btn btn-outline-primary" for="pickp">Protanopia</label>
-          
-            <input type="radio" class="btn-check" name="pick" id="pickd" autocomplete="off">
-            <label class="btn btn-outline-primary" for="pickd">Deutanopia</label>
-          
-            <input type="radio" class="btn-check" name="pick" id="pickt" autocomplete="off">
-            <label class="btn btn-outline-primary" for="pickt">Tritanopia</label>
+    <div class="d-grid gap-3" style="grid-template-columns: 2fr 2fr;">
+      <div class="pt-3 mb-4 px-4 bg-light border rounded-3">
+        <div class="row">
+          <div class="col-sm-12 d-flex justify-content-center align-items-center">
+            <div class="row">
+              <div class="btn-group mb-2" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="pick" id="pickp" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="pickp">Protanopia</label>
+              
+                <input type="radio" class="btn-check" name="pick" id="pickd" autocomplete="off">
+                <label class="btn btn-outline-primary" for="pickd">Deutanopia</label>
+              
+                <input type="radio" class="btn-check" name="pick" id="pickt" autocomplete="off">
+                <label class="btn btn-outline-primary" for="pickt">Tritanopia</label>
+              </div>
+              <div class="btn-group mb-2" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="method" id="m1" autocomplete="off">
+                <label class="btn btn-outline-primary" for="m1">One Plane (Viénot 1999)</label>
+              
+                <input type="radio" class="btn-check" name="method" id="m2" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="m2">Two Plane (Brettel 1997)</label>
+              </div>
+              <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="sim" id="yes" autocomplete="off">
+                <label class="btn btn-outline-primary" for="yes">Show sim colors</label>
+              
+                <input type="radio" class="btn-check" name="sim" id="no" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="no">Show actual colors</label>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-sm-8">
+
+        <hr>
+        <div class="row">
+          <div class="col-sm-4">
+            <h3 id="h11"></h3>
+            <h3 id="n11" class="text-nowrap"></h3>
+            <div class="square" id="s11"></div>
+            <div class="input-group input-group-sm mt-1">
+              <input type="text" id="color" name="color" value="#abbcb4" class="form-control" aria-label="color"/>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <h3 id="h12"></h3>
+            <h3 id="n12" class="text-nowrap"></h3>
+            <div class="square" id="s12"></div>
+            <div class="input-group input-group-sm mt-1">
+              <input type="text" id="t12" class="form-control" aria-label="t12">
+              <button class="btn btn-outline-secondary" type="button" id="b12">Set</button>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <h3 id="h13"></h3>
+            <h3 id="n13" class="text-nowrap"></h3>
+            <div class="square" id="s13"></div>
+            <div class="input-group input-group-sm mt-1">
+              <input type="text" id="t13" class="form-control" aria-label="t13">
+              <button class="btn btn-outline-secondary" type="button" id="b13">Set</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row my-2">
+          <div class="col-sm-5">
+            <div id="colorpicker"></div>
+          </div>
+          <div class="col-sm-7 d-flex align-items-end justify-content-end">
+              <button id="submit" class="btn btn-success btn-lg mt-3">Update</button>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="pt-3 mb-4 px-4 bg-light border rounded-3">
           <div id="rgbDiv"></div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="btn-group mx-4" role="group" aria-label="Basic radio toggle button group">
-            <input type="radio" class="btn-check" name="sim" id="yes" autocomplete="off">
-            <label class="btn btn-outline-primary" for="yes">Show sim colors</label>
-          
-            <input type="radio" class="btn-check" name="sim" id="no" autocomplete="off" checked>
-            <label class="btn btn-outline-primary" for="no">Show actual colors</label>
-          </div>
-        </div>
-        <div class="col-sm-8">
-          <label for="customRange" class="form-label">0</label>
+          <label for="customRange" class="form-label" style="font-size:20px;">Rotation Angle (Degree): 0&#176;</label>
           <input type="range" class="form-range" min="-3.14" max="3.14" step="0.02" id="customRange">
-        </div>
       </div>
-
-      <div class="row mb-4 d-flex justify-content-center">
-        <div class="col-sm-2">
-          <form><input type="text" id="color" name="color" value="#abbcb4" /></form>
-          <div id="colorpicker"></div>
-        </div>
-
-        <div class="col-sm-3">
-          <h3 id="h11"></h3>
-          <h3 id="n11"></h3>
-          <div class="square" id="s11"></div>
-          <button id="b11" class="btn btn-primary btn-sm mt-3">Use the picked color</button>
-        </div>
-
-        <div class="col-sm-3">
-          <h3 id="h12"></h3>
-          <h3 id="n12"></h3>
-          <div class="square" id="s12"></div>
-
-          <div class="input-group input-group-sm mt-3">
-            <input type="text" id="t12" class="form-control" aria-label="t12">
-            <button class="btn btn-outline-secondary" type="button" id="b12">Set</button>
-          </div>
-        </div>
-
-        <div class="col-sm-3">
-          <h3 id="h13"></h3>
-          <h3 id="n13"></h3>
-          <div class="square" id="s13"></div>
-
-          <div class="input-group input-group-sm mt-3">
-            <input type="text" id="t13" class="form-control" aria-label="t13">
-            <button class="btn btn-outline-secondary" type="button" id="b13">Set</button>
-          </div>
-        </div>
-
-        <div class="col-sm-1 d-flex align-items-center">
-          <button id="submit" class="btn btn-primary btn-sm mt-3">Update</button>
-        </div>
-      </div>
-
     </div>
-
   <div class="b-example-divider"></div>
   </div>
 

@@ -218,7 +218,7 @@ function plotRGB(plotId) {
   // O: 0; R: 1; G: 2: B: 3
   // RG: 4; RB: 5; GB: 6; RGB: 7
   var indices = [[0, 1], [0, 2], [0, 3], [1, 4], [1, 5], [2, 4], [2, 6], [3, 5], [3, 6], [4, 7], [5, 7], [6, 7], [0, 7]];
-  var names = ['O', 'R', 'G', 'B', 'R+G', 'R+B', 'G+B', 'R+G+B (W)'];
+  var names = ['O', 'R', 'G', 'B', 'R+G', 'R+B', 'G+B', 'W'];
   var hoverInfo = [true, true, true, 'skip', 'skip', 'skip', 'skip', 'skip', 'skip', true, true, true, 'skip'];
   var colors = ['#000000', redColor, greenColor, blueColor, yellowColor, magentaColor, cyanColor, '#000000'];
   var modes = Array(3).fill('lines+markers+text').concat(Array(6).fill('lines')).concat(Array(3).fill('lines+markers+text'));
@@ -311,6 +311,7 @@ function plotRGB(plotId) {
 
   var layout = {
     height: 600,
+    width: 600,
     margin: {
       l: 0,
       r: 0,
@@ -476,7 +477,7 @@ plotRGB('rgbDiv');
 function registerSlider(id) {
   //$('input[type=range]').on('input', function() {
   $(id).on('input', function() {
-    $('.form-label').html(this.value)
+    $('.form-label').html('Rotation Angle (Degree): ' + (this.value/(2 * Math.PI) * 180).toFixed(2) + '&#176;')
     updatePlot(this.value, 'rgbDiv')
   });
 }
@@ -525,20 +526,35 @@ function registerPickType() {
 
 registerPickType();
 
-$(document).ready(function() {
-  $('#colorpicker').farbtastic('#color');
-});
+function registerPickSimMethod() {
+  $('input[type=radio][name=method]').change(function() {
+    if (this.id == 'm1') {
+      simMethod = 1;
+    } else {
+      simMethod = 0;
+    }
 
-function registerSetMain(buttonId, squareId, colorId, nameId) {
-  $(buttonId).on('click', function(evt) {
-    var val = $('#color').val();
-    $(squareId).css('background-color', val);
-    //$(colorId).text(val);
-    $(nameId).text(sRGB2Name(val));
+    // TODO: automatically update colors and re-plot
   });
 }
 
-registerSetMain('#b11', '#s11', '#h11', '#n11');
+registerPickSimMethod();
+
+$(document).ready(function() {
+  $('#colorpicker').farbtastic('#color');
+
+  // observe background change of the input box. for some reason the value change isn't detected.
+  var observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutationRecord) {
+      //console.log(mutationRecord.target.value);
+      var val = $('#color').val();
+      $('#s11').css('background-color', val);
+      $('#n11').text(sRGB2Name(val));
+    });    
+  });
+  var target = document.getElementById('color');;
+  observer.observe(target, { attributes : true, attributeFilter : ['style'] });
+});
 
 function registerSetSecondary(buttonId, baseId, textId, squareId, colorId, nameId) {
   $(buttonId).on('click', function(evt) {
@@ -571,7 +587,7 @@ function registerSubmit(buttonId, rangeId) {
     name3 = sRGB2Name(rgb2hex($('#s13').css('background-color')));
 
     $(rangeId).val(0);
-    $('.form-label').html('0');
+    $('.form-label').html('Rotation Angle (Degree): 0&#176;');
     updatePlot(0, 'rgbDiv');
   });
 }
