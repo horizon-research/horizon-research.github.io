@@ -80,7 +80,7 @@
     </header>
 
     <div class="d-grid gap-3" style="grid-template-columns: 2fr 2fr;">
-      <div class="pt-3 mb-4 px-4 bg-light border rounded-3">
+      <div class="pt-3 mb-4 px-3 bg-light border rounded-3">
         <div class="row">
           <div class="col-sm-12 d-flex justify-content-center align-items-center">
             <div class="row">
@@ -146,11 +146,26 @@
         </div>
 
         <div class="row my-2">
-          <div class="col-sm-5">
+          <div class="col-sm-4">
             <div id="colorpicker"></div>
           </div>
-          <div class="col-sm-7 d-flex align-items-end justify-content-end">
-            <button id="submit" class="btn btn-success btn-lg mt-3">Update</button>
+          <div class="col-sm-8">
+            <div class="row my-2 mx-1">
+              <div class="col-sm-8">
+                <select id="presets" class="form-select">
+                  <option value="nopreset" selected>Enter Colors</option>
+                  <option value="preset1">Yellow + Green + Orange</option>
+                  <option value="preset2">Blue + Purple + Magenta</option>
+                  <option value="preset3">Red + Dark Green + Brown</option>
+                </select>
+              </div>
+              <div class="col-sm-4 d-flex justify-content-end">
+                <button id="submit" class="btn btn-success btn">Update</button>
+              </div>
+            </div>
+            <div class="row mx-1">
+              <div>Two ways to specify colors. First, select a preset from the dropdown above. Second, select "Enter Colors" and enter colors using the input boxes, which accept both sRGB Hex values and scaling factors. The first color accepts Hex only or from color picker. If using scaling factors, the colors are on a confusion line under the blindness type.</div>
+            </div>
           </div>
         </div>
 
@@ -161,7 +176,7 @@
         <div class="row">
           <div id="rgbDiv"></div>
         </div>
-        <div class="row">
+        <div class="row mt-3">
           <div class="col-sm-10">
             <label for="customRange" class="form-label" style="font-size:20px;">Rotation Angle (Degree): 0&#176;</label>
             <input type="range" class="form-range" min="-3.14" max="3.14" step="0.02" id="customRange">

@@ -499,7 +499,7 @@ function updatePlot(theta, plotId) {
 function registerSlider(id) {
   //$('input[type=range]').on('input', function() {
   $(id).on('input', function() {
-    $('.form-label').html('Rotation Angle (Degree): ' + (this.value/(2 * Math.PI) * 180).toFixed(2) + '&#176;')
+    $('.form-label').html('Rotation Angle (Degree): ' + (this.value/Math.PI*180).toFixed(2) + '&#176;')
     updatePlot(this.value, 'rgbDiv')
   });
 }
@@ -512,6 +512,7 @@ function registerSimMode() {
       $('#b12').prop('disabled', true);
       $('#b13').prop('disabled', true);
       $('#submit').prop('disabled', true);
+      $('#presets').prop('disabled', true);
       $('input[type=radio][name=pick]').prop('disabled', true);
     } else {
       sim = false;
@@ -519,6 +520,7 @@ function registerSimMode() {
       $('#b12').prop('disabled', false);
       $('#b13').prop('disabled', false);
       $('#submit').prop('disabled', false);
+      $('#presets').prop('disabled', false);
       $('input[type=radio][name=pick]').prop('disabled', false);
     }
     updatePlot($('#customRange').val(), 'rgbDiv');
@@ -618,6 +620,39 @@ function registerReset(resetId) {
   });
 }
 
+function registerSelectPresets() {
+  $('#presets').on('change', function(evt) {
+    var val = this.value;
+    if (val == "nopreset") {
+      $('#b11').prop('disabled', false);
+      $('#b12').prop('disabled', false);
+      $('#b13').prop('disabled', false);
+
+      return;
+    } else if (val == "preset1") {
+      $('#color').val(rgb2hex('rgb(237, 238, 51)'));
+      $('#t12').val(rgb2hex('rgb(79, 255, 78)'));
+      $('#t13').val(rgb2hex('rgb(225, 112, 2)'));
+    } else if (val == "preset2") {
+      $('#color').val(rgb2hex('rgb(41, 37, 229)'));
+      $('#t12').val(rgb2hex('rgb(132, 0, 211)'));
+      $('#t13').val(rgb2hex('rgb(224, 2, 224)'));
+    } else if (val == "preset3") {
+      $('#color').val(rgb2hex('rgb(224, 2, 1)'));
+      $('#t12').val(rgb2hex('rgb(9, 90, 0)'));
+      $('#t13').val(rgb2hex('rgb(151, 91, 57)'));
+    }
+
+    $('#b11').trigger('click');
+    $('#b12').trigger('click');
+    $('#b13').trigger('click');
+
+    $('#b11').prop('disabled', true);
+    $('#b12').prop('disabled', true);
+    $('#b13').prop('disabled', true);
+  });
+}
+
 // initial plot with no meaningful data
 plotRGB('rgbDiv');
 
@@ -630,6 +665,7 @@ registerSetSecondary('#b12', '#s11', '#t12', '#s12', '#h12', '#n12');
 registerSetSecondary('#b13', '#s11', '#t13', '#s13', '#h13', '#n13');
 registerSubmit('#submit', '#customRange');
 registerReset('#reset');
+registerSelectPresets();
 
 // init color blindness type
 $('#pickd').prop("checked", true);
