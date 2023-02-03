@@ -396,7 +396,7 @@ function reorderColors(simColors_RGB) {
   var v1 = $('#t12').val();
   var v2 = $('#t13').val();
 
-  if (v1[0] == '#' && v2[0] == '#') return simColors_RGB;
+  if (v1[0] == '#' || v2[0] == '#') return simColors_RGB;
 
   v1 = parseFloat(v1);
   v2 = parseFloat(v2);
