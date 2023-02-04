@@ -560,21 +560,14 @@ function registerPickSimMethod() {
   });
 }
 
-$(document).ready(function() {
-  $('#colorpicker').farbtastic('#color');
-
-  // observe background change of the input box. for some reason the value change isn't detected.
-  var observer = new MutationObserver(function(mutations) {
-    mutations.forEach(function(mutationRecord) {
-      //console.log(mutationRecord.target.value);
-      var val = $('#color').val();
-      $('#s11').css('background-color', val);
-      $('#n11').text(sRGB2Name(val));
-    });    
+function registerSetMain(baseId, squareId, colorId, nameId) {
+  $(baseId).on('change', function(evt) {
+    var colorVal = $(baseId).val();
+    $(squareId).css('background-color', colorVal);
+    //$(colorId).text(val);
+    $(nameId).text(sRGB2Name(colorVal));
   });
-  var target = document.getElementById('color');;
-  observer.observe(target, { attributes : true, attributeFilter : ['style'] });
-});
+}
 
 function registerSetSecondary(buttonId, baseId, textId, squareId, colorId, nameId) {
   $(buttonId).on('click', function(evt) {
@@ -624,9 +617,11 @@ function registerSelectPresets() {
   $('#presets').on('change', function(evt) {
     var val = this.value;
     if (val == "nopreset") {
-      $('#b11').prop('disabled', false);
+      $('#color').prop('disabled', false);
       $('#b12').prop('disabled', false);
       $('#b13').prop('disabled', false);
+      $('#t12').prop('disabled', false);
+      $('#t13').prop('disabled', false);
 
       return;
     } else if (val == "preset1") {
@@ -643,13 +638,15 @@ function registerSelectPresets() {
       $('#t13').val(rgb2hex('rgb(151, 91, 57)'));
     }
 
-    $('#b11').trigger('click');
+    $('#color').trigger('change');
     $('#b12').trigger('click');
     $('#b13').trigger('click');
 
-    $('#b11').prop('disabled', true);
+    $('#color').prop('disabled', true);
     $('#b12').prop('disabled', true);
     $('#b13').prop('disabled', true);
+    $('#t12').prop('disabled', true);
+    $('#t13').prop('disabled', true);
   });
 }
 
@@ -660,7 +657,7 @@ registerSlider('#customRange');
 registerSimMode();
 registerPickType();
 registerPickSimMethod();
-registerSetSecondary('#b11', '#s11', '#color', '#s11', '#h11', '#n11');
+registerSetMain('#color', '#s11', '#h11', '#n11');
 registerSetSecondary('#b12', '#s11', '#t12', '#s12', '#h12', '#n12');
 registerSetSecondary('#b13', '#s11', '#t13', '#s13', '#h13', '#n13');
 registerSubmit('#submit', '#customRange');

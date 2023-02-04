@@ -50,9 +50,6 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
     <script type="text/javascript" src="ntc.js"></script>
 
-    <script type="text/javascript" src="farbtastic/farbtastic.js"></script>
-    <link rel="stylesheet" href="farbtastic/farbtastic.css" type="text/css" />
-
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
     <script type="text/x-mathjax-config">
@@ -119,8 +116,7 @@
             <h3 id="n11" class="text-nowrap"></h3>
             <div class="square" id="s11"></div>
             <div class="input-group input-group-sm mt-1">
-              <input type="text" id="color" name="color" class="form-control" aria-label="t11" value="#abbcb4"/>
-              <button class="btn btn-outline-secondary" type="button" id="b11">Set</button>
+              <input type="color" id="color" name="color" class="form-control" aria-label="t11" value="#abbcb4"/>
             </div>
           </div>
 
@@ -147,7 +143,7 @@
 
         <div class="row my-2">
           <div class="col-sm-4">
-            <div id="colorpicker"></div>
+            <!-- <div id="colorpicker"></div> -->
           </div>
           <div class="col-sm-8">
             <div class="row my-2 mx-1">
@@ -164,7 +160,7 @@
               </div>
             </div>
             <div class="row mx-1">
-              <div>Two ways to specify colors. First, select a preset from the dropdown above. Second, select "Enter Colors" and enter colors using the input boxes, which accept both sRGB Hex values and scaling factors. The first color accepts Hex only or from color picker. If using scaling factors, the colors are on a confusion line under the blindness type.</div>
+              <div>Two ways to specify colors. First, select a preset from the dropdown above. Second, select "Enter Colors" and enter colors using the input boxes, which accept both sRGB Hex values and scaling factors. The first color accepts Hex only or from color picker. If using scaling factors, the colors are on a confusion line under the blindness type. Once done, click "Update" to start playing!</div>
             </div>
           </div>
         </div>
