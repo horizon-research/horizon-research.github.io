@@ -53,7 +53,7 @@ function get_proj_mat() {
     var t_norm1 = math.cross(aWhite, a485);
     var t_norm2 = math.cross(aWhite, a660);
 
-    // quite close to values calculated by https://daltonlens.org/understanding-cvd-simulation/
+    // the results are close to values calculated by https://daltonlens.org/understanding-cvd-simulation/
     var p_proj_mat1 = [[0, -p_norm1[1]/p_norm1[0], -p_norm1[2]/p_norm1[0]], [0, 1, 0], [0, 0, 1]]; // 475
     var d_proj_mat1 = [[1, 0, 0], [-d_norm1[0]/d_norm1[1], 0, -d_norm1[2]/d_norm1[1]], [0, 0, 1]]; // 475
     var t_proj_mat1 = [[1, 0, 0], [0, 1, 0], [-t_norm1[0]/t_norm1[2], -t_norm1[1]/t_norm1[2], 0]]; // 485
@@ -278,7 +278,7 @@ function plotRGB(plotId) {
     },
     //mode: 'markers',
     showlegend: true,
-    name: 'actual colors',
+    name: 'Actual colors',
     opacity:0.8,
     hovertemplate: 'Actual: %{text}<br>' +
       '<br>R: %{x}' +
@@ -304,7 +304,7 @@ function plotRGB(plotId) {
     },
     //mode: 'markers',
     showlegend: true,
-    name: 'simulation',
+    name: 'Simulation',
     opacity:0.8,
     hovertemplate: 'Simulation: %{text}<br>' +
       '<br>R: %{x}' +
@@ -312,6 +312,84 @@ function plotRGB(plotId) {
       '<br>B: %{z}<extra></extra>',
   };
   traces.push(sim_line);
+
+  // Brettel projection planes
+  var a475_lms = [0.0509384206, 0.0618970658, 0.015150576];
+  var a485_lms = [0.0818313433, 0.0880318619, 0.009429312];
+  var a575_lms = [0.6281339073, 0.2874094695, 0.000031687248];
+  var a660_lms = [0.05820210417, 0.002795455831, 0.00000019144848];
+  var aEEW_lms = [14.30506543, 7.190126944, 0.3379046085];
+  var a475_RGB = math.multiply(lms2RGB, a475_lms);
+  var a575_RGB = math.multiply(lms2RGB, a575_lms);
+  var a485_RGB = math.multiply(lms2RGB, a485_lms);
+  var a660_RGB = math.multiply(lms2RGB, a660_lms);
+  var aEEW_RGB = math.multiply(lms2RGB, aEEW_lms);
+
+  // planes for protanopia and deutanopia
+  var prot_plane1 = {
+    x: [-aEEW_RGB[0]*500, a475_RGB[0]*500, aEEW_RGB[0]*500],
+    y: [-aEEW_RGB[1]*500, a475_RGB[1]*500, aEEW_RGB[1]*500],
+    z: [-aEEW_RGB[2]*500, a475_RGB[2]*500, aEEW_RGB[2]*500],
+    i: [0],
+    j: [1],
+    k: [2],
+    type: 'mesh3d',
+    opacity: 0.3,
+    color: purpleColor,
+    showlegend: true,
+    name: 'Protanopia/Deutanopia Plane 1',
+    hoverinfo: 'skip',
+    visible: 'legendonly',
+  };
+
+  var prot_plane2 = {
+    x: [-aEEW_RGB[0]*500, a575_RGB[0]*500, aEEW_RGB[0]*500],
+    y: [-aEEW_RGB[1]*500, a575_RGB[1]*500, aEEW_RGB[1]*500],
+    z: [-aEEW_RGB[2]*500, a575_RGB[2]*500, aEEW_RGB[2]*500],
+    i: [0],
+    j: [1],
+    k: [2],
+    type: 'mesh3d',
+    opacity: 0.3,
+    color: orangeColor,
+    showlegend: true,
+    name: 'Protanopia/Deutanopia Plane 2',
+    hoverinfo: 'skip',
+    visible: 'legendonly',
+  };
+
+  // planes for tritanopia
+  var tri_plane1 = {
+    x: [-aEEW_RGB[0]*500, a485_RGB[0]*500, aEEW_RGB[0]*500],
+    y: [-aEEW_RGB[1]*500, a485_RGB[1]*500, aEEW_RGB[1]*500],
+    z: [-aEEW_RGB[2]*500, a485_RGB[2]*500, aEEW_RGB[2]*500],
+    i: [0],
+    j: [1],
+    k: [2],
+    type: 'mesh3d',
+    color: oGreenColor,
+    hoverinfo: 'skip',
+    showlegend: true,
+    name: 'Tritanopia Plane 1',
+    visible: 'legendonly',
+  };
+
+  var tri_plane2 = {
+    x: [-aEEW_RGB[0]*500, a660_RGB[0]*500, aEEW_RGB[0]*500],
+    y: [-aEEW_RGB[1]*500, a660_RGB[1]*500, aEEW_RGB[1]*500],
+    z: [-aEEW_RGB[2]*500, a660_RGB[2]*500, aEEW_RGB[2]*500],
+    i: [0],
+    j: [1],
+    k: [2],
+    type: 'mesh3d',
+    color: oRedColor,
+    hoverinfo: 'skip',
+    showlegend: true,
+    name: 'Tritanopia Plane 2',
+    visible: 'legendonly',
+  };
+
+  traces.push(prot_plane1, prot_plane2, tri_plane1, tri_plane2);
 
   var data = traces;
 
@@ -326,7 +404,7 @@ function plotRGB(plotId) {
     },
     showlegend: true,
     legend: {
-      x: 0.1,
+      x: 0,
       xanchor: 'left',
       y: 1,
     },
