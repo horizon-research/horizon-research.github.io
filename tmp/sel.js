@@ -14,9 +14,6 @@ var oRedColor = 'rgba(218, 37, 0, 0.3)';
 var oGreenColor = 'rgba(0, 143, 0, 0.3)';
 var oBlueColor = 'rgba(1, 25, 147, 0.5)';
 
-var color1, color2, color3;
-var name1, name2, name3;
-
 function get_proj_mat() {
   // https://daltonlens.org/understanding-cvd-simulation/
   if (simMethod == 1) {
@@ -393,13 +390,10 @@ function plotRGB(plotId) {
 }
 
 function reorderColors(simColors_RGB) {
-  var v1 = $('#t12').val();
-  var v2 = $('#t13').val();
+  if (setter != 1) return simColors_RGB;
 
-  if (v1[0] == '#' || v2[0] == '#') return simColors_RGB;
-
-  v1 = parseFloat(v1);
-  v2 = parseFloat(v2);
+  var v1 = parseFloat($('#t12').val());
+  var v2 = parseFloat($('#t13').val());
 
   var tempColors = [];
   if ((v1 > 0 && 0 > v2) || (v2 > 0 && 0 > v1)) {
@@ -508,22 +502,11 @@ function registerSimMode() {
   $('input[type=radio][name=sim]').change(function() {
     if (this.id == 'yes') {
       sim = true;
-      $('#b11').prop('disabled', true);
-      $('#b12').prop('disabled', true);
-      $('#b13').prop('disabled', true);
-      $('#submit').prop('disabled', true);
-      $('#presets').prop('disabled', true);
-      $('input[type=radio][name=pick]').prop('disabled', true);
     } else {
       sim = false;
-      $('#b11').prop('disabled', false);
-      $('#b12').prop('disabled', false);
-      $('#b13').prop('disabled', false);
-      $('#submit').prop('disabled', false);
-      $('#presets').prop('disabled', false);
-      $('input[type=radio][name=pick]').prop('disabled', false);
     }
-    updatePlot($('#customRange').val(), 'rgbDiv');
+
+    if (init) updatePlot($('#customRange').val(), 'rgbDiv');
   });
 }
 
@@ -540,7 +523,7 @@ function registerPickType() {
     // automatically update colors and re-plot
     //$('#b12').trigger('click');
     //$('#b13').trigger('click');
-    //$('#submit').trigger('click');
+    //$('#play').trigger('click');
   });
 }
 
@@ -556,11 +539,57 @@ function registerPickSimMethod() {
     proj_mat = get_proj_mat();
 
     // automatically update colors and re-plot
-    updatePlot($('#customRange').val(), 'rgbDiv');
+    if (init) updatePlot($('#customRange').val(), 'rgbDiv');
   });
 }
 
-function registerSetMain(baseId, squareId, colorId, nameId) {
+function registerPickColorSetter() {
+  $('input[type=radio][name=setcolor]').change(function() {
+    if (this.id == 'picker') {
+      $('#c11').prop('disabled', false);
+      $('#c12').prop('disabled', false);
+      $('#c13').prop('disabled', false);
+
+      $('#t12').prop('disabled', true);
+      $('#t13').prop('disabled', true);
+      $('#b12').prop('disabled', true);
+      $('#b13').prop('disabled', true);
+
+      $('#presets').prop('disabled', true);
+
+      setter = 0;
+    } else if (this.id == 'scale') {
+      $('#c11').prop('disabled', false);
+      $('#c12').prop('disabled', true);
+      $('#c13').prop('disabled', true);
+
+      $('#t12').prop('disabled', false);
+      $('#t13').prop('disabled', false);
+      $('#b12').prop('disabled', false);
+      $('#b13').prop('disabled', false);
+
+      $('#presets').prop('disabled', true);
+
+      setter = 1;
+    }  else { // 'usepre'
+      $('#c11').prop('disabled', true);
+      $('#c12').prop('disabled', true);
+      $('#c13').prop('disabled', true);
+
+      $('#t12').prop('disabled', true);
+      $('#t13').prop('disabled', true);
+      $('#b12').prop('disabled', true);
+      $('#b13').prop('disabled', true);
+
+      $('#presets').prop('disabled', false);
+
+      setter = 2;
+    }
+
+  });
+}
+
+function registerColorPicker(baseId, squareId, colorId, nameId) {
   $(baseId).on('change', function(evt) {
     var colorVal = $(baseId).val();
     $(squareId).css('background-color', colorVal);
@@ -569,39 +598,20 @@ function registerSetMain(baseId, squareId, colorId, nameId) {
   });
 }
 
-function registerSetSecondary(buttonId, baseId, textId, squareId, colorId, nameId) {
+function registerSetScale(buttonId, baseId, textId, squareId, colorId, nameId) {
   $(buttonId).on('click', function(evt) {
     var baseColor = sRGB2RGB(rgb2hex($(baseId).css('background-color')));
-    var text = $(textId).val();
+    var scale = $(textId).val();
     var colorVal;
 
-    if (text[0] == '#') {
-      colorVal = text;
-    } else {
-      // a scale value
-      var line = confusion_lines[type];
-      colorVal = RGB2sRGB([baseColor[0] + line[0] * text,
-                           baseColor[1] + line[1] * text,
-                           baseColor[2] + line[2] * text], false);
-    }
+    var line = confusion_lines[type];
+    colorVal = RGB2sRGB([baseColor[0] + line[0] * scale,
+                         baseColor[1] + line[1] * scale,
+                         baseColor[2] + line[2] * scale], false);
+
     $(squareId).css('background-color', colorVal);
     //$(colorId).text(val);
     $(nameId).text(sRGB2Name(colorVal));
-  });
-}
-
-function registerSubmit(buttonId, rangeId) {
-  $(buttonId).on('click', function(evt) {
-    color1 = sRGB2RGB(rgb2hex($('#s11').css('background-color')));
-    color2 = sRGB2RGB(rgb2hex($('#s12').css('background-color')));
-    color3 = sRGB2RGB(rgb2hex($('#s13').css('background-color')));
-    name1 = sRGB2Name(rgb2hex($('#s11').css('background-color')));
-    name2 = sRGB2Name(rgb2hex($('#s12').css('background-color')));
-    name3 = sRGB2Name(rgb2hex($('#s13').css('background-color')));
-
-    $(rangeId).val(0);
-    $('.form-label').html('Rotation Angle (Degree): 0&#176;');
-    updatePlot(0, 'rgbDiv');
   });
 }
 
@@ -616,39 +626,87 @@ function registerReset(resetId) {
 function registerSelectPresets() {
   $('#presets').on('change', function(evt) {
     var val = this.value;
-    if (val == "nopreset") {
-      $('#color').prop('disabled', false);
-      $('#b12').prop('disabled', false);
-      $('#b13').prop('disabled', false);
-      $('#t12').prop('disabled', false);
-      $('#t13').prop('disabled', false);
-
-      return;
-    } else if (val == "preset1") {
-      $('#color').val(rgb2hex('rgb(237, 238, 51)'));
-      $('#t12').val(rgb2hex('rgb(79, 255, 78)'));
-      $('#t13').val(rgb2hex('rgb(225, 112, 2)'));
+    if (val == "preset1") {
+      $('#c11').val(rgb2hex('rgb(237, 238, 51)'));
+      $('#c12').val(rgb2hex('rgb(79, 255, 78)'));
+      $('#c13').val(rgb2hex('rgb(225, 112, 2)'));
     } else if (val == "preset2") {
-      $('#color').val(rgb2hex('rgb(41, 37, 229)'));
-      $('#t12').val(rgb2hex('rgb(132, 0, 211)'));
-      $('#t13').val(rgb2hex('rgb(224, 2, 224)'));
+      $('#c11').val(rgb2hex('rgb(41, 37, 229)'));
+      $('#c12').val(rgb2hex('rgb(132, 0, 211)'));
+      $('#c13').val(rgb2hex('rgb(224, 2, 224)'));
     } else if (val == "preset3") {
-      $('#color').val(rgb2hex('rgb(224, 2, 1)'));
-      $('#t12').val(rgb2hex('rgb(9, 90, 0)'));
-      $('#t13').val(rgb2hex('rgb(151, 91, 57)'));
+      $('#c11').val(rgb2hex('rgb(224, 2, 1)'));
+      $('#c12').val(rgb2hex('rgb(9, 90, 0)'));
+      $('#c13').val(rgb2hex('rgb(151, 91, 57)'));
+    } else if (val == "preset4") {
+      $('#c11').val('#abbcb4');
+      $('#c12').val('#e4a0b6');
+      $('#c13').val('#37d4b2');
     }
 
-    $('#color').trigger('change');
-    $('#b12').trigger('click');
-    $('#b13').trigger('click');
-
-    $('#color').prop('disabled', true);
-    $('#b12').prop('disabled', true);
-    $('#b13').prop('disabled', true);
-    $('#t12').prop('disabled', true);
-    $('#t13').prop('disabled', true);
+    $('#c11').trigger('change');
+    $('#c12').trigger('change');
+    $('#c13').trigger('change');
   });
 }
+
+function submit(rangeId) {
+  color1 = sRGB2RGB(rgb2hex($('#s11').css('background-color')));
+  color2 = sRGB2RGB(rgb2hex($('#s12').css('background-color')));
+  color3 = sRGB2RGB(rgb2hex($('#s13').css('background-color')));
+  name1 = sRGB2Name(rgb2hex($('#s11').css('background-color')));
+  name2 = sRGB2Name(rgb2hex($('#s12').css('background-color')));
+  name3 = sRGB2Name(rgb2hex($('#s13').css('background-color')));
+
+  $(rangeId).val(0);
+  $('.form-label').html('Rotation Angle (Degree): 0&#176;');
+  updatePlot(0, 'rgbDiv');
+}
+
+function registerSetState() {
+  $('input[type=radio][name=state]').change(function() {
+    if (this.id == 'edit') {
+      $('input[type=radio][name=setcolor]:checked').prop("checked", true).trigger('change');
+
+      $('input[type=radio][name=pick]').prop('disabled', false);
+      $('input[type=radio][name=setcolor]').prop('disabled', false);
+      $('input[type=radio][name=sim]').prop('disabled', true);
+      $('input[type=radio][name=method]').prop('disabled', true);
+      $('#customRange').prop('disabled', true);
+      $('#reset').prop('disabled', true);
+
+      // reset to two-plane approach and show actual colors
+      $('#no').prop("checked", true).trigger('change');
+      $('#m2').prop("checked", true).trigger('change');
+    } else { // 'play'
+      $('#c11').prop('disabled', true);
+      $('#c12').prop('disabled', true);
+      $('#c13').prop('disabled', true);
+      $('#b12').prop('disabled', true);
+      $('#b13').prop('disabled', true);
+      $('#t12').prop('disabled', true);
+      $('#t13').prop('disabled', true);
+      $('#presets').prop('disabled', true);
+
+      $('input[type=radio][name=pick]').prop('disabled', true);
+      $('input[type=radio][name=setcolor]').prop('disabled', true);
+      $('input[type=radio][name=sim]').prop('disabled', false);
+      $('input[type=radio][name=method]').prop('disabled', false);
+      $('#customRange').prop('disabled', false);
+      $('#reset').prop('disabled', false);
+
+      submit('#customRange');
+    }
+  });
+}
+
+var init = false;
+var simMethod; // 0 for Brettel 1997 (two planes) and 1 for Viénot 1999 (one plane)
+var type; // 0 for P, 1 for D, 2 for T
+var sim;
+var setter; // 0 for using color picker, 1 for using scale, 3 for using presets
+var color1, color2, color3;
+var name1, name2, name3;
 
 // initial plot with no meaningful data
 plotRGB('rgbDiv');
@@ -657,36 +715,33 @@ registerSlider('#customRange');
 registerSimMode();
 registerPickType();
 registerPickSimMethod();
-registerSetMain('#color', '#s11', '#h11', '#n11');
-registerSetSecondary('#b12', '#s11', '#t12', '#s12', '#h12', '#n12');
-registerSetSecondary('#b13', '#s11', '#t13', '#s13', '#h13', '#n13');
-registerSubmit('#submit', '#customRange');
+registerColorPicker('#c11', '#s11', '#h11', '#n11');
+registerColorPicker('#c12', '#s12', '#h12', '#n12');
+registerColorPicker('#c13', '#s13', '#h13', '#n13');
+registerSetScale('#b12', '#s11', '#t12', '#s12', '#h12', '#n12');
+registerSetScale('#b13', '#s11', '#t13', '#s13', '#h13', '#n13');
 registerReset('#reset');
 registerSelectPresets();
+registerPickColorSetter();
+registerSetState();
 
 // init color blindness type
-$('#pickd').prop("checked", true);
-var type = 1; // 0 for P, 1 for D, 2 for T
+$('#pickd').prop("checked", true).trigger('change');
 
 // init simulation method
-// 0 for Brettel 1997 (two planes) and 1 for Viénot 1999 (one plane)
-$('#m2').prop("checked", true);
-var simMethod = 0;
-var proj_mat = get_proj_mat();
+$('#m2').prop("checked", true).trigger('change');
 
 // choose to show actual colors
-$('#no').prop("checked", true);
-var sim = false;
+$('#no').prop("checked", true).trigger('change');
 
-// set secondary colors
-$('#t12').val('-0.4');
-$('#t13').val('0.4');
-$('#b12').trigger('click');
-$('#b13').trigger('click');
+// by default use preset2 in color setter
+$('#usepre').prop("checked", true).trigger('change');
+$('#presets').val('preset2');
+$('#presets').trigger('change');
 
-// update the plot with the initial setting
-$('#submit').trigger('click');
-
+// set the mode to play and update the plot with the initial setting
+$('#play').attr("checked", true).trigger('change');
+init = true;
 
 
 

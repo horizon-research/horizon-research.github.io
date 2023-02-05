@@ -93,10 +93,10 @@
               </div>
               <div class="btn-group mb-2" role="group" aria-label="Basic radio toggle button group">
                 <input type="radio" class="btn-check" name="method" id="m1" autocomplete="off">
-                <label class="btn btn-outline-primary" for="m1">One Plane (Viénot 1999)</label>
+                <label class="btn btn-outline-primary" for="m1">One Plane (Viénot et al. 1999)</label>
               
                 <input type="radio" class="btn-check" name="method" id="m2" autocomplete="off">
-                <label class="btn btn-outline-primary" for="m2">Two Plane (Brettel 1997)</label>
+                <label class="btn btn-outline-primary" for="m2">Two Plane (Brettel et al. 1997)</label>
               </div>
               <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
                 <input type="radio" class="btn-check" name="sim" id="yes" autocomplete="off">
@@ -116,7 +116,7 @@
             <h3 id="n11" class="text-nowrap"></h3>
             <div class="square" id="s11"></div>
             <div class="input-group input-group-sm mt-1">
-              <input type="color" id="color" name="color" class="form-control" aria-label="t11" value="#abbcb4"/>
+              <input type="color" id="c11" class="form-control"/>
             </div>
           </div>
 
@@ -124,6 +124,9 @@
             <h3 id="h12"></h3>
             <h3 id="n12" class="text-nowrap"></h3>
             <div class="square" id="s12"></div>
+            <div class="input-group input-group-sm mt-1">
+              <input type="color" id="c12" class="form-control"/>
+            </div>
             <div class="input-group input-group-sm mt-1">
               <input type="text" id="t12" class="form-control" aria-label="t12">
               <button class="btn btn-outline-secondary" type="button" id="b12">Set</button>
@@ -135,35 +138,68 @@
             <h3 id="n13" class="text-nowrap"></h3>
             <div class="square" id="s13"></div>
             <div class="input-group input-group-sm mt-1">
-              <input type="text" id="t13" class="form-control" aria-label="t13">
+              <input type="color" id="c13" class="form-control"/>
+            </div>
+            <div class="input-group input-group-sm mt-1">
+              <input type="text" id="t13" class="form-control">
               <button class="btn btn-outline-secondary" type="button" id="b13">Set</button>
             </div>
           </div>
         </div>
 
         <div class="row my-2">
-          <div class="col-sm-4">
-            <!-- <div id="colorpicker"></div> -->
-          </div>
-          <div class="col-sm-8">
-            <div class="row my-2 mx-1">
+          <div class="col-sm-12">
+            <div class="row my-2">
               <div class="col-sm-8">
+                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                  <input type="radio" class="btn-check" name="setcolor" id="picker" autocomplete="off">
+                  <label class="btn btn-outline-primary" for="picker">Color Picker</label>
+                
+                  <input type="radio" class="btn-check" name="setcolor" id="scale" autocomplete="off">
+                  <label class="btn btn-outline-primary" for="scale">Base + Scale</label>
+                
+                  <input type="radio" class="btn-check" name="setcolor" id="usepre" autocomplete="off">
+                  <label class="btn btn-outline-primary" for="usepre">Use Presets</label>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
                 <select id="presets" class="form-select">
-                  <option value="nopreset" selected>Enter Colors</option>
-                  <option value="preset1">Yellow + Green + Orange</option>
-                  <option value="preset2">Blue + Purple + Magenta</option>
-                  <option value="preset3">Red + Dark Green + Brown</option>
+                  <option value="preset1">Preset 1: Yellow + Green + Orange</option>
+                  <option value="preset2">Preset 2: Blue + Purple + Magenta</option>
+                  <option value="preset3">Preset 3: Red + Dark Green + Brown</option>
+                  <option value="preset4">Preset 4: Edward + Kobi + Turquoise</option>
                 </select>
               </div>
-              <div class="col-sm-4 d-flex justify-content-end">
-                <button id="submit" class="btn btn-success btn">Update</button>
-              </div>
+
             </div>
-            <div class="row mx-1">
-              <div>Two ways to specify colors. First, select a preset from the dropdown above. Second, select "Enter Colors" and enter colors using the input boxes, which accept both sRGB Hex values and scaling factors. The first color accepts Hex only or from color picker. If using scaling factors, the colors are on a confusion line under the blindness type. Once done, click "Update" to start playing!</div>
+
+            <div class="row mt-2">
+              <div>
+Three ways to set initial colors:
+<li> Select "Color Picker", which also accepts RGB/HSL/Hex values.</li>
+<li> Select "Base + Scale". Use the color picker to choose the first color (Base) and then specify two scaling factors, which put the other two colors on the confusion line (under the selected blindness type) that passes through the first color.</li>
+<li> Select "Use Preset" and choose a preset from the dropdown.</li>
+             </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-sm-8 d-flex justify-content-end">
+          </div>
+          <div class="col-sm-4 d-flex justify-content-end">
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="state" id="edit">
+              <label class="btn btn-outline-success" for="edit">Edit Colors</label>
+            
+              <input type="radio" class="btn-check" name="state" id="play">
+              <label class="btn btn-outline-success" for="play">Play</label>
             </div>
           </div>
         </div>
+
 
 
       </div>
