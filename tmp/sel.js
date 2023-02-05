@@ -395,6 +395,8 @@ function reorderColors(simColors_RGB) {
   var v1 = parseFloat($('#t12').val());
   var v2 = parseFloat($('#t13').val());
 
+  if (isNaN(v1) || isNaN(v2)) return simColors_RGB;
+
   var tempColors = [];
   if ((v1 > 0 && 0 > v2) || (v2 > 0 && 0 > v1)) {
     tempColors[0] = simColors_RGB[1];
@@ -628,20 +630,21 @@ function registerSelectPresets() {
     var val = this.value;
     if (val == "preset1") {
       $('#c11').val(rgb2hex('rgb(237, 238, 51)'));
-      $('#c12').val(rgb2hex('rgb(79, 255, 78)'));
-      $('#c13').val(rgb2hex('rgb(225, 112, 2)'));
+      $('#c12').val(rgb2hex('rgb(127, 255, 0)'));
+      $('#c13').val(rgb2hex('rgb(255, 140, 0)'));
     } else if (val == "preset2") {
       $('#c11').val(rgb2hex('rgb(41, 37, 229)'));
-      $('#c12').val(rgb2hex('rgb(132, 0, 211)'));
+      $('#c12').val(rgb2hex('rgb(148, 0, 211)'));
       $('#c13').val(rgb2hex('rgb(224, 2, 224)'));
     } else if (val == "preset3") {
       $('#c11').val(rgb2hex('rgb(224, 2, 1)'));
       $('#c12').val(rgb2hex('rgb(9, 90, 0)'));
       $('#c13').val(rgb2hex('rgb(151, 91, 57)'));
     } else if (val == "preset4") {
-      $('#c11').val('#abbcb4');
-      $('#c12').val('#e4a0b6');
-      $('#c13').val('#37d4b2');
+      // these are picked to be on Deutanopia confusion line
+      $('#c11').val(rgb2hex('rgb(171, 188, 180)'));
+      $('#c12').val(rgb2hex('rgb(228, 160, 182)'));
+      $('#c13').val(rgb2hex('rgb(55, 212, 178)'));
     }
 
     $('#c11').trigger('change');

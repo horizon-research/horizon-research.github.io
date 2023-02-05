@@ -49,6 +49,7 @@
     <script src="https://d3js.org/d3.v3.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
     <script type="text/javascript" src="ntc.js"></script>
+    <script src="https://colorjs.io/dist/color.global.js"></script>
 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
@@ -109,7 +110,7 @@
           </div>
         </div>
 
-        <hr>
+        <hr style="margin-bottom: 0.2rem">
         <div class="row">
           <div class="col-sm-4">
             <h3 id="h11"></h3>
@@ -147,56 +148,42 @@
           </div>
         </div>
 
-        <div class="row my-2">
+        <div class="row my-1">
           <div class="col-sm-12">
-            <div class="row my-2">
-              <div class="col-sm-8">
-                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                  <input type="radio" class="btn-check" name="setcolor" id="picker" autocomplete="off">
-                  <label class="btn btn-outline-primary" for="picker">Color Picker</label>
-                
-                  <input type="radio" class="btn-check" name="setcolor" id="scale" autocomplete="off">
-                  <label class="btn btn-outline-primary" for="scale">Base + Scale</label>
-                
-                  <input type="radio" class="btn-check" name="setcolor" id="usepre" autocomplete="off">
-                  <label class="btn btn-outline-primary" for="usepre">Use Presets</label>
-                </div>
+            <div class="row">
+              <div class="col-sm-12">
+                Three ways to set initial colors:
+                <ul style="list-style-type:none; padding-left: 0; margin-bottom: 0.2rem">
+                  <li><input type="radio" name="setcolor" id="picker"><label for="picker">&nbsp;&nbsp;<b>Color Picker</b></label>. Click the short color bar under each color square to pick colors; it also accepts RGB/HSL/Hex values.</li>
+                  <li><input type="radio" name="setcolor" id="scale"><label for="scale">&nbsp;&nbsp;<b>Base+Scale</b></label>. Use the color picker to choose the first color (Base) and then enter two scaling factors in the textboxes under the next two colors and hit "Set". This puts the other two colors on the confusion line (under the selected blindness type) that passes through the first color.</li>
+                  <li><input type="radio" name="setcolor" id="usepre"><label for="usepre">&nbsp;&nbsp;<b>Use Presets</b></label>. Choose a preset from below.</li>
+                </ul>
               </div>
-
-              <div class="col-sm-4">
+            </div>
+            <div class="row">
+              <div class="col-sm-8">
                 <select id="presets" class="form-select">
-                  <option value="preset1">Preset 1: Yellow + Green + Orange</option>
-                  <option value="preset2">Preset 2: Blue + Purple + Magenta</option>
-                  <option value="preset3">Preset 3: Red + Dark Green + Brown</option>
-                  <option value="preset4">Preset 4: Edward + Kobi + Turquoise</option>
+                  <option value="preset1">Preset 1: Gold + Chartreuse + DarkOrange </option>
+                  <option value="preset2">Preset 2: Blue + DarkViolet + Fuchsia</option>
+                  <option value="preset3">Preset 3: Crimson + DarkGreen + Chocolate</option>
+                  <option value="preset4">Preset 4: DarkGrey+ DarkSalmon + Aquamarine</option>
                 </select>
               </div>
-
-            </div>
-
-            <div class="row mt-2">
-              <div>
-Three ways to set initial colors:
-<li> Select "Color Picker", which also accepts RGB/HSL/Hex values.</li>
-<li> Select "Base + Scale". Use the color picker to choose the first color (Base) and then specify two scaling factors, which put the other two colors on the confusion line (under the selected blindness type) that passes through the first color.</li>
-<li> Select "Use Preset" and choose a preset from the dropdown.</li>
-             </div>
+              <div class="col-sm-4 d-flex justify-content-end">
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                  <input type="radio" class="btn-check" name="state" id="edit">
+                  <label class="btn btn-outline-success" for="edit">Edit Colors</label>
+                
+                  <input type="radio" class="btn-check" name="state" id="play">
+                  <label class="btn btn-outline-success" for="play">Play</label>
+                </div>
+              </div>
             </div>
           </div>
-
         </div>
 
         <div class="row mb-2">
           <div class="col-sm-8 d-flex justify-content-end">
-          </div>
-          <div class="col-sm-4 d-flex justify-content-end">
-            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-              <input type="radio" class="btn-check" name="state" id="edit">
-              <label class="btn btn-outline-success" for="edit">Edit Colors</label>
-            
-              <input type="radio" class="btn-check" name="state" id="play">
-              <label class="btn btn-outline-success" for="play">Play</label>
-            </div>
           </div>
         </div>
 
