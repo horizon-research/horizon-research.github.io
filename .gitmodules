@@ -1,3 +1,6 @@
 [submodule "colorvis"]
 	path = colorvis
 	url = https://github.com/yuhao/colorvis.git
+[submodule "metasapiens"]
+	path = metasapiens
+	url = https://github.com/linwk20/metasapiens.github.io.git
