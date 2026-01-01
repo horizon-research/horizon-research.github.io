@@ -5,5 +5,5 @@
 	path = metasapiens
 	url = https://github.com/linwk20/metasapiens.github.io.git
 [submodule "powergs_web"]
-	path = powergs_web
+	path = powergs
 	url = https://github.com/linwk20/powergs_web.git
