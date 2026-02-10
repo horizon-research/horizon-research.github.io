@@ -7,3 +7,6 @@
 [submodule "powergs"]
 	path = powergs
 	url = https://github.com/linwk20/powergs_web.git
+[submodule "siggraphet2026"]
+	path = siggraphet2026
+	url = https://github.com/linwk20/siggraph_et_web.git
