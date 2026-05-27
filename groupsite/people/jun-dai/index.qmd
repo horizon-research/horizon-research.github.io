@@ -1,0 +1,50 @@
+---
+title: &TITLE Jun Dai
+order: 6
+last: Dai
+first: Jun
+people_group: phdstudent
+education: M.E. | Zhejiang University | 2024<br>B.E. | Tianjin University | 2021
+subtitle: Ph.D. Student
+image: avatar.jpg
+listing:
+  id: pubs
+  template: ../../_ejs/publications-people.ejs 
+  contents: 
+    - "../../../publications/pubs/*.qmd"
+  sort: "pub_number desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    author: *TITLE
+  fields: [publication, title, categories, image, date, author]
+page-layout: full
+about: 
+  id: about
+  template: trestles
+  image-shape: round
+  image: avatar.jpg
+  links:
+    - text: Website
+      icon: house
+      href: https://daijun10086.github.io/
+---
+
+<hr>
+
+
+:::{#about}
+
+
+
+## Education
+{{< meta education >}}
+
+<br>
+
+:::
+
+## {{< meta first >}}'s Group Publications
+
+:::{#pubs}
+:::

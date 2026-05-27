@@ -1,0 +1,24 @@
+---
+title: 'SnapPix: Efficient-Coding–Inspired In-Sensor Compression for Edge Vision'
+author:
+- Weikai Lin
+- Tianrui Ma
+- Adith Boloor
+- Yu Feng
+- Ruofan Xing
+- Xuan Zhang
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- visual_computing_systems
+url_source: https://dl.acm.org/doi/pdf/10.1109/DAC63849.2025.11132672
+talk_source: https://docs.google.com/presentation/d/1Jk58LvVzjw7N9pajXXbuj96i6mIkgLpwlhIzwec6i1Q/edit?usp=sharing
+code_source: https://github.com/horizon-research/SnapPix
+journ: DAC
+year: 2025
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 95
+---

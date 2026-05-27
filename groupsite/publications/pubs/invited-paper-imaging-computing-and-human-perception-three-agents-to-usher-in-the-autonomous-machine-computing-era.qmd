@@ -1,0 +1,18 @@
+---
+title: 'Invited Paper: Imaging, Computing, and Human Perception: Three Agents to Usher
+  in the Autonomous Machine Computing Era'
+author:
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- robotics
+- human_perception
+url_source: https://horizon-lab.org/pubs/iccad24-agents.pdf
+journ: ICCAD
+year: 2024
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 85
+---

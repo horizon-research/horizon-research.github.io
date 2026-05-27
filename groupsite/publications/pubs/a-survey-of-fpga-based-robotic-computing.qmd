@@ -1,0 +1,24 @@
+---
+title: A Survey of FPGA-Based Robotic Computing
+author:
+- Zishen Wan
+- Bo Yu
+- Thomas Yuang Li
+- Jie Tang
+- Yuhao Zhu
+- Yu Wang
+- Arijit Raychowdhury
+- Shaoshan Liu
+categories:
+- Show All
+- Work We Contributed to
+topics:
+- robotics
+url_source: https://horizon-lab.org/pubs/cas21-fpga.pdf
+journ: IEEE CAS-M
+year: 2021
+contrib: Work We Contributed to
+image: featured.png
+award: Invited Paper for Special Issue on FPGA
+pub_number: 48
+---

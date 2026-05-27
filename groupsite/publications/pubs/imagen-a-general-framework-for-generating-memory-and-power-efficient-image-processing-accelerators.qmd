@@ -1,0 +1,20 @@
+---
+title: 'ImaGen: A General Framework for Generating Memory- and Power-Efficient Image
+  Processing Accelerators'
+author:
+- Nisarg Ujjainkar
+- Jingwen Leng
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- visual_computing_systems
+url_source: https://horizon-lab.org/pubs/isca23-imagen.pdf
+code_source: https://github.com/horizon-research/imagen
+journ: ISCA
+year: 2023
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 72
+---

@@ -1,0 +1,53 @@
+---
+title: &TITLE Gunnar Hammonds
+last: Hammonds
+first: Gunnar
+people_group: alumni
+education: B.S. | University of Rochester | 2023
+current_pos: Software Engineer | InterSystems
+subtitle: Former B.S. Student
+image: avatar.jpg
+listing:
+  id: pubs
+  template: ../../_ejs/publications-people.ejs 
+  contents: 
+    - "../../../publications/pubs/*.qmd"
+  sort: "pub_number desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    author: *TITLE
+  fields: [publication, title, categories, image, date, author]
+page-layout: full
+about: 
+  id: about
+  template: trestles
+  image-shape: round
+  image: avatar.jpg
+  # links:
+  #   - text: Website
+  #     icon: house
+  #     href: https://tcxxxx.github.io/
+---
+
+<hr>
+
+
+:::{#about}
+
+
+
+## Education
+{{< meta education >}}
+
+## Current Position
+{{< meta current_pos >}}
+
+<br>
+
+:::
+
+## {{< meta first >}}'s Group Publications
+
+:::{#pubs}
+:::

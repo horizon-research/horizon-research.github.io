@@ -1,0 +1,18 @@
+---
+title: High-Performance and Energy-Efficient Mobile Web Browsing on Big/Little Systems
+author:
+- Yuhao Zhu
+- Vijay Janapa Reddi
+categories:
+- Show All
+- Pre-2018 Work
+topics:
+- watt_wise_web
+url_source: https://horizon-lab.org/pubs/hpca13.pdf
+talk_source: https://speakerdeck.com/queeten/little-systems
+journ: HPCA
+year: 2013
+contrib: Pre-2018 Work
+image: featured.png
+pub_number: 5
+---

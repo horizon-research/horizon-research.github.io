@@ -1,0 +1,54 @@
+---
+title: &TITLE Yu Feng
+last: Feng
+first: Yu
+people_group: alumni
+education: Ph.D. | University of Rochester | 2023
+current_pos: Professor | Shanghai Jiaotong University
+subtitle: Former Ph.D. Student
+image: avatar.jpg
+listing:
+  id: pubs
+  template: ../../_ejs/publications-people.ejs 
+  contents: 
+    - "../../../publications/pubs/*.qmd"
+  sort: "pub_number desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    author: *TITLE
+  fields: [publication, title, categories, image, date, author]
+page-layout: full
+about: 
+  id: about
+  template: trestles
+  image-shape: round
+  image: avatar.jpg
+  links:
+    - text: Website
+      icon: house
+      href: https://yufenguofr.github.io/
+---
+
+<hr>
+
+
+:::{#about}
+
+
+
+## Education
+{{< meta education >}}<br>
+[Dissertation](https://horizon-lab.org/pubs/FengDissertation2023.pdf): Systematic Optimizations for Efficient Mobile Visual Computing
+
+## Current Position
+{{< meta current_pos >}}
+
+<br>
+
+:::
+
+## {{< meta first >}}'s Group Publications
+
+:::{#pubs}
+:::

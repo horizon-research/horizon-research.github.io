@@ -1,0 +1,21 @@
+---
+title: 'Tail Latency in Node.js: Energy Efficient Turbo Boosting for Long Latency
+  Requests in Event-Driven Web Services'
+author:
+- Wenzhi Cui
+- Daniel Richins
+- Yuhao Zhu
+- Vijay Janapa Reddi
+categories:
+- Show All
+- Pre-2018 Work
+topics:
+- watt_wise_web
+url_source: https://horizon-lab.org/pubs/vee19.pdf
+talk_source: https://speakerdeck.com/queeten/tail-latency-in-node-dot-js-energy-efficient-turbo-boosting-for-long-latency-requests-in-event-driven-web-services
+journ: VEE
+year: 2019
+contrib: Pre-2018 Work
+image: featured.png
+pub_number: 25
+---

@@ -1,0 +1,23 @@
+---
+title: 'Automatic Neural Network Compression by Sparsity-Quantization Joint Learning:
+  A Constrained Optimization-based Approach'
+author:
+- Haichuan Yang
+- Shupeng Gui
+- Yuhao Zhu
+- Ji Liu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- mlsys
+url_source: https://openaccess.thecvf.com/content_CVPR_2020/papers/Yang_Automatic_Neural_Network_Compression_by_Sparsity-Quantization_Joint_Learning_A_Constrained_CVPR_2020_paper.pdf
+talk_source: https://horizon-lab.org/pubs/cvpr20-slides.pdf
+code_source: https://github.com/hyang1990/sparsity_quantization_joint
+journ: CVPR
+year: 2020
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+teaser: https://horizon-lab.org/pubs/cvpr20_1min.mp4
+pub_number: 41
+---

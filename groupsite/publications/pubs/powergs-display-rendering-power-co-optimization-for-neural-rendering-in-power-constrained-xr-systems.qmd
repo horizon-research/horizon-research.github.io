@@ -1,0 +1,24 @@
+---
+title: 'PowerGS: Display-Rendering Power Co-Optimization for Neural Rendering in Power-Constrained
+  XR Systems'
+author:
+- Weikai Lin
+- Sushant Kondguli
+- Carll Marshall
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- visual_computing_systems]
+- human_perception
+url_source: https://dl.acm.org/doi/pdf/10.1145/3757377.3763851
+talk_source: https://drive.google.com/file/d/1KPnwwdGmt3R7GD0XqN2uv4YG4kHaDgun/view
+supp_source: https://horizon-lab.org/pubs/sa25-powergs-supp.pdf
+code_source: https://horizon-lab.org/powergs/
+journ: SIGGRAPH Asia
+year: 2025
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 99
+---

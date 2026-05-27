@@ -1,0 +1,53 @@
+---
+title: &TITLE Boyuan Tian
+last: Tian
+first: Boyuan
+people_group: alumni
+education: M.Sc. | University of Rochester | 2020
+current_pos: Ph.D. Student | UIUC
+subtitle: Former M.Sc. Student
+image: avatar.jpg
+listing:
+  id: pubs
+  template: ../../_ejs/publications-people.ejs 
+  contents: 
+    - "../../../publications/pubs/*.qmd"
+  sort: "pub_number desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    author: *TITLE
+  fields: [publication, title, categories, image, date, author]
+page-layout: full
+about: 
+  id: about
+  template: trestles
+  image-shape: round
+  image: avatar.jpg
+  # links:
+  #   - text: Website
+  #     icon: house
+  #     href: https://tcxxxx.github.io/
+---
+
+<hr>
+
+
+:::{#about}
+
+
+
+## Education
+{{< meta education >}}
+
+## Current Position
+{{< meta current_pos >}}
+
+<br>
+
+:::
+
+## {{< meta first >}}'s Group Publications
+
+:::{#pubs}
+:::

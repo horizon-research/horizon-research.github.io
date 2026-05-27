@@ -1,0 +1,19 @@
+---
+title: 'BlissCam: Boosting Eye Tracking Efficiency with Learned In-Sensor Sparse Sampling'
+author:
+- Yu Feng
+- Tianrui Ma
+- Yuhao Zhu
+- Xuan Zhang
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- visual_computing_systems
+url_source: https://horizon-lab.org/pubs/isca24-blisscam.pdf
+journ: ISCA
+year: 2024
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 81
+---

@@ -1,0 +1,19 @@
+---
+title: Event-Based Scheduling for Energy-Efficient QoS (eQoS) in Mobile Web Applications
+author:
+- Yuhao Zhu
+- Matthew Halpern
+- Vijay Janapa Reddi
+categories:
+- Show All
+- Pre-2018 Work
+topics:
+- watt_wise_web
+url_source: https://horizon-lab.org/pubs/hpca15.pdf
+talk_source: https://speakerdeck.com/queeten/event-based-scheduling-for-energy-efficient-quality-of-service-eqos-in-mobile-web-applications
+journ: HPCA
+year: 2015
+contrib: Pre-2018 Work
+image: featured.png
+pub_number: 10
+---

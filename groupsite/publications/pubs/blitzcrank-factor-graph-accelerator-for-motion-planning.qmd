@@ -1,0 +1,22 @@
+---
+title: 'BLITZCRANK: Factor Graph Accelerator for Motion Planning'
+author:
+- Yuhui Hao
+- Yiming Gan
+- Bo Yu
+- Qiang Liu
+- Shaoshan Liu
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- robotics
+url_source: https://horizon-lab.org/pubs/dac23.pdf
+code_source: https://github.com/horizon-research/BLITZCRANK
+journ: DAC
+year: 2023
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 70
+---

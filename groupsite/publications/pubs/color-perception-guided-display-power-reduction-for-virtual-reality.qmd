@@ -1,0 +1,24 @@
+---
+title: Color-Perception-Guided Display Power Reduction for Virtual Reality
+author:
+- Budmonde Duinkharjav
+- Kenneth Chen
+- Abhishek Tyagi
+- Jiayi He
+- Yuhao Zhu
+- Qi Sun
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- visual_computing_systems
+- human_perception
+url_source: https://horizon-lab.org/pubs/sa22.pdf
+code_source: https://github.com/NYU-ICL/vr-power-saver
+journ: SIGGRAPH Asia (TOG)
+year: 2022
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+teaser: https://www.youtube.com/watch?v=bcbG_80TLa0
+pub_number: 65
+---

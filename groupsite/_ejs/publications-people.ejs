@@ -1,0 +1,67 @@
+```{=html}
+<div class="list quarto-listing-default">
+    <% for (const item of items) { %>
+    
+    <div class="quarto-post image-right" <%= metadataAttrs(item) %> >
+        <!-- <div class="thumbnail">
+                <p>
+                    <% if (item.image) { %>
+                    <img alt="<%= item.title %>" src="<%= item.image %>" class="thumbnail-image">
+                    <% } %>
+
+                </p>
+        </div> -->
+        <div class="body">
+            <div class="no-anchor listing-pub-title listing-title"><a href="<%- item.url_source %>" class="small"><%= item.title %></a></div>
+                
+            <div class="listing-pub-author listing-author small">
+                <%= item.author %><br> 
+            </div>
+                
+            <div class="metadata-value listing-pub-journal small">
+                <% if (item.supp_source) { %>
+                    <a href="<%- item.supp_source %>">Supplemental Material <i class="bi bi-box-arrow-up-right"></i>
+                    </a>&emsp;
+                <% } %>
+
+                <% if (item.code_source) { %>
+                    <a href="<%- item.code_source %>">Code <i class="bi bi-box-arrow-up-right"></i>
+                    </a>&emsp;
+                <% } %>
+
+                <% if (item.talk_source) { %>
+                    <a href="<%- item.talk_source %>">Talk <i class="bi bi-box-arrow-up-right"></i>
+                    </a>
+                <% } %>
+            </div>
+
+            <% if (item.award) { %>
+            <div class="listing-pub-award small">
+                &#9733; <%= item.award %>
+            </div>
+            <% } %>
+        </div>
+        <div class="metadata">
+            <% if (item.journ) { %>
+            <div class="listing-pub-url small">
+                <p style="color:#000000;"><%= item.journ %> <%= item.year %></p>
+            </div>
+            <% } %>
+
+            <!-- </a> -->
+            <!-- <% if (item.url_source) { %>
+            <div class="listing-pub-url">
+
+                    <a href="<%- item.url_source %>">
+                    <p style="color:#00AD00;">Paper <i class="bi bi-box-arrow-up-right"></i></p>
+                    </a>
+                </div>
+                    <% } %> -->
+
+        </div>
+    </div>
+    
+    <% } %>
+    </div>
+
+```

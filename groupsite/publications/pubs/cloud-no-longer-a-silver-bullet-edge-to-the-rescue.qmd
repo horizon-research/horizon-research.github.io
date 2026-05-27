@@ -1,0 +1,18 @@
+---
+title: Cloud No Longer a Silver Bullet, Edge to the Rescue
+author:
+- Yuhao Zhu
+- Gu-Yeon Wei
+- David Brooks
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- mlsys
+url_source: https://arxiv.org/abs/1802.05943
+journ: arXiv
+year: 2018
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 19
+---

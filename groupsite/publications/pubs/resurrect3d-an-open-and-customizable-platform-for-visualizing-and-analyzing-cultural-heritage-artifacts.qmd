@@ -1,0 +1,22 @@
+---
+title: 'Resurrect3D: An Open and Customizable Platform for Visualizing and Analyzing
+  Cultural Heritage Artifacts'
+author:
+- Joshua Romphf
+- Elias Neuman-Donihue
+- Gregory Heyworth
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- comp_human
+url_source: https://dl.acm.org/doi/pdf/10.1145/3485444.3487644
+code_source: https://github.com/rochester-rcl/resurrect3d
+journ: Web3D
+year: 2021
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+website: https://resurrect3d.lib.rochester.edu/
+pub_number: 51
+---

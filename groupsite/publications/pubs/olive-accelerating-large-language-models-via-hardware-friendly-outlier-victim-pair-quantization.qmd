@@ -1,0 +1,26 @@
+---
+title: 'OliVe: Accelerating Large Language Models via Hardware-friendly Outlier-Victim
+  Pair Quantization'
+author:
+- Cong Guo
+- Jiaming Tang
+- Weiming Hu
+- Jingwen Leng
+- Chen Zhang
+- Fan Yang
+- Yunxin Liu
+- Minyi Guo
+- Yuhao Zhu
+categories:
+- Show All
+- Work We Contributed to
+topics:
+- mlsys
+url_source: https://horizon-lab.org/pubs/isca23-olive.pdf
+code_source: https://github.com/clevercool/ANT-Quantization
+journ: ISCA
+year: 2023
+contrib: Work We Contributed to
+image: featured.png
+pub_number: 71
+---

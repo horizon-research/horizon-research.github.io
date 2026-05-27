@@ -1,0 +1,25 @@
+---
+title: Characterizing and Demystifying the Implicit Convolution Algorithm on Commercial
+  Matrix-Multiplication Accelerators
+author:
+- Yangjie Zhou
+- Mengtian Yang
+- Cong Guo
+- Jingwen Leng
+- Yun Liang
+- Quan Chen
+- Minyi Guo
+- Yuhao Zhu
+categories:
+- Show All
+- Work We Contributed to
+topics:
+- mlsys
+url_source: https://arxiv.org/pdf/2110.03901.pdf
+talk_source: https://www.youtube.com/watch?v=fsIP_fPcLyg
+journ: IISWC
+year: 2021
+contrib: Work We Contributed to
+image: featured.png
+pub_number: 50
+---

@@ -1,0 +1,22 @@
+---
+title: 'ECC: Platform-Independent Energy-Constrained Deep Neural Network Compression
+  via a Bilinear Regression Model'
+author:
+- Haichuan Yang
+- Yuhao Zhu
+- Ji Liu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- mlsys
+url_source: http://openaccess.thecvf.com/content_CVPR_2019/papers/Yang_ECC_Platform-Independent_Energy-Constrained_Deep_Neural_Network_Compression_via_a_Bilinear_CVPR_2019_paper.pdf
+supp_source: http://openaccess.thecvf.com/content_CVPR_2019/supplemental/Yang_ECC_Platform-Independent_Energy-Constrained_CVPR_2019_supplemental.pdf
+code_source: https://github.com/hyang1990/energy_constrained_compression
+journ: CVPR
+year: 2019
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+poster_source: https://horizon-lab.org/pubs/cvpr19a_poster.pdf
+pub_number: 28
+---

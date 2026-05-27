@@ -1,0 +1,29 @@
+---
+title: 'Amanda: Unified Instrumentation Framework for Deep Neural Networks'
+author:
+- Yue Guan
+- Yuxian Qiu
+- Jingwen Leng
+- Fan Yang
+- Shuo Yu
+- Yunxin Liu
+- Yu Feng
+- Yuhao Zhu
+- Lidong Zhou
+- Yun Liang
+- Chen Zhang
+- Chao Li
+- Minyi Guo
+categories:
+- Show All
+- Work We Contributed to
+topics:
+- mlsys
+url_source: https://horizon-lab.org/pubs/asplos24-amanda.pdf
+code_source: https://github.com/uchuhimo/amanda
+journ: ASPLOS
+year: 2024
+contrib: Work We Contributed to
+image: featured.png
+pub_number: 78
+---

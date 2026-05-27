@@ -1,0 +1,17 @@
+---
+title: 'Hermes: An Integrated CPU/GPU Microarchitecture for IP Routing'
+author:
+- Yuhao Zhu
+- Yangdong Deng
+- Yubei Chen
+categories:
+- Show All
+- Pre-2018 Work
+url_source: https://horizon-lab.org/pubs/dac11.pdf
+talk_source: https://speakerdeck.com/queeten/gpu-microarchitecture-for-ip-routing
+journ: DAC
+year: 2011
+contrib: Pre-2018 Work
+image: featured.png
+pub_number: 3
+---

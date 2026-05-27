@@ -1,0 +1,21 @@
+---
+title: Co-designed Metaoptoelectronic Deep Learning
+author:
+- Carlos Mauricio Villegas Burgos
+- Pei Xiong
+- Liangyu Qiu
+- Yuhao Zhu
+- Nick Vamivakas
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- visual_computing_systems
+url_source: https://horizon-lab.org/pubs/oe23.pdf
+supp_source: https://horizon-lab.org/pubs/oe23-supp.pdf
+journ: Optical Express
+year: 2023
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 69
+---

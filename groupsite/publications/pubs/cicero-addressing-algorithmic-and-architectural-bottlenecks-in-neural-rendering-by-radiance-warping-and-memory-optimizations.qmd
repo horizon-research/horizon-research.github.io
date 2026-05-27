@@ -1,0 +1,23 @@
+---
+title: 'Cicero: Addressing Algorithmic and Architectural Bottlenecks in Neural Rendering
+  by Radiance Warping and Memory Optimizations'
+author:
+- Yu Feng
+- Zihan Liu
+- Jingwen Leng
+- Minyi Guo
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- visual_computing_systems
+url_source: https://horizon-lab.org/pubs/isca24-cicero.pdf
+code_source: https://github.com/SJTU-MVCLab/SpaRW-NeRF-Acceleration
+journ: ISCA
+year: 2024
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+ext_source: https://dl.acm.org/doi/abs/10.1145/3689340
+pub_number: 80
+---

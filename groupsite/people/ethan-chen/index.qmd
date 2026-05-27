@@ -1,0 +1,50 @@
+---
+title: &TITLE Ethan Chen
+order: 3
+last: Chen
+first: Ethan
+people_group: phdstudent
+education: B.S. | University of Virginia | 2022
+subtitle: Ph.D. Student
+image: avatar.jpg
+listing:
+  id: pubs
+  template: ../../_ejs/publications-people.ejs 
+  contents: 
+    - "../../../publications/pubs/*.qmd"
+  sort: "pub_number desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    author: *TITLE
+  fields: [publication, title, categories, image, date, author]
+page-layout: full
+about: 
+  id: about
+  template: trestles
+  image-shape: round
+  image: avatar.jpg
+  links:
+    - text: Website
+      icon: house
+      href: https://www.cs.rochester.edu/u/echen48/
+---
+
+<hr>
+
+
+:::{#about}
+
+
+
+## Education
+{{< meta education >}}
+
+<br>
+
+:::
+
+## {{< meta first >}}'s Group Publications
+
+:::{#pubs}
+:::

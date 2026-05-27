@@ -1,0 +1,24 @@
+---
+title: Real-Time Gaze Tracking with Event-Driven Eye Segmentation
+author:
+- Yu Feng
+- Nathan Goulding-Hotta
+- Asif Khan
+- Hans Reyserhove
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- visual_computing_systems
+url_source: https://horizon-lab.org/pubs/vr22.pdf
+talk_source: https://www.youtube.com/watch?v=7jctvusephY
+code_source: https://github.com/horizon-research/edgaze
+journ: IEEE VR
+year: 2022
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+ext_source: https://arxiv.org/pdf/2201.07367.pdf
+award: Best Paper Honorable Mention
+pub_number: 58
+---

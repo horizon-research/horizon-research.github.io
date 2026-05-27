@@ -1,0 +1,20 @@
+---
+title: 'Mobile CPU’s Rise to Power: Quantifying the Impact of Generational Mobile
+  CPU Design Trends on Performance, Energy, and User Satisfaction'
+author:
+- Matthew Halpern
+- Yuhao Zhu
+- Vijay Janapa Reddi
+categories:
+- Show All
+- Pre-2018 Work
+topics:
+- watt_wise_web
+url_source: https://horizon-lab.org/pubs/hpca16.pdf
+talk_source: https://horizon-lab.org/pubs/hpca16-slides.pdf
+journ: HPCA
+year: 2016
+contrib: Pre-2018 Work
+image: featured.png
+pub_number: 13
+---

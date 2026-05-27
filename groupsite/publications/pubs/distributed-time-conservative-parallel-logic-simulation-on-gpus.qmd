@@ -1,0 +1,17 @@
+---
+title: Distributed Time, Conservative Parallel Logic Simulation on GPUs
+author:
+- Bo Wang
+- Yuhao Zhu
+- Yangdong Deng
+categories:
+- Show All
+- Pre-2018 Work
+url_source: https://horizon-lab.org/pubs/dac10.pdf
+talk_source: https://horizon-lab.org/pubs/dac10-slides.pdf
+journ: DAC
+year: 2010
+contrib: Pre-2018 Work
+image: featured.png
+pub_number: 1
+---

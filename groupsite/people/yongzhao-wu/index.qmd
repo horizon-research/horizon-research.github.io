@@ -1,0 +1,53 @@
+---
+title: &TITLE Yongzhao Wu
+last: Wu
+first: Yongzhao
+people_group: alumni
+education: B.S. | University of Rochester | 2025
+current_pos: M.E. Student | UT Austin
+subtitle: Former B.S. Student
+image: avatar.jpg
+listing:
+  id: pubs
+  template: ../../_ejs/publications-people.ejs 
+  contents: 
+    - "../../../publications/pubs/*.qmd"
+  sort: "pub_number desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    author: *TITLE
+  fields: [publication, title, categories, image, date, author]
+page-layout: full
+about: 
+  id: about
+  template: trestles
+  image-shape: round
+  image: avatar.jpg
+  # links:
+  #   - text: Website
+  #     icon: house
+  #     href: https://striest.github.io/
+---
+
+<hr>
+
+
+:::{#about}
+
+
+
+## Education
+{{< meta education >}}
+
+## Current Position
+{{< meta current_pos >}}
+
+<br>
+
+:::
+
+## {{< meta first >}}'s Group Publications
+
+:::{#pubs}
+:::

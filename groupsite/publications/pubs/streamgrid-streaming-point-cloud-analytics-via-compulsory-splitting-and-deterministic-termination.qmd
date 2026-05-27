@@ -1,0 +1,25 @@
+---
+title: 'StreamGrid: Streaming Point Cloud Analytics via Compulsory Splitting and Deterministic
+  Termination'
+author:
+- Yu Feng
+- Zheng Liu
+- Weikai Lin
+- Zihan Liu
+- Jingwen Leng
+- Minyi Guo
+- Zhezhi He
+- Jieru Zhao
+- Yuhao Zhu
+categories:
+- Show All
+- Work We Contributed to
+topics:
+- visual_computing_systems
+url_source: https://dl.acm.org/doi/pdf/10.1145/3676641.3716021
+journ: ASPLOS
+year: 2025
+contrib: Work We Contributed to
+image: featured.png
+pub_number: 92
+---

@@ -1,0 +1,21 @@
+---
+title: Energy-Constrained Compression for Deep Neural Networks via Weighted Sparse
+  Projection and Layer Input Masking
+author:
+- Haichuan Yang
+- Yuhao Zhu
+- Ji Liu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- mlsys
+url_source: https://openreview.net/forum?id=BylBr3C9K7
+code_source: https://github.com/hyang1990/model_based_energy_constrained_compression
+journ: ICLR
+year: 2019
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+poster_source: https://horizon-lab.org/pubs/iclr19_poster.pdf
+pub_number: 29
+---

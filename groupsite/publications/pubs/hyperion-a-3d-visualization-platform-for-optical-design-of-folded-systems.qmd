@@ -1,0 +1,20 @@
+---
+title: 'Hyperion: A 3D Visualization Platform for Optical Design of Folded Systems'
+author:
+- Daniel K. Nikolov
+- Sifan Ye
+- Sydney Dlhopolsky
+- Zhen Bai
+- Yuhao Zhu
+- Jannick P. Rolland
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+url_source: https://horizon-lab.org/pubs/frameless19.pdf
+journ: Frameless (Demo)
+year: 2019
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+teaser: https://www.youtube.com/watch?v=a9kBGDjsctM
+pub_number: 34
+---

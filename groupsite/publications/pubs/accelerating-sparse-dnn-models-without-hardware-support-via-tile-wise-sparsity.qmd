@@ -1,0 +1,27 @@
+---
+title: Accelerating Sparse DNN Models Without Hardware-Support via Tile-wise Sparsity
+author:
+- Cong Guo
+- Bo Yang Hsueh
+- Jingwen Leng
+- Yuxian Qiu
+- Yue Guan
+- Zehuan Wang
+- Xiaoying Jia
+- Xipeng Li
+- Minyi Guo
+- Yuhao Zhu
+categories:
+- Show All
+- Work We Contributed to
+topics:
+- mlsys
+url_source: https://horizon-lab.org/pubs/sc20.pdf
+talk_source: https://horizon-lab.org/pubs/sc20-slides.pdf
+code_source: https://github.com/clevercool/TileSparsity
+journ: SC
+year: 2020
+contrib: Work We Contributed to
+image: featured.png
+pub_number: 40
+---

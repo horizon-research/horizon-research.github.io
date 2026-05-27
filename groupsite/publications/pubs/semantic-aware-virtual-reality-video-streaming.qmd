@@ -1,0 +1,20 @@
+---
+title: Semantic-Aware Virtual Reality Video Streaming
+author:
+- Yue Leng
+- Chi-Chun Chen
+- Qiuyue Sun
+- Jian Huang
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- visual_computing_systems
+url_source: https://horizon-lab.org/pubs/apsys18.pdf
+journ: APSys
+year: 2018
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 22
+---

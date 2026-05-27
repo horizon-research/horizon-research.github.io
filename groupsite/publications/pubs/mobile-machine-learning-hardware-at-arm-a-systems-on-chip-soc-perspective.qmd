@@ -1,0 +1,18 @@
+---
+title: 'Mobile Machine Learning Hardware at ARM: A Systems-on-Chip (SoC) Perspective'
+author:
+- Yuhao Zhu
+- Matthew Mattina
+- Paul Whatmough
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- mlsys
+url_source: https://horizon-lab.org/pubs/sysml18.pdf
+journ: SysML
+year: 2018
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 20
+---

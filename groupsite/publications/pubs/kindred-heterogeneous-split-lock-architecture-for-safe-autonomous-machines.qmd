@@ -1,0 +1,19 @@
+---
+title: 'KINDRED: Heterogeneous Split-Lock Architecture for Safe Autonomous Machines'
+author:
+- Yiming Gan
+- Jingwen Leng
+- Bo Yu
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- robotics
+url_source: https://dl.acm.org/doi/pdf/10.1145/3711924
+journ: TACO
+year: 2025
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 90
+---

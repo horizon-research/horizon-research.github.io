@@ -1,0 +1,21 @@
+---
+title: Demystifying Bayesian Inference Workloads
+author:
+- Yu Wang
+- Yuhao Zhu
+- Glenn Ko
+- Brandon Reagen
+- Gu-Yeon Wei
+- David Brooks
+categories:
+- Show All
+- Work We Contributed to
+topics:
+- mlsys
+url_source: https://horizon-lab.org/pubs/ispass19.pdf
+journ: ISPASS
+year: 2019
+contrib: Work We Contributed to
+image: featured.png
+pub_number: 24
+---

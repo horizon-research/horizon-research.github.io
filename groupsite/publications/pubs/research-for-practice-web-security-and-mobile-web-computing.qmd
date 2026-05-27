@@ -1,0 +1,20 @@
+---
+title: 'Research for Practice: Web Security and Mobile Web Computing'
+author:
+- Jean Yang
+- Vijay Janapa Reddi
+- Yuhao Zhu
+- Peter Bailis
+categories:
+- Show All
+- Pre-2018 Work
+topics:
+- watt_wise_web
+url_source: https://horizon-lab.org/pubs/rfp16.pdf
+journ: ACM Queue
+year: 2016
+contrib: Pre-2018 Work
+image: featured.png
+award: Invited Article to the "Research for Practice" ( RfP ) Column
+pub_number: 12
+---

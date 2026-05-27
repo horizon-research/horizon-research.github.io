@@ -1,0 +1,17 @@
+---
+title: 'Teaching Color Science to EECS Students Using Interactive Tutorials: Tools
+  and Lessons'
+author:
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- human_perception
+url_source: https://library.imaging.org/ei/articles/35/1/VDA-396
+journ: IS&T EI (VDA)
+year: 2023
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 68
+---

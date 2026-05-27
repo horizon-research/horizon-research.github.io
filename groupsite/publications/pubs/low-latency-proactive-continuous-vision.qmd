@@ -1,0 +1,22 @@
+---
+title: Low-Latency Proactive Continuous Vision
+author:
+- Yiming Gan
+- Yuxian Qiu
+- Lele Chen
+- Jingwen Leng
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- visual_computing_systems
+url_source: https://horizon-lab.org/pubs/pact20.pdf
+talk_source: https://speakerdeck.com/horizonlab/low-latency-proactive-continuous-vision
+journ: PACT
+year: 2020
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+award: Best Paper Nominee
+pub_number: 39
+---

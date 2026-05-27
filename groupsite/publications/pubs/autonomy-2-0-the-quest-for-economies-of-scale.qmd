@@ -1,0 +1,19 @@
+---
+title: 'Autonomy 2.0: The Quest for Economies of Scale'
+author:
+- Shuang Wu
+- Bo Yu
+- Shaoshan Liu
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- robotics
+url_source: https://cacm.acm.org/opinion/autonomy-2-0-the-quest-for-economies-of-scale/
+journ: CACM
+year: 2025
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 89
+---

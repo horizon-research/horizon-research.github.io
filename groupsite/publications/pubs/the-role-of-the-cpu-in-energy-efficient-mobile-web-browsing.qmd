@@ -1,0 +1,18 @@
+---
+title: The Role of the CPU in Energy-Efficient Mobile Web Browsing
+author:
+- Yuhao Zhu
+- Matthew Halpern
+- Vijay Janapa Reddi
+categories:
+- Show All
+- Pre-2018 Work
+topics:
+- watt_wise_web
+url_source: https://horizon-lab.org/pubs/ieeemicro15.pdf
+journ: IEEE Micro
+year: 2015
+contrib: Pre-2018 Work
+image: featured.png
+pub_number: 8
+---

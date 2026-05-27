@@ -1,0 +1,18 @@
+---
+title: 'RTNN: Accelerating Neighbor Search Using Hardware Ray Tracing'
+author:
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- visual_computing_systems
+url_source: https://horizon-lab.org/pubs/ppopp22.pdf
+talk_source: https://speakerdeck.com/queeten/rtnn-accelerating-neighbor-search-using-hardware-ray-tracing
+code_source: https://github.com/horizon-research/rtnn
+journ: PPoPP
+year: 2022
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 56
+---

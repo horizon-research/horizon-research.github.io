@@ -1,0 +1,17 @@
+---
+title: 'Cognitive Computing Safety: The New Horizon for Reliability'
+author:
+- Yuhao Zhu
+- Vijay Janapa Reddi
+categories:
+- Show All
+- Pre-2018 Work
+topics:
+- mlsys
+url_source: https://horizon-lab.org/pubs/ieeemicro17.pdf
+journ: IEEE Micro
+year: 2017
+contrib: Pre-2018 Work
+image: featured.png
+pub_number: 17
+---

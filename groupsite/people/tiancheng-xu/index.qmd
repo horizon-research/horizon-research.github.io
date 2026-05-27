@@ -1,0 +1,53 @@
+---
+title: &TITLE Tiancheng Xu
+last: Xu
+first: Tiancheng
+people_group: alumni
+education: Ph.D. | Rice University | 2025
+current_pos: Google
+subtitle: Former M.Sc. Student
+image: avatar.webp
+listing:
+  id: pubs
+  template: ../../_ejs/publications-people.ejs 
+  contents: 
+    - "../../../publications/pubs/*.qmd"
+  sort: "pub_number desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    author: *TITLE
+  fields: [publication, title, categories, image, date, author]
+page-layout: full
+about: 
+  id: about
+  template: trestles
+  image-shape: round
+  image: avatar.webp
+  links:
+    - text: Website
+      icon: house
+      href: https://tcxxxx.github.io/
+---
+
+<hr>
+
+
+:::{#about}
+
+
+
+## Education
+{{< meta education >}}
+
+## Current Position
+{{< meta current_pos >}}
+
+<br>
+
+:::
+
+## {{< meta first >}}'s Group Publications
+
+:::{#pubs}
+:::

@@ -1,0 +1,25 @@
+---
+title: 'Potamoi: Accelerating Neural Rendering via a Unified Streaming Architecture'
+author:
+- Yu Feng
+- Weikai Lin
+- Zihan Liu
+- Jingwen Leng
+- Minyi Guo
+- Han Zhao
+- Xiaofeng Hou
+- Jieru Zhao
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- visual_computing_systems
+url_source: https://dl.acm.org/doi/pdf/10.1145/3689340
+journ: TACO
+year: 2024
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+note: Supersedes ISCA 2024 Cicero paper
+pub_number: 82
+---

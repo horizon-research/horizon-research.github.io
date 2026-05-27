@@ -1,0 +1,119 @@
+```{=html}
+
+<%
+const categoryOrder = [
+  "Work (Co-)Led by Horizon Lab",
+  "Work We Contributed to",
+  "Pre-2018 Work",
+  "Show All",
+];
+
+const allCategoriesRaw = [
+  ...new Set(items.flatMap(item => item.categories || []))
+];
+
+const allCategories = categoryOrder.filter(
+  c => allCategoriesRaw.includes(c)
+);
+%>
+
+<script>
+window.addEventListener("DOMContentLoaded", () => {
+  const category = "Work (Co-)Led by Horizon Lab";
+
+  window.quartoListingCategory(
+    btoa(category)
+  );
+
+  const el = [...document.querySelectorAll(".listing-category")]
+    .find(el => el.dataset.category === category);
+
+  if (el) {
+    el.classList.add("selected");
+  }
+});
+</script>
+
+<div class="listing-categories global-categories">
+  <% for (const category of allCategories) { %>
+    <span class="listing-category" data-category="<%= category %>" onclick="
+        document.querySelectorAll('.listing-category').forEach(el => el.classList.remove('selected'));
+        this.classList.add('selected');
+        window.quartoListingCategory('<%=btoa(category)%>'); return false;">
+      <%= category %>
+    </span>
+  <% } %>
+</div>
+
+<div class="list quarto-listing-default">
+    <% for (const item of items) { %>
+    
+    <div class="quarto-post image-right" <%= metadataAttrs(item) %> >
+        <div class="thumbnail">
+
+                <!-- <p>
+                    <% if (item.image) { %>
+                    <img alt="<%= item.title %>" src="<%= item.image %>" class="thumbnail-image">
+                    <% } %>
+
+                </p> -->
+            <div class="metadata-value listing-pub-journal">
+                    <% if (item.supp_source) { %>
+                        <a href="<%- item.supp_source %>">supp. mat. <i class="bi bi-box-arrow-up-right"></i>
+                        </a><br>
+                    <% } %>
+
+                    <% if (item.code_source) { %>
+                        <a href="<%- item.code_source %>">code <i class="bi bi-box-arrow-up-right"></i>
+                        </a><br>
+                    <% } %>
+
+                     <% if (item.talk_source) { %>
+                        <a href="<%- item.talk_source %>">talk <i class="bi bi-box-arrow-up-right"></i>
+                        </a><br>
+                    <% } %>
+
+                    <% if (item.ext_source) { %>
+                        <a href="<%- item.ext_source %>">ext. version <i class="bi bi-box-arrow-up-right"></i>
+                        </a><br>
+                    <% } %>
+            </div>
+        </div>
+        <div class="body">
+            <div class="no-anchor listing-pub-title listing-title"><a href="<%- item.url_source %>"><%= item.title %></a></div>
+                
+            <div class="listing-pub-author listing-author">
+                <%= item.author %><br> 
+            </div>
+
+           <!-- <div class="listing-categories">
+                <% for (const category of item.categories) { %>
+                <div class="listing-category" onclick="window.quartoListingCategory('<%=btoa(category)%>'); return false;"><%= category %></div>
+                <% } %>
+                </div> -->
+               
+                        
+            <% if (item.award) { %>
+            <div class="listing-pub-award">
+                &#9733; <%= item.award %>
+            </div>
+            <% } %>
+        </div>
+        <div class="metadata">
+            <!-- <a href="<%- item.path %>"> -->
+                <!-- <div class="listing-pub-number">
+                    <%= item.pub_number %><br> 
+                </div> -->
+
+            <% if (item.journ) { %>
+            <div class="listing-pub-url">
+                <p style="color:#000000;"><%= item.journ %> <%= item.year %></p>
+            </div>
+            <% } %>
+        </div>
+    </div>
+    
+    <% } %>
+    </div>
+
+```

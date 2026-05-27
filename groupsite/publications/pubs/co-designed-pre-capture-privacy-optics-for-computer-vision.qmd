@@ -1,0 +1,21 @@
+---
+title: Co-Designed Pre-capture Privacy Optics for Computer Vision
+author:
+- Carlos Mauricio Villegas Burgos
+- Yu Feng
+- Pei Xiong
+- Yuhao Zhu
+- Nick Vamivakas
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- visual_computing_systems
+url_source: https://horizon-lab.org/pubs/oe25.pdf
+supp_source: https://horizon-lab.org/pubs/oe25-supp.pdf
+journ: Optical Express
+year: 2025
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 96
+---

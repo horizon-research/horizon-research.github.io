@@ -1,0 +1,20 @@
+---
+title: 'Invited Paper: Learned In-Sensor Visual Computing: From Compression to Eventification'
+author:
+- Yu Feng
+- Tianrui Ma
+- Adith Boloor
+- Yuhao Zhu
+- Xuan Zhang
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- visual_computing_systems
+url_source: https://horizon-lab.org/pubs/iccad23.pdf
+journ: ICCAD
+year: 2023
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 74
+---

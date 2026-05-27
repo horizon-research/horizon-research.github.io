@@ -1,0 +1,19 @@
+---
+title: Latent Speech Representations Learned Through Self-Supervised Learning Predict
+  Listeners' Generalization of Adaptation Across Talkers
+author:
+- Zhengyang Jin
+- Yuhao Zhu
+- T. Florian Jaeger
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- human_perception
+url_source: https://horizon-lab.org/pubs/cogsci25.pdf
+journ: CogSci
+year: 2025
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 98
+---

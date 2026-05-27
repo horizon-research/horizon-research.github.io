@@ -1,0 +1,25 @@
+---
+title: 'SQuant: On-the-Fly Data-Free Quantization via Diagonal Hessian Approximation'
+author:
+- Cong Guo
+- Yuxian Qiu
+- Jingwen Leng
+- Xiaotian Gao
+- Chen Zhang
+- Yunxin Liu
+- Fan Yang
+- Yuhao Zhu
+- Minyi Guo
+categories:
+- Show All
+- Work We Contributed to
+topics:
+- mlsys
+url_source: https://openreview.net/pdf?id=JXhROKNZzOc
+code_source: https://github.com/clevercool/SQuant
+journ: ICLR
+year: 2022
+contrib: Work We Contributed to
+image: featured.png
+pub_number: 54
+---

@@ -1,0 +1,20 @@
+---
+title: 'Crescent: Taming Memory Irregularities for Accelerating Deep Point Cloud Analytics'
+author:
+- Yu Feng
+- Gunnar Hammonds
+- Yiming Gan
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- visual_computing_systems
+url_source: https://horizon-lab.org/pubs/isca22.pdf
+code_source: https://github.com/horizon-research/crescent
+journ: ISCA
+year: 2022
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 61
+---

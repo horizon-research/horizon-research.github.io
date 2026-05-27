@@ -1,0 +1,22 @@
+---
+title: 'SEAL: A Single-Event Architecture for In-Sensor Visual Localization'
+author:
+- Ryan Hou
+- Thomas Twomey
+- Vasileios Milionis
+- Evangelos Dikopoulos
+- Tianrui Ma
+- Yuhao Zhu
+- Georgios Tzimpragos
+categories:
+- Show All
+- Work We Contributed to
+topics:
+- visual_computing_systems
+url_source: https://dl.acm.org/doi/pdf/10.1145/3695053.3731034
+journ: ISCA
+year: 2025
+contrib: Work We Contributed to
+image: featured.png
+pub_number: 93
+---

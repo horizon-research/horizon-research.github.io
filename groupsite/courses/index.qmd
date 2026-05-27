@@ -1,0 +1,28 @@
+---
+title: "Teaching and Learning Resources"
+---
+
+## Visual Computing Book
+
+[Foundations of Visual Computing](https://learnvisualcomputing.github.io/) is an open, online textbook on the fundamentals of visual computing, covering human vision, rendering, imaging, and display technologies. A [condensed version](https://link.springer.com/book/9783032050175) is published as a part of the [Synthesis Lectures on Computer Architecture](https://link.springer.com/series/16916) series by Springer Nature.
+
+## Interactive Tutorial on Color Science
+
+We have developed a set of [interactive Web tutorials](https://horizon-lab.org/colorvis/) that illustrate the basic concepts in color science. These tutorials are originally developed for the Computer Imaging and Graphics course taught at University of Rochester. See the [EI paper](https://library.imaging.org/ei/articles/35/1/VDA-396) for the rationale behind and the design of these tutorials. It is the plan that new tutorials on more advanced concepts in color science will be added — when time permits. We welcome your contributions, too.
+
+## Courses
+
+### CSC 259 Computer Imaging and Graphics
+
+This is an undergraduate-level course on computer imaging and graphics.
+It is *not* a computer vision class. Computer vision is concerned with understanding images, whereas in this class we are mostly concerned with how images are formed in the first place. In particular, we study three fundamental forms of image formation: biological (human eye and retina), electrical (cameras), and computational (computer graphics).
+
+Why do we care about image formation? First, it's a wonderfully rich topic that covers sciences (e.g., physics, optics, visual neuroscience), engineering (e.g., camera/display design, Augmented/Virtual Reality glass design), computation (e.g., rendering algorithms, computational photography, image/video compression algorithms), art (e.g., paintings, pentimento), and mathematics (e.g., linear systems, Fourier analysis). Second, understanding image formation allows us to better design vision systems (both computer vision and human vision) — if we don't understand how an image is formed in the first place, how can we analyze it to extract useful information?
+
+The course was most recently offered in [Fall 2025](https://cs.rochester.edu/courses/259/fall2025/index.html), and is expected to be offered every Fall.
+
+### CSC 5xx Computational Vision
+
+This is a planned new course that will be offered for the first time in Spring 2027.
+It will most likely combine lectures, paper readings/presentations, and small-group projects.
+And, once again, this is not a computer vision course --- the focus will instead be on human vision, or more broadly, animal vision.

@@ -1,0 +1,24 @@
+---
+title: Imperceptible Color Modulation for Power Saving in VR/AR
+author:
+- Kenneth Chen
+- Budmonde Duinkharjav
+- Nisarg Ujjainkar
+- Ethan Shahan
+- Abhishek Tyagi
+- Jiayi He
+- Yuhao Zhu
+- Qi Sun
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- visual_computing_systems
+- human_perception
+url_source: https://horizon-lab.org/pubs/siggraph23-et.pdf
+journ: SIGGRAPH Emerging Tech.
+year: 2023
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 75
+---

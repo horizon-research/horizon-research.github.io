@@ -1,0 +1,23 @@
+---
+title: 'Building the Computing System for Autonomous Micromobility Vehicles: Design
+  Constraints and Architectural Optimizations'
+author:
+- Bo Yu
+- Wei Hu
+- Leimeng Xu
+- Jie Tang
+- Shaoshan Liu
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- robotics
+url_source: https://horizon-lab.org/pubs/micro20-amv.pdf
+talk_source: https://speakerdeck.com/horizonlab/building-the-computing-system-for-autonomous-micromobility-vehicles-design-constraints-and-architectural-optimizations
+journ: MICRO
+year: 2020
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 44
+---

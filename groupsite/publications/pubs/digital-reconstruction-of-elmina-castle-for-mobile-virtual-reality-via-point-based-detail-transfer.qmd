@@ -1,0 +1,23 @@
+---
+title: Digital Reconstruction of Elmina Castle for Mobile Virtual Reality via Point-based
+  Detail Transfer
+author:
+- Sifan Ye
+- Ting Wu
+- Michael Jarvis
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- comp_human
+url_source: https://library.imaging.org/ei/articles/34/1/VDA-409
+code_source: https://github.com/horizon-research/3D-Reconstruction-From-Point-Cloud
+journ: IS&T EI (VDA)
+year: 2022
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+award: Kostas Pantazos Memorial Award for Outstanding Paper in Visualization and Data
+  Analysis
+pub_number: 57
+---

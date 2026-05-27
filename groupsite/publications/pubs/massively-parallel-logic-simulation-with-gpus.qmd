@@ -1,0 +1,16 @@
+---
+title: Massively Parallel Logic Simulation with GPUs
+author:
+- Yuhao Zhu
+- Bo Wang
+- Yangdong Deng
+categories:
+- Show All
+- Pre-2018 Work
+url_source: https://horizon-lab.org/pubs/todaes11.pdf
+journ: TODAES
+year: 2011
+contrib: Pre-2018 Work
+image: featured.png
+pub_number: 2
+---

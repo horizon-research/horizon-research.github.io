@@ -1,0 +1,20 @@
+---
+title: 'Invited Paper: Dataflow Accelerator Architecture for Autonomous Machine Computing'
+author:
+- Shaoshan Liu
+- Yuhao Zhu
+- Bo Yu
+- Jean-Luc Gaudiot
+- Guang R. Gao
+categories:
+- Show All
+- Work We Contributed to
+topics:
+- robotics
+url_source: https://horizon-lab.org/pubs/iccad24-daa.pdf
+journ: ICCAD
+year: 2024
+contrib: Work We Contributed to
+image: featured.png
+pub_number: 84
+---

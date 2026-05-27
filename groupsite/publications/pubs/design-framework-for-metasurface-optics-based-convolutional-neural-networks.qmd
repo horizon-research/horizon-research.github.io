@@ -1,0 +1,20 @@
+---
+title: Design Framework for Metasurface Optics-based Convolutional Neural Networks
+author:
+- Carlos Mauricio Villegas Burgos
+- Tianqi Yang
+- Nick Vamivakas
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- visual_computing_systems
+url_source: https://horizon-lab.org/pubs/ao21-msonn.pdf
+supp_source: https://horizon-lab.org/pubs/ao21-msonn-supp.pdf
+journ: Applied Optics
+year: 2021
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 49
+---

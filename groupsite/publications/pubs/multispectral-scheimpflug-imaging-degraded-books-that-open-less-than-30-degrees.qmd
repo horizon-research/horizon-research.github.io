@@ -1,0 +1,19 @@
+---
+title: 'Multispectral Scheimpflug: Imaging Degraded Books that Open less than 30 Degrees'
+author:
+- Gregory Heyworth
+- Keith T. Knox
+- Kenneth Boydston
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- comp_human
+url_source: https://library.imaging.org/archiving/articles/19/1/1
+journ: IS&T Archiving
+year: 2022
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 63
+---

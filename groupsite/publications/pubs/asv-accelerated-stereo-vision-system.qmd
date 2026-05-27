@@ -1,0 +1,20 @@
+---
+title: 'ASV: Accelerated Stereo Vision System'
+author:
+- Yu Feng
+- Paul Whatmough
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- visual_computing_systems
+url_source: https://horizon-lab.org/pubs/micro19-asv.pdf
+talk_source: https://speakerdeck.com/horizonlab/asv-accelerated-stereo-vision-system
+journ: MICRO
+year: 2019
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+teaser: https://speakerdeck.com/horizonlab/asv-accelerated-stereo-vision-system-fb3e7faf-8c02-40ef-9ed5-974f67d0281b
+pub_number: 33
+---

@@ -1,0 +1,25 @@
+---
+title: 'Archytas: A Framework for Synthesizing and Dynamically Optimizing Accelerators
+  for Robotic Localization'
+author:
+- Weizhuang Liu
+- Bo Yu
+- Yiming Gan
+- Qiang Liu
+- Jie Tang
+- Shaoshan Liu
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- robotics
+url_source: https://horizon-lab.org/pubs/micro21.pdf
+code_source: https://github.com/horizon-research/Archytas
+journ: MICRO
+year: 2021
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+ext_source: https://ieeexplore.ieee.org/abstract/document/9994649
+pub_number: 52
+---

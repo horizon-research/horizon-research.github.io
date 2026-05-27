@@ -1,0 +1,23 @@
+---
+title: Energy-Efficient Video Processing for Virtual Reality
+author:
+- Yue Leng
+- Chi-Chun Chen
+- Qiuyue Sun
+- Jian Huang
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- visual_computing_systems
+url_source: https://horizon-lab.org/pubs/isca19-evr.pdf
+talk_source: https://horizon-lab.org/pubs/isca19-evr-talk.pdf
+journ: ISCA
+year: 2019
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+teaser: https://www.youtube.com/watch?v=GL1HWkTdAPY
+award: IEEE Micro Top Picks from Computer Architecture Conferences in 2019
+pub_number: 30
+---

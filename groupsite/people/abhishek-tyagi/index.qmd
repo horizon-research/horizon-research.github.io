@@ -1,0 +1,51 @@
+---
+title: &TITLE Abhishek Tyagi
+order: 1
+last: Tyagi
+first: Abhishek
+people_group: phdstudent
+education: B.E. | Delhi College of Engineering | 2017
+subtitle: Ph.D. Student
+image: avatar.jpg
+listing:
+  id: pubs
+  template: ../../_ejs/publications-people.ejs 
+  contents: 
+    - "../../../publications/pubs/*.qmd"
+    #- "!../../../publications/_template/"
+  sort: "pub_number desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    author: *TITLE
+  fields: [publication, title, categories, image, date, author]
+page-layout: full
+about: 
+  id: about
+  template: trestles
+  image-shape: round
+  image: avatar.jpg
+  links:
+    - text: Website
+      icon: house
+      href: https://abhishektyaagi.github.io/
+---
+
+<hr>
+
+
+:::{#about}
+
+
+
+## Education
+{{< meta education >}}
+
+<br>
+
+:::
+
+## {{< meta first >}}'s Group Publications
+
+:::{#pubs}
+:::

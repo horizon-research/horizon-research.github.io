@@ -1,0 +1,23 @@
+---
+title: A Systematic Methodology for Characterizing Scalability of DNN Accelerators
+  using SCALE-Sim
+author:
+- Anand Samajdar
+- J. Joseph
+- Yuhao Zhu
+- Paul Whatmough
+- Matt Mattina
+- Tushar Krishna
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- mlsys
+url_source: https://horizon-lab.org/pubs/ispass20.pdf
+code_source: https://github.com/ARM-software/SCALE-Sim
+journ: ISPASS
+year: 2020
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 38
+---

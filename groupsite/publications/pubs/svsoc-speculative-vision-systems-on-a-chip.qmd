@@ -1,0 +1,19 @@
+---
+title: 'SVSoC: Speculative Vision Systems-on-a-Chip'
+author:
+- Yiming Gan
+- Yuxian Qiu
+- Jingwen Leng
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- visual_computing_systems
+url_source: https://horizon-lab.org/pubs/cal19.pdf
+journ: CAL
+year: 2019
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 26
+---

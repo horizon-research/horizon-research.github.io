@@ -1,0 +1,22 @@
+---
+title: 'Ptolemy: Architecture Support for Robust Deep Learning'
+author:
+- Yiming Gan
+- Yuxian Qiu
+- Jingwen Leng
+- Minyi Guo
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- mlsys
+url_source: https://horizon-lab.org/pubs/micro20-ptolemy.pdf
+talk_source: https://speakerdeck.com/horizonlab/ptolemy-architecture-support-for-robust-deep-learning-7c87e1b7-e956-43c5-9465-b9c0ae5c715d
+code_source: https://github.com/Ptolemy-dl/Ptolemy
+journ: MICRO
+year: 2020
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 43
+---

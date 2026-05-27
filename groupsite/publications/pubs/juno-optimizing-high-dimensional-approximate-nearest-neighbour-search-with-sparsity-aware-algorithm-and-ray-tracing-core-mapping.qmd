@@ -1,0 +1,26 @@
+---
+title: 'Juno: Optimizing High-Dimensional Approximate Nearest Neighbour Search with
+  Sparsity-Aware Algorithm and Ray-Tracing Core Mapping'
+author:
+- Zihan Liu
+- Wentao Ni
+- Jingwen Leng
+- Yu Feng
+- Cong Guo
+- Quan Chen
+- Chao Li
+- Minyi Guo
+- Yuhao Zhu
+categories:
+- Show All
+- Work We Contributed to
+topics:
+- mlsys
+url_source: https://horizon-lab.org/pubs/asplos24-juno.pdf
+code_source: https://github.com/SubjectNoi/RTANN
+journ: ASPLOS
+year: 2024
+contrib: Work We Contributed to
+image: featured.png
+pub_number: 77
+---

@@ -1,0 +1,23 @@
+---
+title: Microarchitectural Implications of Event-driven Server-side Web Applications
+author:
+- Yuhao Zhu
+- Daniel Richins
+- Matthew Halpern
+- Vijay Janapa Reddi
+categories:
+- Show All
+- Pre-2018 Work
+topics:
+- watt_wise_web
+url_source: https://horizon-lab.org/pubs/micro15.pdf
+talk_source: https://speakerdeck.com/queeten/microarchitectural-implications-of-event-driven-server-side-web-applications
+journ: MICRO
+year: 2015
+contrib: Pre-2018 Work
+image: featured.png
+teaser: https://speakerdeck.com/queeten/micro-2015-lightning-session-talk
+award: IEEE Micro Top Picks from Computer Architecture Conferences in 2015 (Honorable
+  Mention)
+pub_number: 11
+---

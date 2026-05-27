@@ -1,0 +1,21 @@
+---
+title: Factor Graph Accelerator for LiDAR-Inertial Odometry (Invited Paper)
+author:
+- Yuhui Hao
+- Bo Yu
+- Qiang Liu
+- Shaoshan Liu
+- Yuhao Zhu
+categories:
+- Show All
+- Work We Contributed to
+topics:
+- robotics
+url_source: https://horizon-lab.org/pubs/iccad22.pdf
+code_source: https://github.com/horizon-research/FGLIO
+journ: ICCAD
+year: 2022
+contrib: Work We Contributed to
+image: featured.png
+pub_number: 59
+---

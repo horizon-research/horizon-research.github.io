@@ -1,0 +1,30 @@
+---
+title: 'VQ-LLM: High-performance Code Generation for Vector Quantization Augmented
+  LLM Inference'
+author:
+- Zihan Liu
+- Xinhao Luo
+- Junxian Guo
+- Wentao Ni
+- Yangjie Zhou
+- Yue Guan
+- Cong Guo
+- Weihao Cui
+- Yu Feng
+- Minyi Guo
+- Yuhao Zhu
+- Minjia Zhang
+- Jingwen Leng
+- Chen Jin
+categories:
+- Show All
+- Work We Contributed to
+topics:
+- mlsys
+url_source: https://arxiv.org/pdf/2503.02236
+journ: HPCA
+year: 2025
+contrib: Work We Contributed to
+image: featured.png
+pub_number: 88
+---

@@ -1,0 +1,23 @@
+---
+title: 'MetaSapiens: Real-Time Neural Rendering with Efficiency-Aware Pruning and
+  Accelerated Foveated Rendering'
+author:
+- Weikai Lin
+- Yu Feng
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- visual_computing_systems
+- human_perception
+url_source: https://horizon-lab.org/pubs/asplos25.pdf
+talk_source: https://docs.google.com/presentation/d/1z_GqK0imMH_fR48RaC76mAfAEnk5CgS2cuEwgBlbmsI/edit?usp=sharing
+code_source: https://horizon-lab.org/metasapiens/
+journ: ASPLOS
+year: 2025
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+award: Best Paper Award
+pub_number: 91
+---

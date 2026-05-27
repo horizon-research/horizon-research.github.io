@@ -1,0 +1,20 @@
+---
+title: 'PES: Proactive Event Scheduling for Responsive and Energy-Efficient Mobile
+  Web Computing'
+author:
+- Yu Feng
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- watt_wise_web
+url_source: https://horizon-lab.org/pubs/isca19-pes.pdf
+talk_source: https://speakerdeck.com/horizonlab/pes-proactive-event-scheduling-for-responsive-and-energy-efficient-mobile-web-computing
+journ: ISCA
+year: 2019
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+teaser: https://www.youtube.com/watch?v=uQ__PAULjgs
+pub_number: 31
+---

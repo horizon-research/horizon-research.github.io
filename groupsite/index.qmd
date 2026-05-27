@@ -1,0 +1,33 @@
+---
+page-layout: full
+---
+<div class="gradient-text">
+
+<div class="welcome-headline">
+Welcome to the Horizon Lab<br>
+</div>
+<div class="welcome-subheadline">
+where we explore nature's mysteries, inspire inquisitive minds, and empower all forms of life
+</div>
+</div>
+
+::::{.cmm-background}
+::: {.content-container}
+::: {.welcome }
+
+::: grid
+::: {.g-col-12 .g-col-lg-4 .welcome-text .sand-background style="padding: 15px;"}
+
+We are a group in the [Department of Computer Science](https://www.cs.rochester.edu/) and the [Department of Brain and Cognitive Sciences](https://www.sas.rochester.edu/bcs/) at University of Rochester.
+We are mostly drawn to research problems at the intersection of **imaging** (light transport, optics, and image sensors), **human perception and cognition** (psychophysics and computational modeling), and **computer systems** (computer architecture and programming systems).
+Ultimately, our research mission is to 1) discover new sciences to understand things we currently don't and 2) build new engineering systems to do things we currently can't.
+:::
+:::
+
+:::
+:::
+::::
+
+::: {style="text-align: center;"}
+Website inspired by the [Masiello Group Website](https://faculty.washington.edu/masiello/).
+:::

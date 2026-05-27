@@ -1,0 +1,50 @@
+---
+title: &TITLE Weikai Lin
+order: 4
+last: Lin
+first: Weikai
+people_group: phdstudent
+education: M.Sc. | Peking University | 2023<br>B.E. | Tsinghua University  | 2020
+subtitle: Ph.D. Student
+image: avatar.webp
+listing:
+  id: pubs
+  template: ../../_ejs/publications-people.ejs 
+  contents: 
+    - "../../../publications/pubs/*.qmd"
+  sort: "pub_number desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    author: *TITLE
+  fields: [publication, title, categories, image, date, author]
+page-layout: full
+about: 
+  id: about
+  template: trestles
+  image-shape: round
+  image: avatar.webp
+  links:
+    - text: Website
+      icon: house
+      href: https://linwk20.github.io/
+---
+
+<hr>
+
+
+:::{#about}
+
+
+
+## Education
+{{< meta education >}}
+
+<br>
+
+:::
+
+## {{< meta first >}}'s Group Publications
+
+:::{#pubs}
+:::

@@ -1,0 +1,22 @@
+---
+title: 'Tigris: Architecture and Algorithms for 3D Perception in Point Clouds'
+author:
+- Tiancheng Xu
+- Boyuan Tian
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- visual_computing_systems
+url_source: https://horizon-lab.org/pubs/micro19-tigris.pdf
+talk_source: https://speakerdeck.com/horizonlab/tigris-architecture-and-algorithms-for-3d-perception-in-point-clouds
+code_source: https://github.com/horizon-research/PointCloud-pipeline
+journ: MICRO
+year: 2019
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+teaser: https://speakerdeck.com/horizonlab/tigris-architecture-and-algorithms-for-3d-perception-in-point-clouds-bb57ecf8-f0e3-42d2-8fd4-c19a1dc0b942
+award: Best Paper Nominee
+pub_number: 32
+---

@@ -1,0 +1,21 @@
+---
+title: 'Communication Challenges in Infrastructure-Vehicle Cooperative Autonomous
+  Driving: A Field Deployment Perspective'
+author:
+- Shaoshan Liu
+- Bo Yu
+- Jie Tang
+- Yuhao Zhu
+- Xue Liu
+categories:
+- Show All
+- Work We Contributed to
+topics:
+- robotics
+url_source: https://ieeexplore.ieee.org/document/9770087
+journ: IEEE Wireless Comm.
+year: 2022
+contrib: Work We Contributed to
+image: featured.png
+pub_number: 62
+---

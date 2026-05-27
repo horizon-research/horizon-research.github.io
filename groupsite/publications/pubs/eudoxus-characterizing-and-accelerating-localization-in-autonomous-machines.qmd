@@ -1,0 +1,25 @@
+---
+title: 'Eudoxus: Characterizing and Accelerating Localization in Autonomous Machines'
+author:
+- Yiming Gan
+- Bo Yu
+- Boyuan Tian
+- Leimeng Xu
+- Wei Hu
+- Shaoshan Liu
+- Qiang Liu
+- Yanjun Zhang
+- Jie Tang
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- robotics
+url_source: https://horizon-lab.org/pubs/hpca21.pdf
+journ: HPCA
+year: 2021
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 46
+---

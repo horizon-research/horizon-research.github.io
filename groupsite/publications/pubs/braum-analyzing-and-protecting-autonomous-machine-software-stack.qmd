@@ -1,0 +1,21 @@
+---
+title: 'BRAUM: Analyzing and Protecting Autonomous Machine Software Stack'
+author:
+- Yiming Gan
+- Paul Whatmough
+- Jingwen Leng
+- Bo Yu
+- Shaoshan Liu
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- robotics
+url_source: https://horizon-lab.org/pubs/issre22.pdf
+journ: ISSRE
+year: 2022
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 60
+---

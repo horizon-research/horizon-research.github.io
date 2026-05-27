@@ -1,0 +1,19 @@
+---
+title: Energy-Efficient Mobile Web Computing
+author:
+- Yuhao Zhu
+categories:
+- Show All
+- Pre-2018 Work
+topics:
+- watt_wise_web
+url_source: https://horizon-lab.org/pubs/dissertation.pdf
+talk_source: https://speakerdeck.com/queeten/defense-talk-energy-efficient-mobile-web-computing
+journ: Dissertation
+year: 2017
+contrib: Pre-2018 Work
+image: featured.png
+award: Honorable Mention of the ACM SIGARCH/IEEE-CS TCCA Outstanding Dissertation
+  Award
+pub_number: 15
+---

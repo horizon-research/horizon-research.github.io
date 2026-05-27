@@ -1,0 +1,21 @@
+---
+title: Characterizing Soft-Error Resiliency in Arm's Ethos-U55 Embedded Machine Learning
+  Accelerator
+author:
+- Abhishek Tyagi
+- Reiley Jeyapaul
+- Chuteng Zhou
+- Paul Whatmough
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- mlsys
+url_source: https://horizon-lab.org/pubs/ispass24.pdf
+journ: ISPASS
+year: 2024
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 76
+---

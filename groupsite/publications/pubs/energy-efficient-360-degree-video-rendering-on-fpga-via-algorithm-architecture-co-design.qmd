@@ -1,0 +1,21 @@
+---
+title: Energy-Efficient 360-Degree Video Rendering on FPGA via Algorithm-Architecture
+  Co-Design
+author:
+- Qiuyue Sun
+- Amir Taherin
+- Yawo Siatitse
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- visual_computing_systems
+url_source: https://horizon-lab.org/pubs/fpga20.pdf
+talk_source: https://speakerdeck.com/horizonlab/energy-efficient-360-degree-video-rendering-on-fpga-via-algorithm-architecture-co-design
+journ: FPGA
+year: 2020
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 35
+---

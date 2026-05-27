@@ -1,0 +1,22 @@
+---
+title: 'Mesorasi: Architecture Support for Point Cloud Analytics via Delayed-Aggregation'
+author:
+- Yu Feng
+- Boyuan Tian
+- Tiancheng Xu
+- Paul Whatmough
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- visual_computing_systems
+url_source: https://horizon-lab.org/pubs/micro20-mesorasi.pdf
+talk_source: https://speakerdeck.com/horizonlab/mesorasi-architecture-support-for-point-cloud-analytics-via-delayed-aggregation
+code_source: https://github.com/horizon-research/Efficient-Deep-Learning-for-Point-Clouds
+journ: MICRO
+year: 2020
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 45
+---

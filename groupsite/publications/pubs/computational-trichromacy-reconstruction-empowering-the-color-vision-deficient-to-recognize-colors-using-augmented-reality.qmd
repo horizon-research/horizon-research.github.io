@@ -1,0 +1,23 @@
+---
+title: 'Computational Trichromacy Reconstruction: Empowering the Color-Vision Deficient
+  to Recognize Colors Using Augmented Reality'
+author:
+- Yuhao Zhu
+- Ethan Chen
+- Colin Hascup
+- Yukang Yan
+- Gaurav Sharma
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- human_perception
+url_source: https://horizon-lab.org/pubs/uist24.pdf
+talk_source: https://www.youtube.com/watch?v=cVt3sZtmRQY&list=PLqhXYFYmZ-VfqlTc5EliOGQ591UoeFCZC&index=119&pp=iAQB
+journ: UIST
+year: 2024
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+website: https://colorvision.cs.rochester.edu/
+pub_number: 83
+---

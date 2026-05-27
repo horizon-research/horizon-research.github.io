@@ -1,0 +1,50 @@
+---
+title: &TITLE Han Yan
+order: 5
+last: Yan
+first: Han
+people_group: phdstudent
+education: M.Sc. | University of Chinese Academy of Sciences | 2024<br>B.E. | Tianjing University | 2021
+subtitle: Ph.D. Student
+image: avatar.jpg
+listing:
+  id: pubs
+  template: ../../_ejs/publications-people.ejs 
+  contents: 
+    - "../../../publications/pubs/*.qmd"
+  sort: "pub_number desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    author: *TITLE
+  fields: [publication, title, categories, image, date, author]
+page-layout: full
+about: 
+  id: about
+  template: trestles
+  image-shape: round
+  image: avatar.jpg
+  # links:
+  #   - text: Website
+  #     icon: house
+  #     href: 
+---
+
+<hr>
+
+
+:::{#about}
+
+
+
+## Education
+{{< meta education >}}
+
+<br>
+
+:::
+
+## {{< meta first >}}'s Group Publications
+
+:::{#pubs}
+:::

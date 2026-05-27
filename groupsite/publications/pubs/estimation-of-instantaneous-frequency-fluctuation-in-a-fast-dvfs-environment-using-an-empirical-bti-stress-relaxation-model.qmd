@@ -1,0 +1,20 @@
+---
+title: Estimation of Instantaneous Frequency Fluctuation in a Fast DVFS Environment
+  Using an Empirical BTI Stress-Relaxation Model
+author:
+- Chen Zhou
+- Xiaofei Wang
+- Weichao Xu
+- Yuhao Zhu
+- Vijay Janapa Reddi
+- Chris Kim
+categories:
+- Show All
+- Pre-2018 Work
+url_source: https://horizon-lab.org/pubs/irps14.pdf
+journ: IRPS
+year: 2014
+contrib: Pre-2018 Work
+image: featured.png
+pub_number: 6
+---

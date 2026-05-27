@@ -1,0 +1,17 @@
+---
+title: Optimizing General-Purpose CPUs for Energy-Efficient Mobile Web Computing
+author:
+- Yuhao Zhu
+- Vijay Janapa Reddi
+categories:
+- Show All
+- Pre-2018 Work
+topics:
+- watt_wise_web
+url_source: https://horizon-lab.org/pubs/tocs17.pdf
+journ: TOCS
+year: 2017
+contrib: Pre-2018 Work
+image: featured.png
+pub_number: 18
+---

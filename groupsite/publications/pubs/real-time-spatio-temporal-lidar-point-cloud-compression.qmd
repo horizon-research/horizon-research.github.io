@@ -1,0 +1,20 @@
+---
+title: Real-Time Spatio-Temporal LiDAR Point Cloud Compression
+author:
+- Yu Feng
+- Shaoshan Liu
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- visual_computing_systems
+url_source: https://horizon-lab.org/pubs/iros20.pdf
+talk_source: https://speakerdeck.com/horizonlab/real-time-spatio-temporal-lidar-point-cloud-compression
+code_source: https://github.com/horizon-research/Real-Time-Spatio-Temporal-LiDAR-Point-Cloud-Compression
+journ: IROS
+year: 2020
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 42
+---

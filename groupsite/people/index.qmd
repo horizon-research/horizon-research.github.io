@@ -1,0 +1,95 @@
+---
+title: "Meet the Group"
+listing:
+  - id: pi
+    include: 
+      people_group: "pi"
+    exclude:
+      external: true
+    template: ../_ejs/people-box.ejs
+    type: grid
+    fields: [title, subtitle, image, education]
+  - id: phdstudent
+    include: 
+      people_group: "phdstudent"
+    exclude:
+      external: true
+    template: ../_ejs/people-box.ejs
+    sort: order
+    type: grid
+    fields: [title, subtitle, image, education]
+  - id: alumni
+    include: 
+      people_group: "alumni"
+    exclude:
+      external: true
+    template: ../_ejs/alumni-box.ejs
+    sort: "subtitle desc"
+    type: grid
+    fields: [title, subtitle, image, education, altsubtitle, alteducation]
+page-layout: full
+---
+
+## Principal Investigator
+### [Yuhao Zhu](https://yuhaozhu.com/)
+Associate Professor<br>
+Computer Science | Brain and Cognitive Sciences<br>
+Center for Visual Science | Goergen Institute for Data Science and Artificial Intelligence<br>
+University of Rochester
+
+
+## Ph.D. Students
+::: {#phdstudent}
+:::
+
+
+## M.Sc. Students
+::: {#msstudent}
+:::
+
+
+## Undergraduate Students
+##### [Junjie Zhao](https://www.linkedin.com/in/junjie-zhao-53808228b/) (AR displays)
+
+
+## Alumni
+::: {#alumni}
+:::
+
+##### Suumil Roy (M.Sc. 2024; color)
+##### Raj Rajwade (M.Sc. 2023; color)
+##### Shreyan Goswami (M.Sc. 2022; color)
+##### Yi Yang (M.Sc. 2021; graphics)
+##### Zeyi Pan (M.Sc. 2021; physics simulation)
+##### Hanlin Gao (M.Sc. 2021; physics simulation)
+##### Ting Wu (M.Sc. 2020 → Ebay; graphics)
+
+##### Ahmed Nassar (B.S.; graphics)
+##### Aayush Poudel (B.S.; physics simulation)
+##### Anthony Chan (B.S.; art and art history)
+##### Baazil Akhlaque (B.S.; art and art history)
+##### Avery Young (B.S.; color)
+##### Shuhan Li (B.S.; visualization)
+##### Ziyang Yuan (B.S.; imaging)
+##### Samuel Lee (B.S.; architecture)
+##### Zeyu Nie (B.S.; imaging)
+##### Christopher Bruinsma (B.S.; image sensing)
+##### Jiayi (Louise) He (B.S. → CMU; cultural heritage)
+##### Matan Kotler-Berkowitz (B.S.; VR and physics simulation)
+##### Jingyan Yu (B.S.; cultural heritage)
+##### Junhua Huang (B.S.; cultural heritage)
+##### Meisen Hu (B.S.; cultural heritage)
+##### Ruihan Xu (B.S.; graphics)
+##### Muhammad Qasim (B.S.; cultural heritage)
+##### Shengyi Jia (B.S. → John Hopkins University; graphics)
+##### Nikhil Khanna (B.S.; VR)
+##### Mohamed ali manai (B.S.; architecture)
+##### Siddhant Choudhary (B.S.; vision)
+##### Edmund Sepeku (B.S.; Astrophysics)
+##### Kharissa King (B.S.; Astrophysics)
+##### Weituo Kong (B.S. → Brown; imaging)
+##### Yawo Alphonse Siatitse (B.S. → John Hopkins University; VR)
+##### Oliver Zhang (B.S. → University of Michigan; imaging)
+##### Noah Helterbrand (B.S.; compiler)
+##### Tolga Furkan Aktas (B.S.; imaging)
+##### Jessica Ervin (B.S.; image processing)

@@ -1,0 +1,21 @@
+---
+title: Dynamic Sparse Training of Diagonally Sparse Networks
+author:
+- Abhishek Tyagi
+- Arjun Iyer
+- William H Renninger
+- Christopher Kanan
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- mlsys
+url_source: https://openreview.net/forum?id=bAUVnNc0Ky
+code_source: https://github.com/horizon-research/DynaDiag
+journ: ICML
+year: 2025
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 97
+---

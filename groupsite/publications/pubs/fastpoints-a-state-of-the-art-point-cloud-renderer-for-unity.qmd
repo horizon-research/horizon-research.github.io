@@ -1,0 +1,20 @@
+---
+title: 'FastPoints: A State-of-the-Art Point Cloud Renderer for Unity'
+author:
+- Elias Neuman-Donihue
+- Michael Jarvis
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- comp_human
+url_source: https://library.imaging.org/ei/articles/35/1/VDA-394
+talk_source: https://docs.google.com/presentation/d/1uGBpXc0XrPnwUAHTadLj1CsvmZMXyr4B7G8UAF9Fn2E/edit?usp=sharing
+code_source: https://github.com/eliasnd/FastPoints
+journ: IS&T EI (VDA)
+year: 2023
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 67
+---

@@ -1,0 +1,21 @@
+---
+title: 'CamJ: Enabling System-Level Energy Modeling and Architectural Exploration
+  for In-Sensor Visual Computing'
+author:
+- Tianrui Ma
+- Yu Feng
+- Xuan Zhang
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- visual_computing_systems
+url_source: https://horizon-lab.org/pubs/isca23-camj.pdf
+code_source: https://github.com/horizon-research/CamJ/
+journ: ISCA
+year: 2023
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 73
+---

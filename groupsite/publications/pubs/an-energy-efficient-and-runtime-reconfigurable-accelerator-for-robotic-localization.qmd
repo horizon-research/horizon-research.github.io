@@ -1,0 +1,24 @@
+---
+title: An Energy Efficient and Runtime Reconfigurable Accelerator for Robotic Localization
+author:
+- Qiang Liu
+- Yuhui Hao
+- Weizhuang Liu
+- Bo Yu
+- Yiming Gan
+- Jie Tang
+- Shao-Shan Liu
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- robotics
+url_source: https://ieeexplore.ieee.org/abstract/document/9994649
+journ: TC
+year: 2022
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+note: Supersedes MICRO 2021 Archytas paper
+pub_number: 53
+---
