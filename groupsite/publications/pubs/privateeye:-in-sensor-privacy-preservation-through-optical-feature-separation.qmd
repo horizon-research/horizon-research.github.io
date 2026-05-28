@@ -1,0 +1,22 @@
+---
+title: 'PrivateEye: In-Sensor Privacy Preservation Through Optical Feature Separation'
+author:
+- Adith Boloor
+- Weikai Lin
+- Tianrui Ma
+- Yu Feng
+- Yuhao Zhu
+- Xuan Zhang
+categories:
+- Show All
+- Work We Contributed to
+topics:
+- visual_computing_systems
+url_source: https://openaccess.thecvf.com/content/WACV2025/papers/Boloor_PrivateEye_In-Sensor_Privacy_Preservation_Through_Optical_Feature_Separation_WACV_2025_paper.pdf
+journ: WACV
+year: 2025
+contrib: Work We Contributed to
+image: featured.png
+pub_number: 88
+---
+

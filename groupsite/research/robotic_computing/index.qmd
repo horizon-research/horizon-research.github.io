@@ -1,0 +1,27 @@
+---
+title: "Robotic Computing"
+order: 4
+alias: &ALIAS robotics
+image: featured.jpg
+listing:
+  id: pubs
+  template: ../../_ejs/publications-people.ejs 
+  contents: 
+    - "../../publications/pubs/*.qmd"
+  sort: "pub_number desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    topics: *ALIAS
+  fields: [publication, title, categories, image, date, author] 
+
+---
+![](featured.jpg)
+
+Robotic computing has reached a tipping point. A myriad of autonomous machines such as drones, logistic robots, and self-driving cars are on the cusp of becoming an integral part of our everyday life. The continuous proliferation of autonomous machines, however, depends critically on an efficient and safe computing substrate, driven by higher performance requirements and the miniaturization of machine form factors.
+We explore computer systems and architectures for autonomous machines from ground up while targeting both efficiency and safety.
+
+## Related Publications
+
+:::{#pubs}
+:::

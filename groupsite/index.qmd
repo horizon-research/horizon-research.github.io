@@ -1,7 +1,7 @@
 ---
 page-layout: full
 ---
-<div class="gradient-text">
+<div class="lightgreen">
 
 <div class="welcome-headline">
 Welcome to the Horizon Lab<br>
@@ -29,5 +29,5 @@ Ultimately, our research mission is to 1) discover new sciences to understand th
 ::::
 
 ::: {style="text-align: center;"}
-Website inspired by the [Masiello Group Website](https://faculty.washington.edu/masiello/).
+A [Quarto](https://quarto.org/) website inspired by the [Masiello Group Website](https://faculty.washington.edu/masiello/). Horizon is the line where the earth seems to meet the sky, and the research group where arts and sciences meet engineering, abstractions meet implementations, and principles meet practices.
 :::

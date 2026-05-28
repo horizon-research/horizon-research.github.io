@@ -1,0 +1,20 @@
+---
+title: 'Fast and Accurate: Video Enhancement Using Sparse Depth'
+author:
+- Yu Feng
+- Patrick Hansen
+- Paul N Whatmough
+- Guoyu Lu
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- robotics
+url_source: https://openaccess.thecvf.com/content/WACV2023/papers/Feng_Fast_and_Accurate_Video_Enhancement_Using_Sparse_Depth_WACV_2023_paper.pdf
+journ: WACV
+year: 2023
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 66
+---

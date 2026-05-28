@@ -14,6 +14,7 @@
       "/publications/pubs/metasapiens-real-time-neural-rendering-with-efficiency-aware-pruning-and-accelerated-foveated-rendering.html",
       "/publications/pubs/kindred-heterogeneous-split-lock-architecture-for-safe-autonomous-machines.html",
       "/publications/pubs/autonomy-2-0-the-quest-for-economies-of-scale.html",
+      "/publications/pubs/privateeye:-in-sensor-privacy-preservation-through-optical-feature-separation.html",
       "/publications/pubs/vq-llm-high-performance-code-generation-for-vector-quantization-augmented-llm-inference.html",
       "/publications/pubs/coolerspace-a-language-for-physically-correct-and-computationally-efficient-color-programming.html",
       "/publications/pubs/the-vulnerability-adaptive-protection-paradigm-toward-reliable-autonomous-machines.html",
@@ -36,6 +37,7 @@
       "/publications/pubs/co-designed-metaoptoelectronic-deep-learning.html",
       "/publications/pubs/teaching-color-science-to-eecs-students-using-interactive-tutorials-tools-and-lessons.html",
       "/publications/pubs/fastpoints-a-state-of-the-art-point-cloud-renderer-for-unity.html",
+      "/publications/pubs/fast-and-accurate:-video-enhancement-using-sparse-depth.html",
       "/publications/pubs/thales-formulating-and-estimating-architectural-vulnerability-factors-for-dnn-accelerators.html",
       "/publications/pubs/color-perception-guided-display-power-reduction-for-virtual-reality.html",
       "/publications/pubs/ant-exploiting-adaptive-numerical-data-type-for-low-bit-deep-neural-network-quantization.html",
@@ -105,12 +107,12 @@
   {
     "listing": "/research/index.html",
     "items": [
-      "/research/1. visual_computing_systems/index.html",
-      "/research/2. human/index.html",
-      "/research/3. art/index.html",
-      "/research/4. robotic computing/index.html",
-      "/research/5. mlsys/index.html",
-      "/research/6. watt_wise_web/index.html"
+      "/research/visual_computing_systems/index.html",
+      "/research/human/index.html",
+      "/research/humanities/index.html",
+      "/research/robotic_computing/index.html",
+      "/research/mlsys/index.html",
+      "/research/watt_wise_web/index.html"
     ]
   },
   {
@@ -372,7 +374,6 @@
       "/publications/pubs/olive-accelerating-large-language-models-via-hardware-friendly-outlier-victim-pair-quantization.html",
       "/publications/pubs/thales-formulating-and-estimating-architectural-vulnerability-factors-for-dnn-accelerators.html",
       "/publications/pubs/ant-exploiting-adaptive-numerical-data-type-for-low-bit-deep-neural-network-quantization.html",
-      "/publications/pubs/braum-analyzing-and-protecting-autonomous-machine-software-stack.html",
       "/publications/pubs/s2ta-exploiting-structured-sparsity-for-energy-efficient-mobile-cnn-acceleration.html",
       "/publications/pubs/squant-on-the-fly-data-free-quantization-via-diagonal-hessian-approximation.html",
       "/publications/pubs/characterizing-and-demystifying-the-implicit-convolution-algorithm-on-commercial-matrix-multiplication-accelerators.html",
@@ -407,6 +408,7 @@
       "/publications/pubs/seal-a-single-event-architecture-for-in-sensor-visual-localization.html",
       "/publications/pubs/streamgrid-streaming-point-cloud-analytics-via-compulsory-splitting-and-deterministic-termination.html",
       "/publications/pubs/metasapiens-real-time-neural-rendering-with-efficiency-aware-pruning-and-accelerated-foveated-rendering.html",
+      "/publications/pubs/privateeye:-in-sensor-privacy-preservation-through-optical-feature-separation.html",
       "/publications/pubs/coolerspace-a-language-for-physically-correct-and-computationally-efficient-color-programming.html",
       "/publications/pubs/potamoi-accelerating-neural-rendering-via-a-unified-streaming-architecture.html",
       "/publications/pubs/blisscam-boosting-eye-tracking-efficiency-with-learned-in-sensor-sparse-sampling.html",
@@ -507,6 +509,7 @@
       "/publications/pubs/invited-paper-imaging-computing-and-human-perception-three-agents-to-usher-in-the-autonomous-machine-computing-era.html",
       "/publications/pubs/invited-paper-dataflow-accelerator-architecture-for-autonomous-machine-computing.html",
       "/publications/pubs/blitzcrank-factor-graph-accelerator-for-motion-planning.html",
+      "/publications/pubs/fast-and-accurate:-video-enhancement-using-sparse-depth.html",
       "/publications/pubs/communication-challenges-in-infrastructure-vehicle-cooperative-autonomous-driving-a-field-deployment-perspective.html",
       "/publications/pubs/braum-analyzing-and-protecting-autonomous-machine-software-stack.html",
       "/publications/pubs/factor-graph-accelerator-for-lidar-inertial-odometry-invited-paper.html",
@@ -582,6 +585,7 @@
       "/publications/pubs/seal-a-single-event-architecture-for-in-sensor-visual-localization.html",
       "/publications/pubs/streamgrid-streaming-point-cloud-analytics-via-compulsory-splitting-and-deterministic-termination.html",
       "/publications/pubs/metasapiens-real-time-neural-rendering-with-efficiency-aware-pruning-and-accelerated-foveated-rendering.html",
+      "/publications/pubs/privateeye:-in-sensor-privacy-preservation-through-optical-feature-separation.html",
       "/publications/pubs/coolerspace-a-language-for-physically-correct-and-computationally-efficient-color-programming.html",
       "/publications/pubs/potamoi-accelerating-neural-rendering-via-a-unified-streaming-architecture.html",
       "/publications/pubs/blisscam-boosting-eye-tracking-efficiency-with-learned-in-sensor-sparse-sampling.html",
@@ -828,5 +832,35 @@
   {
     "listing": "/people/yongzhao-wu/index.html",
     "items": []
+  },
+  {
+    "listing": "/research/robotic_computing/index.html",
+    "items": [
+      "/publications/pubs/kindred-heterogeneous-split-lock-architecture-for-safe-autonomous-machines.html",
+      "/publications/pubs/autonomy-2-0-the-quest-for-economies-of-scale.html",
+      "/publications/pubs/the-vulnerability-adaptive-protection-paradigm-toward-reliable-autonomous-machines.html",
+      "/publications/pubs/invited-paper-imaging-computing-and-human-perception-three-agents-to-usher-in-the-autonomous-machine-computing-era.html",
+      "/publications/pubs/invited-paper-dataflow-accelerator-architecture-for-autonomous-machine-computing.html",
+      "/publications/pubs/blitzcrank-factor-graph-accelerator-for-motion-planning.html",
+      "/publications/pubs/fast-and-accurate:-video-enhancement-using-sparse-depth.html",
+      "/publications/pubs/communication-challenges-in-infrastructure-vehicle-cooperative-autonomous-driving-a-field-deployment-perspective.html",
+      "/publications/pubs/braum-analyzing-and-protecting-autonomous-machine-software-stack.html",
+      "/publications/pubs/factor-graph-accelerator-for-lidar-inertial-odometry-invited-paper.html",
+      "/publications/pubs/an-energy-efficient-and-runtime-reconfigurable-accelerator-for-robotic-localization.html",
+      "/publications/pubs/archytas-a-framework-for-synthesizing-and-dynamically-optimizing-accelerators-for-robotic-localization.html",
+      "/publications/pubs/a-survey-of-fpga-based-robotic-computing.html",
+      "/publications/pubs/brief-industry-paper-the-matter-of-time-a-general-and-efficient-system-for-precise-sensor-synchronization-in-robotic-computing.html",
+      "/publications/pubs/eudoxus-characterizing-and-accelerating-localization-in-autonomous-machines.html",
+      "/publications/pubs/building-the-computing-system-for-autonomous-micromobility-vehicles-design-constraints-and-architectural-optimizations.html"
+    ]
+  },
+  {
+    "listing": "/research/humanities/index.html",
+    "items": [
+      "/publications/pubs/fastpoints-a-state-of-the-art-point-cloud-renderer-for-unity.html",
+      "/publications/pubs/multispectral-scheimpflug-imaging-degraded-books-that-open-less-than-30-degrees.html",
+      "/publications/pubs/digital-reconstruction-of-elmina-castle-for-mobile-virtual-reality-via-point-based-detail-transfer.html",
+      "/publications/pubs/resurrect3d-an-open-and-customizable-platform-for-visualizing-and-analyzing-cultural-heritage-artifacts.html"
+    ]
   }
 ]
