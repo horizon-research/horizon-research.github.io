@@ -5,11 +5,11 @@ alias: &ALIAS visual_computing_systems
 image: featured.jpg
 listing:
   id: pubs
-  page-size: 300
   template: ../../_ejs/publications-people.ejs 
   contents: 
     - "../../publications/pubs/*.qmd"
   sort: "pub_number desc"
+  page-size: 300
   # sort-ui: true
   filter-ui: true
   include:

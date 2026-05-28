@@ -1,5 +1,5 @@
 ---
-title: "MLSys"
+title: "Machine Learning Systems"
 order: 5
 alias: &ALIAS mlsys
 image: featured.jpg
@@ -9,6 +9,7 @@ listing:
   contents: 
     - "../../publications/pubs/*.qmd"
   sort: "pub_number desc"
+  page-size: 300
   # sort-ui: true
   filter-ui: true
   include:
@@ -18,7 +19,7 @@ listing:
 ---
 ![](featured.jpg)
 
-Through exploiting sparsity, quantization, and co-designing the software and hardware stacks, our work aims to improve the performance, energy efficiency, and robustness (against adversarial attacks, soft errors, and permanent faults) of modern deep learning systems.
+Through exploiting sparsity, quantization, and co-designing the electrical and optical hardware, our work aims to improve the performance, energy efficiency, and robustness (against adversarial attacks, soft errors, and permanent faults) of modern deep learning systems.
 
 ## Related Publications
 

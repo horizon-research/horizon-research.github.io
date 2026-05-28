@@ -7,7 +7,7 @@ categories:
 - Show All
 - Pre-2018 Work
 topics:
-- mlsys
+- robotics
 url_source: https://horizon-lab.org/pubs/ieeemicro17.pdf
 journ: IEEE Micro
 year: 2017

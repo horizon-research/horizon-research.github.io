@@ -9,6 +9,7 @@ listing:
   contents: 
     - "../../publications/pubs/*.qmd"
   sort: "pub_number desc"
+  page-size: 300
   # sort-ui: true
   filter-ui: true
   include:

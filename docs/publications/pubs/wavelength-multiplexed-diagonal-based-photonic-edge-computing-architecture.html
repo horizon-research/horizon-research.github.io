@@ -6,8 +6,12 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Arjun Iyer">
+<meta name="author" content="Abhishek Tyagi">
+<meta name="author" content="Yuhao Zhu">
+<meta name="author" content="William H Renninger">
 
-<title>Abhishek Tyagi – Horizon Lab</title>
+<title>Wavelength-Multiplexed Diagonal-Based Photonic Edge-Computing Architecture – Horizon Lab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,12 +34,11 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
@@ -68,65 +71,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-pubs .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-publication','listing-title','listing-categories','listing-image','listing-date','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
-      
-      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-title","listing-author","listing-categories","listing-topics","listing-url_source","listing-journ","listing-year","listing-contrib","listing-image","listing-pub_number","listing-path","listing-outputHref","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-code_source","listing-teaser"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-pubs'] = new List('listing-pubs', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -183,468 +128,60 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#education" id="toc-education" class="nav-link active" data-scroll-target="#education">Education</a></li>
-  <li><a href="#s-group-publications" id="toc-s-group-publications" class="nav-link" data-scroll-target="#s-group-publications">Abhishek’s Group Publications</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
-
-
-
-<hr>
-<div class="quarto-about-trestles column-page-left">
-  <div class="about-entity">
-    <img src="avatar.jpg" class="about-image
-  round " style="height: 20em; width: 20em;">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Abhishek Tyagi</h1>
-<p class="subtitle lead">Ph.D.&nbsp;Student</p>
-</div>
-<div class="quarto-title-meta column-page-left">
+<h1 class="title">Wavelength-Multiplexed Diagonal-Based Photonic Edge-Computing Architecture</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Show All</div>
+    <div class="quarto-category">Work (Co-)Led by Horizon Lab</div>
   </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>Arjun Iyer </p>
+             <p>Abhishek Tyagi </p>
+             <p>Yuhao Zhu </p>
+             <p>William H Renninger </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
 </header>
-    <div class="about-links">
-  <a href="https://abhishektyaagi.github.io/" class="about-link" rel="" target="">
-    <i class="bi bi-house"></i>
-     <span class="about-link-text">Website</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><div id="about">
-<section id="education" class="level2">
-<h2 data-anchor-id="education">Education</h2>
-<p>B.E. | Delhi College of Engineering | 2017</p>
-<p><br></p>
-</section>
-</div></div>
-</div>
-
-<section id="s-group-publications" class="level2">
-<h2 data-anchor-id="s-group-publications">Abhishek’s Group Publications</h2>
-<div id="listing-pubs" class="quarto-listing quarto-listing-container-custom">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<div class="list quarto-listing-default">
-    
-    
-    <div class="quarto-post image-right" data-index="0" data-categories="U2hvdyUyMEFsbCUyQ1dvcmslMjAoQ28tKUxlZCUyMGJ5JTIwSG9yaXpvbiUyMExhYg==" data-listing-file-modified-sort="1779976558251" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-        <!-- <div class="thumbnail">
-                <p>
-                    
-                    <img alt="Dynamic Sparse Training of Diagonally Sparse Networks" src="/publications/pubs/featured.png" class="thumbnail-image">
-                    
-
-                </p>
-        </div> -->
-        <div class="body">
-            <div class="no-anchor listing-pub-title listing-title"><a href="https://openreview.net/forum?id=bAUVnNc0Ky" class="small">Dynamic Sparse Training of Diagonally Sparse Networks</a></div>
-                
-            <div class="listing-pub-author listing-author small">
-                Abhishek Tyagi, Arjun Iyer, William H Renninger, Christopher Kanan, Yuhao Zhu<br> 
-            </div>
-                
-            <div class="metadata-value listing-pub-journal small">
-                
-
-                
-                    <a href="https://github.com/horizon-research/DynaDiag">Code <i class="bi bi-box-arrow-up-right"></i>
-                    </a> 
-                
-
-                
-            </div>
-
-            
-        </div>
-        <div class="metadata">
-            
-            <div class="listing-pub-url small">
-                <p style="color:#000000;">ICML 2025</p>
-            </div>
-            
-
-            <!-- </a> -->
-            <!-- 
-            <div class="listing-pub-url">
-
-                    <a href="https://openreview.net/forum?id=bAUVnNc0Ky">
-                    <p style="color:#00AD00;">Paper <i class="bi bi-box-arrow-up-right"></i></p>
-                    </a>
-                </div>
-                     -->
-
-        </div>
-    </div>
-    
-    
-    
-    <div class="quarto-post image-right" data-index="1" data-categories="U2hvdyUyMEFsbCUyQ1dvcmslMjAoQ28tKUxlZCUyMGJ5JTIwSG9yaXpvbiUyMExhYg==" data-listing-file-modified-sort="1779976545962" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-        <!-- <div class="thumbnail">
-                <p>
-                    
-                    <img alt="Diagonal Structured Sparsity for Efficient Optical and GPU-Based Neural Networks" src="/publications/pubs/featured.png" class="thumbnail-image">
-                    
-
-                </p>
-        </div> -->
-        <div class="body">
-            <div class="no-anchor listing-pub-title listing-title"><a href="https://opg.optica.org/abstract.cfm?uri=CLEO_FS-2025-JSS129_4" class="small">Diagonal Structured Sparsity for Efficient Optical and GPU-Based Neural Networks</a></div>
-                
-            <div class="listing-pub-author listing-author small">
-                Abhishek Tyagi, Arjun Iyer, Christopher Kanan, William H Renninger, Yuhao Zhu<br> 
-            </div>
-                
-            <div class="metadata-value listing-pub-journal small">
-                
-
-                
-
-                
-            </div>
-
-            
-        </div>
-        <div class="metadata">
-            
-            <div class="listing-pub-url small">
-                <p style="color:#000000;">CLEO 2025</p>
-            </div>
-            
-
-            <!-- </a> -->
-            <!-- 
-            <div class="listing-pub-url">
-
-                    <a href="https://opg.optica.org/abstract.cfm?uri=CLEO_FS-2025-JSS129_4">
-                    <p style="color:#00AD00;">Paper <i class="bi bi-box-arrow-up-right"></i></p>
-                    </a>
-                </div>
-                     -->
-
-        </div>
-    </div>
-    
-    
-    
-    <div class="quarto-post image-right" data-index="2" data-categories="U2hvdyUyMEFsbCUyQ1dvcmslMjAoQ28tKUxlZCUyMGJ5JTIwSG9yaXpvbiUyMExhYg==" data-listing-file-modified-sort="1779976549482" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-        <!-- <div class="thumbnail">
-                <p>
-                    
-                    <img alt="Offset-Diagonal Computing for Large-scale, Compact, Efficient, and Sparsity-enabled Optical Processors" src="/publications/pubs/featured.png" class="thumbnail-image">
-                    
-
-                </p>
-        </div> -->
-        <div class="body">
-            <div class="no-anchor listing-pub-title listing-title"><a href="https://opg.optica.org/abstract.cfm?uri=CLEO_FS-2025-JSS129_2" class="small">Offset-Diagonal Computing for Large-scale, Compact, Efficient, and Sparsity-enabled Optical Processors</a></div>
-                
-            <div class="listing-pub-author listing-author small">
-                Arjun Iyer, Abhishek Tyagi, Liam Young, Yuhao Zhu, William H Renninger<br> 
-            </div>
-                
-            <div class="metadata-value listing-pub-journal small">
-                
-
-                
-
-                
-            </div>
-
-            
-        </div>
-        <div class="metadata">
-            
-            <div class="listing-pub-url small">
-                <p style="color:#000000;">CLEO 2025</p>
-            </div>
-            
-
-            <!-- </a> -->
-            <!-- 
-            <div class="listing-pub-url">
-
-                    <a href="https://opg.optica.org/abstract.cfm?uri=CLEO_FS-2025-JSS129_2">
-                    <p style="color:#00AD00;">Paper <i class="bi bi-box-arrow-up-right"></i></p>
-                    </a>
-                </div>
-                     -->
-
-        </div>
-    </div>
-    
-    
-    
-    <div class="quarto-post image-right" data-index="3" data-categories="U2hvdyUyMEFsbCUyQ1dvcmslMjAoQ28tKUxlZCUyMGJ5JTIwSG9yaXpvbiUyMExhYg==" data-listing-file-modified-sort="1779976553570" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-        <!-- <div class="thumbnail">
-                <p>
-                    
-                    <img alt="Wavelength-Multiplexed Diagonal-Based Photonic Edge-Computing Architecture" src="/publications/pubs/featured.png" class="thumbnail-image">
-                    
-
-                </p>
-        </div> -->
-        <div class="body">
-            <div class="no-anchor listing-pub-title listing-title"><a href="https://opg.optica.org/abstract.cfm?uri=CLEO_FS-2025-JSS129_3" class="small">Wavelength-Multiplexed Diagonal-Based Photonic Edge-Computing Architecture</a></div>
-                
-            <div class="listing-pub-author listing-author small">
-                Arjun Iyer, Abhishek Tyagi, Yuhao Zhu, William H Renninger<br> 
-            </div>
-                
-            <div class="metadata-value listing-pub-journal small">
-                
-
-                
-
-                
-            </div>
-
-            
-        </div>
-        <div class="metadata">
-            
-            <div class="listing-pub-url small">
-                <p style="color:#000000;">CLEO 2025</p>
-            </div>
-            
-
-            <!-- </a> -->
-            <!-- 
-            <div class="listing-pub-url">
-
-                    <a href="https://opg.optica.org/abstract.cfm?uri=CLEO_FS-2025-JSS129_3">
-                    <p style="color:#00AD00;">Paper <i class="bi bi-box-arrow-up-right"></i></p>
-                    </a>
-                </div>
-                     -->
-
-        </div>
-    </div>
-    
-    
-    
-    <div class="quarto-post image-right" data-index="4" data-categories="U2hvdyUyMEFsbCUyQ1dvcmslMjAoQ28tKUxlZCUyMGJ5JTIwSG9yaXpvbiUyMExhYg==" data-listing-file-modified-sort="1779971951948" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-        <!-- <div class="thumbnail">
-                <p>
-                    
-                    <img alt="Characterizing Soft-Error Resiliency in Arm's Ethos-U55 Embedded Machine Learning Accelerator" src="/publications/pubs/featured.png" class="thumbnail-image">
-                    
-
-                </p>
-        </div> -->
-        <div class="body">
-            <div class="no-anchor listing-pub-title listing-title"><a href="https://horizon-lab.org/pubs/ispass24.pdf" class="small">Characterizing Soft-Error Resiliency in Arm's Ethos-U55 Embedded Machine Learning Accelerator</a></div>
-                
-            <div class="listing-pub-author listing-author small">
-                Abhishek Tyagi, Reiley Jeyapaul, Chuteng Zhou, Paul Whatmough, Yuhao Zhu<br> 
-            </div>
-                
-            <div class="metadata-value listing-pub-journal small">
-                
-
-                
-
-                
-            </div>
-
-            
-        </div>
-        <div class="metadata">
-            
-            <div class="listing-pub-url small">
-                <p style="color:#000000;">ISPASS 2024</p>
-            </div>
-            
-
-            <!-- </a> -->
-            <!-- 
-            <div class="listing-pub-url">
-
-                    <a href="https://horizon-lab.org/pubs/ispass24.pdf">
-                    <p style="color:#00AD00;">Paper <i class="bi bi-box-arrow-up-right"></i></p>
-                    </a>
-                </div>
-                     -->
-
-        </div>
-    </div>
-    
-    
-    
-    <div class="quarto-post image-right" data-index="5" data-categories="U2hvdyUyMEFsbCUyQ1dvcmslMjAoQ28tKUxlZCUyMGJ5JTIwSG9yaXpvbiUyMExhYg==" data-listing-file-modified-sort="1779971951953" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-        <!-- <div class="thumbnail">
-                <p>
-                    
-                    <img alt="Imperceptible Color Modulation for Power Saving in VR/AR" src="/publications/pubs/featured.png" class="thumbnail-image">
-                    
-
-                </p>
-        </div> -->
-        <div class="body">
-            <div class="no-anchor listing-pub-title listing-title"><a href="https://horizon-lab.org/pubs/siggraph23-et.pdf" class="small">Imperceptible Color Modulation for Power Saving in VR/AR</a></div>
-                
-            <div class="listing-pub-author listing-author small">
-                Kenneth Chen, Budmonde Duinkharjav, Nisarg Ujjainkar, Ethan Shahan, Abhishek Tyagi, Jiayi He, Yuhao Zhu, Qi Sun<br> 
-            </div>
-                
-            <div class="metadata-value listing-pub-journal small">
-                
-
-                
-
-                
-            </div>
-
-            
-        </div>
-        <div class="metadata">
-            
-            <div class="listing-pub-url small">
-                <p style="color:#000000;">SIGGRAPH Emerging Tech. 2023</p>
-            </div>
-            
-
-            <!-- </a> -->
-            <!-- 
-            <div class="listing-pub-url">
-
-                    <a href="https://horizon-lab.org/pubs/siggraph23-et.pdf">
-                    <p style="color:#00AD00;">Paper <i class="bi bi-box-arrow-up-right"></i></p>
-                    </a>
-                </div>
-                     -->
-
-        </div>
-    </div>
-    
-    
-    
-    <div class="quarto-post image-right" data-index="6" data-categories="U2hvdyUyMEFsbCUyQ1dvcmslMjAoQ28tKUxlZCUyMGJ5JTIwSG9yaXpvbiUyMExhYg==" data-listing-file-modified-sort="1779971951959" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-        <!-- <div class="thumbnail">
-                <p>
-                    
-                    <img alt="Thales: Formulating and Estimating Architectural Vulnerability Factors for DNN Accelerators" src="/publications/pubs/featured.png" class="thumbnail-image">
-                    
-
-                </p>
-        </div> -->
-        <div class="body">
-            <div class="no-anchor listing-pub-title listing-title"><a href="https://horizon-lab.org/pubs/hpca23.pdf" class="small">Thales: Formulating and Estimating Architectural Vulnerability Factors for DNN Accelerators</a></div>
-                
-            <div class="listing-pub-author listing-author small">
-                Abhishek Tyagi, Yiming Gan, Shaoshan Liu, Bo Yu, Paul Whatmough, Yuhao Zhu<br> 
-            </div>
-                
-            <div class="metadata-value listing-pub-journal small">
-                
-
-                
-
-                
-            </div>
-
-            
-        </div>
-        <div class="metadata">
-            
-            <div class="listing-pub-url small">
-                <p style="color:#000000;">HPCA 2023</p>
-            </div>
-            
-
-            <!-- </a> -->
-            <!-- 
-            <div class="listing-pub-url">
-
-                    <a href="https://horizon-lab.org/pubs/hpca23.pdf">
-                    <p style="color:#00AD00;">Paper <i class="bi bi-box-arrow-up-right"></i></p>
-                    </a>
-                </div>
-                     -->
-
-        </div>
-    </div>
-    
-    
-    
-    <div class="quarto-post image-right" data-index="7" data-categories="U2hvdyUyMEFsbCUyQ1dvcmslMjAoQ28tKUxlZCUyMGJ5JTIwSG9yaXpvbiUyMExhYg==" data-listing-file-modified-sort="1779971951949" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-        <!-- <div class="thumbnail">
-                <p>
-                    
-                    <img alt="Color-Perception-Guided Display Power Reduction for Virtual Reality" src="/publications/pubs/featured.png" class="thumbnail-image">
-                    
-
-                </p>
-        </div> -->
-        <div class="body">
-            <div class="no-anchor listing-pub-title listing-title"><a href="https://horizon-lab.org/pubs/sa22.pdf" class="small">Color-Perception-Guided Display Power Reduction for Virtual Reality</a></div>
-                
-            <div class="listing-pub-author listing-author small">
-                Budmonde Duinkharjav, Kenneth Chen, Abhishek Tyagi, Jiayi He, Yuhao Zhu, Qi Sun<br> 
-            </div>
-                
-            <div class="metadata-value listing-pub-journal small">
-                
-
-                
-                    <a href="https://github.com/NYU-ICL/vr-power-saver">Code <i class="bi bi-box-arrow-up-right"></i>
-                    </a> 
-                
-
-                
-            </div>
-
-            
-        </div>
-        <div class="metadata">
-            
-            <div class="listing-pub-url small">
-                <p style="color:#000000;">SIGGRAPH Asia (TOG) 2022</p>
-            </div>
-            
-
-            <!-- </a> -->
-            <!-- 
-            <div class="listing-pub-url">
-
-                    <a href="https://horizon-lab.org/pubs/sa22.pdf">
-                    <p style="color:#00AD00;">Paper <i class="bi bi-box-arrow-up-right"></i></p>
-                    </a>
-                </div>
-                     -->
-
-        </div>
-    </div>
-    
-    
-    </div>
-
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
 
 
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     

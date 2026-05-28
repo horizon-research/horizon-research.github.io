@@ -1,0 +1,20 @@
+---
+title: Diagonal Structured Sparsity for Efficient Optical and GPU-Based Neural Networks
+author:
+- Abhishek Tyagi
+- Arjun Iyer
+- Christopher Kanan
+- William H Renninger
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- mlsys
+url_source: https://opg.optica.org/abstract.cfm?uri=CLEO_FS-2025-JSS129_4
+journ: CLEO
+year: 2025
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 97
+---

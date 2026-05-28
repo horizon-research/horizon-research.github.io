@@ -1,0 +1,19 @@
+---
+title: Wavelength-Multiplexed Diagonal-Based Photonic Edge-Computing Architecture
+author:
+- Arjun Iyer
+- Abhishek Tyagi
+- Yuhao Zhu
+- William H Renninger
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- mlsys
+url_source: https://opg.optica.org/abstract.cfm?uri=CLEO_FS-2025-JSS129_3
+journ: CLEO
+year: 2025
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 97
+---
