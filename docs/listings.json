@@ -1,0 +1,446 @@
+[
+  {
+    "listing": "/research/watt_wise_web/index.html",
+    "items": [
+      "/publications/pubs/pes-proactive-event-scheduling-for-responsive-and-energy-efficient-mobile-web-computing.html",
+      "/publications/pubs/tail-latency-in-node-js-energy-efficient-turbo-boosting-for-long-latency-requests-in-event-driven-web-services.html",
+      "/publications/pubs/optimizing-general-purpose-cpus-for-energy-efficient-mobile-web-computing.html",
+      "/publications/pubs/energy-efficient-mobile-web-computing.html",
+      "/publications/pubs/greenweb-language-extensions-for-energy-efficient-mobile-web-computing.html",
+      "/publications/pubs/mobile-cpu-s-rise-to-power-quantifying-the-impact-of-generational-mobile-cpu-design-trends-on-performance-energy-and-user-satisfaction.html",
+      "/publications/pubs/research-for-practice-web-security-and-mobile-web-computing.html",
+      "/publications/pubs/microarchitectural-implications-of-event-driven-server-side-web-applications.html",
+      "/publications/pubs/event-based-scheduling-for-energy-efficient-qos-eqos-in-mobile-web-applications.html",
+      "/publications/pubs/mosaic-cross-platform-user-interaction-record-and-replay-for-the-fragmented-android-ecosystem.html",
+      "/publications/pubs/the-role-of-the-cpu-in-energy-efficient-mobile-web-browsing.html",
+      "/publications/pubs/webcore-architectural-support-for-mobile-web-browsing.html",
+      "/publications/pubs/high-performance-and-energy-efficient-mobile-web-browsing-on-big-little-systems.html",
+      "/publications/pubs/exploiting-webpage-characteristics-for-energy-efficient-mobile-web-browsing.html"
+    ]
+  },
+  {
+    "listing": "/research/robotic_computing/index.html",
+    "items": [
+      "/publications/pubs/kindred-heterogeneous-split-lock-architecture-for-safe-autonomous-machines.html",
+      "/publications/pubs/autonomy-2-0-the-quest-for-economies-of-scale.html",
+      "/publications/pubs/the-vulnerability-adaptive-protection-paradigm-toward-reliable-autonomous-machines.html",
+      "/publications/pubs/invited-paper-imaging-computing-and-human-perception-three-agents-to-usher-in-the-autonomous-machine-computing-era.html",
+      "/publications/pubs/invited-paper-dataflow-accelerator-architecture-for-autonomous-machine-computing.html",
+      "/publications/pubs/blitzcrank-factor-graph-accelerator-for-motion-planning.html",
+      "/publications/pubs/fast-and-accurate:-video-enhancement-using-sparse-depth.html",
+      "/publications/pubs/communication-challenges-in-infrastructure-vehicle-cooperative-autonomous-driving-a-field-deployment-perspective.html",
+      "/publications/pubs/braum-analyzing-and-protecting-autonomous-machine-software-stack.html",
+      "/publications/pubs/factor-graph-accelerator-for-lidar-inertial-odometry-invited-paper.html",
+      "/publications/pubs/an-energy-efficient-and-runtime-reconfigurable-accelerator-for-robotic-localization.html",
+      "/publications/pubs/archytas-a-framework-for-synthesizing-and-dynamically-optimizing-accelerators-for-robotic-localization.html",
+      "/publications/pubs/a-survey-of-fpga-based-robotic-computing.html",
+      "/publications/pubs/brief-industry-paper-the-matter-of-time-a-general-and-efficient-system-for-precise-sensor-synchronization-in-robotic-computing.html",
+      "/publications/pubs/eudoxus-characterizing-and-accelerating-localization-in-autonomous-machines.html",
+      "/publications/pubs/building-the-computing-system-for-autonomous-micromobility-vehicles-design-constraints-and-architectural-optimizations.html"
+    ]
+  },
+  {
+    "listing": "/research/index.html",
+    "items": [
+      "/research/visual_computing_systems/index.html",
+      "/research/human/index.html",
+      "/research/humanities/index.html",
+      "/research/robotic_computing/index.html",
+      "/research/mlsys/index.html",
+      "/research/watt_wise_web/index.html"
+    ]
+  },
+  {
+    "listing": "/research/human/index.html",
+    "items": [
+      "/publications/pubs/modeling-and-exploiting-the-time-course-of-chromatic-adaptation-for-display-power-optimizations-in-virtual-reality.html",
+      "/publications/pubs/powergs-display-rendering-power-co-optimization-for-neural-rendering-in-power-constrained-xr-systems.html",
+      "/publications/pubs/latent-speech-representations-learned-through-self-supervised-learning-predict-listeners-generalization-of-adaptation-across-talkers.html",
+      "/publications/pubs/metasapiens-real-time-neural-rendering-with-efficiency-aware-pruning-and-accelerated-foveated-rendering.html",
+      "/publications/pubs/coolerspace-a-language-for-physically-correct-and-computationally-efficient-color-programming.html",
+      "/publications/pubs/invited-paper-imaging-computing-and-human-perception-three-agents-to-usher-in-the-autonomous-machine-computing-era.html",
+      "/publications/pubs/computational-trichromacy-reconstruction-empowering-the-color-vision-deficient-to-recognize-colors-using-augmented-reality.html",
+      "/publications/pubs/exploiting-human-color-discrimination-for-memory-and-energy-efficient-image-encoding-in-virtual-reality.html",
+      "/publications/pubs/imperceptible-color-modulation-for-power-saving-in-vr-ar.html",
+      "/publications/pubs/teaching-color-science-to-eecs-students-using-interactive-tutorials-tools-and-lessons.html",
+      "/publications/pubs/color-perception-guided-display-power-reduction-for-virtual-reality.html"
+    ]
+  },
+  {
+    "listing": "/people/yu-feng/index.html",
+    "items": [
+      "/publications/pubs/co-designed-pre-capture-privacy-optics-for-computer-vision.html",
+      "/publications/pubs/snappix-efficient-coding-inspired-in-sensor-compression-for-edge-vision.html",
+      "/publications/pubs/lumina-real-time-neural-rendering-by-exploiting-computational-redundancy.html",
+      "/publications/pubs/streamgrid-streaming-point-cloud-analytics-via-compulsory-splitting-and-deterministic-termination.html",
+      "/publications/pubs/metasapiens-real-time-neural-rendering-with-efficiency-aware-pruning-and-accelerated-foveated-rendering.html",
+      "/publications/pubs/privateeye:-in-sensor-privacy-preservation-through-optical-feature-separation.html",
+      "/publications/pubs/vq-llm-high-performance-code-generation-for-vector-quantization-augmented-llm-inference.html",
+      "/publications/pubs/potamoi-accelerating-neural-rendering-via-a-unified-streaming-architecture.html",
+      "/publications/pubs/blisscam-boosting-eye-tracking-efficiency-with-learned-in-sensor-sparse-sampling.html",
+      "/publications/pubs/cicero-addressing-algorithmic-and-architectural-bottlenecks-in-neural-rendering-by-radiance-warping-and-memory-optimizations.html",
+      "/publications/pubs/amanda-unified-instrumentation-framework-for-deep-neural-networks.html",
+      "/publications/pubs/juno-optimizing-high-dimensional-approximate-nearest-neighbour-search-with-sparsity-aware-algorithm-and-ray-tracing-core-mapping.html",
+      "/publications/pubs/invited-paper-learned-in-sensor-visual-computing-from-compression-to-eventification.html",
+      "/publications/pubs/camj-enabling-system-level-energy-modeling-and-architectural-exploration-for-in-sensor-visual-computing.html",
+      "/publications/pubs/fast-and-accurate:-video-enhancement-using-sparse-depth.html",
+      "/publications/pubs/crescent-taming-memory-irregularities-for-accelerating-deep-point-cloud-analytics.html",
+      "/publications/pubs/real-time-gaze-tracking-with-event-driven-eye-segmentation.html",
+      "/publications/pubs/mesorasi-architecture-support-for-point-cloud-analytics-via-delayed-aggregation.html",
+      "/publications/pubs/real-time-spatio-temporal-lidar-point-cloud-compression.html",
+      "/publications/pubs/asv-accelerated-stereo-vision-system.html",
+      "/publications/pubs/pes-proactive-event-scheduling-for-responsive-and-energy-efficient-mobile-web-computing.html"
+    ]
+  },
+  {
+    "listing": "/people/yiming-gan/index.html",
+    "items": [
+      "/publications/pubs/kindred-heterogeneous-split-lock-architecture-for-safe-autonomous-machines.html",
+      "/publications/pubs/the-vulnerability-adaptive-protection-paradigm-toward-reliable-autonomous-machines.html",
+      "/publications/pubs/blitzcrank-factor-graph-accelerator-for-motion-planning.html",
+      "/publications/pubs/thales-formulating-and-estimating-architectural-vulnerability-factors-for-dnn-accelerators.html",
+      "/publications/pubs/crescent-taming-memory-irregularities-for-accelerating-deep-point-cloud-analytics.html",
+      "/publications/pubs/braum-analyzing-and-protecting-autonomous-machine-software-stack.html",
+      "/publications/pubs/an-energy-efficient-and-runtime-reconfigurable-accelerator-for-robotic-localization.html",
+      "/publications/pubs/archytas-a-framework-for-synthesizing-and-dynamically-optimizing-accelerators-for-robotic-localization.html",
+      "/publications/pubs/eudoxus-characterizing-and-accelerating-localization-in-autonomous-machines.html",
+      "/publications/pubs/ptolemy-architecture-support-for-robust-deep-learning.html",
+      "/publications/pubs/low-latency-proactive-continuous-vision.html",
+      "/publications/pubs/svsoc-speculative-vision-systems-on-a-chip.html"
+    ]
+  },
+  {
+    "listing": "/people/tianqi-yang/index.html",
+    "items": [
+      "/publications/pubs/design-framework-for-metasurface-optics-based-convolutional-neural-networks.html"
+    ]
+  },
+  {
+    "listing": "/people/sifan-ye/index.html",
+    "items": [
+      "/publications/pubs/digital-reconstruction-of-elmina-castle-for-mobile-virtual-reality-via-point-based-detail-transfer.html",
+      "/publications/pubs/hyperion-a-3d-visualization-platform-for-optical-design-of-folded-systems.html"
+    ]
+  },
+  {
+    "listing": "/people/sam-triest/index.html",
+    "items": []
+  },
+  {
+    "listing": "/people/nisarg-ujjainkar/index.html",
+    "items": [
+      "/publications/pubs/exploiting-human-color-discrimination-for-memory-and-energy-efficient-image-encoding-in-virtual-reality.html",
+      "/publications/pubs/imperceptible-color-modulation-for-power-saving-in-vr-ar.html",
+      "/publications/pubs/imagen-a-general-framework-for-generating-memory-and-power-efficient-image-processing-accelerators.html"
+    ]
+  },
+  {
+    "listing": "/people/index.html",
+    "items": [
+      "/people/abhishek-tyagi/index.html",
+      "/people/nisarg-ujjainkar/index.html",
+      "/people/ethan-chen/index.html",
+      "/people/weikai-lin/index.html",
+      "/people/han-yan/index.html",
+      "/people/jun-dai/index.html",
+      "/people/sheng-zhao/index.html",
+      "/people/yiming-gan/index.html",
+      "/people/yu-feng/index.html",
+      "/people/boyuan-tian/index.html",
+      "/people/chi-chun-chen/index.html",
+      "/people/tiancheng-xu/index.html",
+      "/people/tianqi-yang/index.html",
+      "/people/colin-hascup/index.html",
+      "/people/elias-neuman-donihue/index.html",
+      "/people/ethan-shahan/index.html",
+      "/people/gunnar-hammonds/index.html",
+      "/people/qiuyue-sun/index.html",
+      "/people/sam-triest/index.html",
+      "/people/sifan-ye/index.html",
+      "/people/yongzhao-wu/index.html"
+    ]
+  },
+  {
+    "listing": "/people/gunnar-hammonds/index.html",
+    "items": [
+      "/publications/pubs/crescent-taming-memory-irregularities-for-accelerating-deep-point-cloud-analytics.html"
+    ]
+  },
+  {
+    "listing": "/people/ethan-chen/index.html",
+    "items": [
+      "/publications/pubs/modeling-and-exploiting-the-time-course-of-chromatic-adaptation-for-display-power-optimizations-in-virtual-reality.html",
+      "/publications/pubs/coolerspace-a-language-for-physically-correct-and-computationally-efficient-color-programming.html",
+      "/publications/pubs/computational-trichromacy-reconstruction-empowering-the-color-vision-deficient-to-recognize-colors-using-augmented-reality.html"
+    ]
+  },
+  {
+    "listing": "/people/colin-hascup/index.html",
+    "items": [
+      "/publications/pubs/computational-trichromacy-reconstruction-empowering-the-color-vision-deficient-to-recognize-colors-using-augmented-reality.html"
+    ]
+  },
+  {
+    "listing": "/people/boyuan-tian/index.html",
+    "items": [
+      "/publications/pubs/eudoxus-characterizing-and-accelerating-localization-in-autonomous-machines.html",
+      "/publications/pubs/mesorasi-architecture-support-for-point-cloud-analytics-via-delayed-aggregation.html",
+      "/publications/pubs/tigris-architecture-and-algorithms-for-3d-perception-in-point-clouds.html"
+    ]
+  },
+  {
+    "listing": "/people/abhishek-tyagi/index.html",
+    "items": [
+      "/publications/pubs/dynamic-sparse-training-of-diagonally-sparse-networks.html",
+      "/publications/pubs/characterizing-soft-error-resiliency-in-arm-s-ethos-u55-embedded-machine-learning-accelerator.html",
+      "/publications/pubs/imperceptible-color-modulation-for-power-saving-in-vr-ar.html",
+      "/publications/pubs/thales-formulating-and-estimating-architectural-vulnerability-factors-for-dnn-accelerators.html",
+      "/publications/pubs/color-perception-guided-display-power-reduction-for-virtual-reality.html"
+    ]
+  },
+  {
+    "listing": "/people/chi-chun-chen/index.html",
+    "items": [
+      "/publications/pubs/energy-efficient-video-processing-for-virtual-reality.html",
+      "/publications/pubs/semantic-aware-virtual-reality-video-streaming.html"
+    ]
+  },
+  {
+    "listing": "/people/elias-neuman-donihue/index.html",
+    "items": [
+      "/publications/pubs/fastpoints-a-state-of-the-art-point-cloud-renderer-for-unity.html",
+      "/publications/pubs/resurrect3d-an-open-and-customizable-platform-for-visualizing-and-analyzing-cultural-heritage-artifacts.html"
+    ]
+  },
+  {
+    "listing": "/people/ethan-shahan/index.html",
+    "items": [
+      "/publications/pubs/exploiting-human-color-discrimination-for-memory-and-energy-efficient-image-encoding-in-virtual-reality.html",
+      "/publications/pubs/imperceptible-color-modulation-for-power-saving-in-vr-ar.html"
+    ]
+  },
+  {
+    "listing": "/people/han-yan/index.html",
+    "items": []
+  },
+  {
+    "listing": "/people/jun-dai/index.html",
+    "items": []
+  },
+  {
+    "listing": "/people/qiuyue-sun/index.html",
+    "items": [
+      "/publications/pubs/energy-efficient-360-degree-video-rendering-on-fpga-via-algorithm-architecture-co-design.html",
+      "/publications/pubs/energy-efficient-video-processing-for-virtual-reality.html",
+      "/publications/pubs/semantic-aware-virtual-reality-video-streaming.html"
+    ]
+  },
+  {
+    "listing": "/people/sheng-zhao/index.html",
+    "items": []
+  },
+  {
+    "listing": "/people/tiancheng-xu/index.html",
+    "items": [
+      "/publications/pubs/mesorasi-architecture-support-for-point-cloud-analytics-via-delayed-aggregation.html",
+      "/publications/pubs/tigris-architecture-and-algorithms-for-3d-perception-in-point-clouds.html"
+    ]
+  },
+  {
+    "listing": "/people/weikai-lin/index.html",
+    "items": [
+      "/publications/pubs/powergs-display-rendering-power-co-optimization-for-neural-rendering-in-power-constrained-xr-systems.html",
+      "/publications/pubs/snappix-efficient-coding-inspired-in-sensor-compression-for-edge-vision.html",
+      "/publications/pubs/lumina-real-time-neural-rendering-by-exploiting-computational-redundancy.html",
+      "/publications/pubs/streamgrid-streaming-point-cloud-analytics-via-compulsory-splitting-and-deterministic-termination.html",
+      "/publications/pubs/metasapiens-real-time-neural-rendering-with-efficiency-aware-pruning-and-accelerated-foveated-rendering.html",
+      "/publications/pubs/privateeye:-in-sensor-privacy-preservation-through-optical-feature-separation.html",
+      "/publications/pubs/potamoi-accelerating-neural-rendering-via-a-unified-streaming-architecture.html"
+    ]
+  },
+  {
+    "listing": "/people/yongzhao-wu/index.html",
+    "items": []
+  },
+  {
+    "listing": "/publications/index.html",
+    "items": [
+      "/publications/pubs/modeling-and-exploiting-the-time-course-of-chromatic-adaptation-for-display-power-optimizations-in-virtual-reality.html",
+      "/publications/pubs/powergs-display-rendering-power-co-optimization-for-neural-rendering-in-power-constrained-xr-systems.html",
+      "/publications/pubs/latent-speech-representations-learned-through-self-supervised-learning-predict-listeners-generalization-of-adaptation-across-talkers.html",
+      "/publications/pubs/dynamic-sparse-training-of-diagonally-sparse-networks.html",
+      "/publications/pubs/co-designed-pre-capture-privacy-optics-for-computer-vision.html",
+      "/publications/pubs/snappix-efficient-coding-inspired-in-sensor-compression-for-edge-vision.html",
+      "/publications/pubs/lumina-real-time-neural-rendering-by-exploiting-computational-redundancy.html",
+      "/publications/pubs/seal-a-single-event-architecture-for-in-sensor-visual-localization.html",
+      "/publications/pubs/streamgrid-streaming-point-cloud-analytics-via-compulsory-splitting-and-deterministic-termination.html",
+      "/publications/pubs/metasapiens-real-time-neural-rendering-with-efficiency-aware-pruning-and-accelerated-foveated-rendering.html",
+      "/publications/pubs/kindred-heterogeneous-split-lock-architecture-for-safe-autonomous-machines.html",
+      "/publications/pubs/autonomy-2-0-the-quest-for-economies-of-scale.html",
+      "/publications/pubs/privateeye:-in-sensor-privacy-preservation-through-optical-feature-separation.html",
+      "/publications/pubs/vq-llm-high-performance-code-generation-for-vector-quantization-augmented-llm-inference.html",
+      "/publications/pubs/coolerspace-a-language-for-physically-correct-and-computationally-efficient-color-programming.html",
+      "/publications/pubs/the-vulnerability-adaptive-protection-paradigm-toward-reliable-autonomous-machines.html",
+      "/publications/pubs/invited-paper-imaging-computing-and-human-perception-three-agents-to-usher-in-the-autonomous-machine-computing-era.html",
+      "/publications/pubs/invited-paper-dataflow-accelerator-architecture-for-autonomous-machine-computing.html",
+      "/publications/pubs/computational-trichromacy-reconstruction-empowering-the-color-vision-deficient-to-recognize-colors-using-augmented-reality.html",
+      "/publications/pubs/potamoi-accelerating-neural-rendering-via-a-unified-streaming-architecture.html",
+      "/publications/pubs/blisscam-boosting-eye-tracking-efficiency-with-learned-in-sensor-sparse-sampling.html",
+      "/publications/pubs/cicero-addressing-algorithmic-and-architectural-bottlenecks-in-neural-rendering-by-radiance-warping-and-memory-optimizations.html",
+      "/publications/pubs/exploiting-human-color-discrimination-for-memory-and-energy-efficient-image-encoding-in-virtual-reality.html",
+      "/publications/pubs/amanda-unified-instrumentation-framework-for-deep-neural-networks.html",
+      "/publications/pubs/juno-optimizing-high-dimensional-approximate-nearest-neighbour-search-with-sparsity-aware-algorithm-and-ray-tracing-core-mapping.html",
+      "/publications/pubs/characterizing-soft-error-resiliency-in-arm-s-ethos-u55-embedded-machine-learning-accelerator.html",
+      "/publications/pubs/imperceptible-color-modulation-for-power-saving-in-vr-ar.html",
+      "/publications/pubs/invited-paper-learned-in-sensor-visual-computing-from-compression-to-eventification.html",
+      "/publications/pubs/camj-enabling-system-level-energy-modeling-and-architectural-exploration-for-in-sensor-visual-computing.html",
+      "/publications/pubs/imagen-a-general-framework-for-generating-memory-and-power-efficient-image-processing-accelerators.html",
+      "/publications/pubs/olive-accelerating-large-language-models-via-hardware-friendly-outlier-victim-pair-quantization.html",
+      "/publications/pubs/blitzcrank-factor-graph-accelerator-for-motion-planning.html",
+      "/publications/pubs/co-designed-metaoptoelectronic-deep-learning.html",
+      "/publications/pubs/teaching-color-science-to-eecs-students-using-interactive-tutorials-tools-and-lessons.html",
+      "/publications/pubs/fastpoints-a-state-of-the-art-point-cloud-renderer-for-unity.html",
+      "/publications/pubs/fast-and-accurate:-video-enhancement-using-sparse-depth.html",
+      "/publications/pubs/thales-formulating-and-estimating-architectural-vulnerability-factors-for-dnn-accelerators.html",
+      "/publications/pubs/color-perception-guided-display-power-reduction-for-virtual-reality.html",
+      "/publications/pubs/ant-exploiting-adaptive-numerical-data-type-for-low-bit-deep-neural-network-quantization.html",
+      "/publications/pubs/multispectral-scheimpflug-imaging-degraded-books-that-open-less-than-30-degrees.html",
+      "/publications/pubs/communication-challenges-in-infrastructure-vehicle-cooperative-autonomous-driving-a-field-deployment-perspective.html",
+      "/publications/pubs/crescent-taming-memory-irregularities-for-accelerating-deep-point-cloud-analytics.html",
+      "/publications/pubs/braum-analyzing-and-protecting-autonomous-machine-software-stack.html",
+      "/publications/pubs/factor-graph-accelerator-for-lidar-inertial-odometry-invited-paper.html",
+      "/publications/pubs/real-time-gaze-tracking-with-event-driven-eye-segmentation.html",
+      "/publications/pubs/digital-reconstruction-of-elmina-castle-for-mobile-virtual-reality-via-point-based-detail-transfer.html",
+      "/publications/pubs/rtnn-accelerating-neighbor-search-using-hardware-ray-tracing.html",
+      "/publications/pubs/s2ta-exploiting-structured-sparsity-for-energy-efficient-mobile-cnn-acceleration.html",
+      "/publications/pubs/squant-on-the-fly-data-free-quantization-via-diagonal-hessian-approximation.html",
+      "/publications/pubs/an-energy-efficient-and-runtime-reconfigurable-accelerator-for-robotic-localization.html",
+      "/publications/pubs/archytas-a-framework-for-synthesizing-and-dynamically-optimizing-accelerators-for-robotic-localization.html",
+      "/publications/pubs/resurrect3d-an-open-and-customizable-platform-for-visualizing-and-analyzing-cultural-heritage-artifacts.html",
+      "/publications/pubs/characterizing-and-demystifying-the-implicit-convolution-algorithm-on-commercial-matrix-multiplication-accelerators.html",
+      "/publications/pubs/design-framework-for-metasurface-optics-based-convolutional-neural-networks.html",
+      "/publications/pubs/a-survey-of-fpga-based-robotic-computing.html",
+      "/publications/pubs/brief-industry-paper-the-matter-of-time-a-general-and-efficient-system-for-precise-sensor-synchronization-in-robotic-computing.html",
+      "/publications/pubs/eudoxus-characterizing-and-accelerating-localization-in-autonomous-machines.html",
+      "/publications/pubs/mesorasi-architecture-support-for-point-cloud-analytics-via-delayed-aggregation.html",
+      "/publications/pubs/building-the-computing-system-for-autonomous-micromobility-vehicles-design-constraints-and-architectural-optimizations.html",
+      "/publications/pubs/ptolemy-architecture-support-for-robust-deep-learning.html",
+      "/publications/pubs/real-time-spatio-temporal-lidar-point-cloud-compression.html",
+      "/publications/pubs/automatic-neural-network-compression-by-sparsity-quantization-joint-learning-a-constrained-optimization-based-approach.html",
+      "/publications/pubs/accelerating-sparse-dnn-models-without-hardware-support-via-tile-wise-sparsity.html",
+      "/publications/pubs/low-latency-proactive-continuous-vision.html",
+      "/publications/pubs/a-systematic-methodology-for-characterizing-scalability-of-dnn-accelerators-using-scale-sim.html",
+      "/publications/pubs/balancing-efficiency-and-flexibility-for-dnn-acceleration-via-temporal-gpu-systolic-array-integration.html",
+      "/publications/pubs/energy-efficient-360-degree-video-rendering-on-fpga-via-algorithm-architecture-co-design.html",
+      "/publications/pubs/hyperion-a-3d-visualization-platform-for-optical-design-of-folded-systems.html",
+      "/publications/pubs/asv-accelerated-stereo-vision-system.html",
+      "/publications/pubs/tigris-architecture-and-algorithms-for-3d-perception-in-point-clouds.html",
+      "/publications/pubs/pes-proactive-event-scheduling-for-responsive-and-energy-efficient-mobile-web-computing.html",
+      "/publications/pubs/energy-efficient-video-processing-for-virtual-reality.html",
+      "/publications/pubs/energy-constrained-compression-for-deep-neural-networks-via-weighted-sparse-projection-and-layer-input-masking.html",
+      "/publications/pubs/ecc-platform-independent-energy-constrained-deep-neural-network-compression-via-a-bilinear-regression-model.html",
+      "/publications/pubs/adversarial-defense-through-network-profiling-based-path-extraction.html",
+      "/publications/pubs/svsoc-speculative-vision-systems-on-a-chip.html",
+      "/publications/pubs/tail-latency-in-node-js-energy-efficient-turbo-boosting-for-long-latency-requests-in-event-driven-web-services.html",
+      "/publications/pubs/demystifying-bayesian-inference-workloads.html",
+      "/publications/pubs/euphrates-algorithm-soc-co-design-for-low-power-mobile-continuous-vision.html",
+      "/publications/pubs/semantic-aware-virtual-reality-video-streaming.html",
+      "/publications/pubs/bitflow-exploiting-vector-parallelism-for-binary-neural-networks-on-cpu.html",
+      "/publications/pubs/mobile-machine-learning-hardware-at-arm-a-systems-on-chip-soc-perspective.html",
+      "/publications/pubs/cloud-no-longer-a-silver-bullet-edge-to-the-rescue.html",
+      "/publications/pubs/optimizing-general-purpose-cpus-for-energy-efficient-mobile-web-computing.html",
+      "/publications/pubs/cognitive-computing-safety-the-new-horizon-for-reliability.html",
+      "/publications/pubs/energy-efficient-mobile-web-computing.html",
+      "/publications/pubs/greenweb-language-extensions-for-energy-efficient-mobile-web-computing.html",
+      "/publications/pubs/mobile-cpu-s-rise-to-power-quantifying-the-impact-of-generational-mobile-cpu-design-trends-on-performance-energy-and-user-satisfaction.html",
+      "/publications/pubs/research-for-practice-web-security-and-mobile-web-computing.html",
+      "/publications/pubs/microarchitectural-implications-of-event-driven-server-side-web-applications.html",
+      "/publications/pubs/event-based-scheduling-for-energy-efficient-qos-eqos-in-mobile-web-applications.html",
+      "/publications/pubs/mosaic-cross-platform-user-interaction-record-and-replay-for-the-fragmented-android-ecosystem.html",
+      "/publications/pubs/the-role-of-the-cpu-in-energy-efficient-mobile-web-browsing.html",
+      "/publications/pubs/webcore-architectural-support-for-mobile-web-browsing.html",
+      "/publications/pubs/estimation-of-instantaneous-frequency-fluctuation-in-a-fast-dvfs-environment-using-an-empirical-bti-stress-relaxation-model.html",
+      "/publications/pubs/high-performance-and-energy-efficient-mobile-web-browsing-on-big-little-systems.html",
+      "/publications/pubs/exploiting-webpage-characteristics-for-energy-efficient-mobile-web-browsing.html",
+      "/publications/pubs/hermes-an-integrated-cpu-gpu-microarchitecture-for-ip-routing.html",
+      "/publications/pubs/massively-parallel-logic-simulation-with-gpus.html",
+      "/publications/pubs/distributed-time-conservative-parallel-logic-simulation-on-gpus.html"
+    ]
+  },
+  {
+    "listing": "/research/humanities/index.html",
+    "items": [
+      "/publications/pubs/fastpoints-a-state-of-the-art-point-cloud-renderer-for-unity.html",
+      "/publications/pubs/multispectral-scheimpflug-imaging-degraded-books-that-open-less-than-30-degrees.html",
+      "/publications/pubs/digital-reconstruction-of-elmina-castle-for-mobile-virtual-reality-via-point-based-detail-transfer.html",
+      "/publications/pubs/resurrect3d-an-open-and-customizable-platform-for-visualizing-and-analyzing-cultural-heritage-artifacts.html"
+    ]
+  },
+  {
+    "listing": "/research/mlsys/index.html",
+    "items": [
+      "/publications/pubs/dynamic-sparse-training-of-diagonally-sparse-networks.html",
+      "/publications/pubs/vq-llm-high-performance-code-generation-for-vector-quantization-augmented-llm-inference.html",
+      "/publications/pubs/amanda-unified-instrumentation-framework-for-deep-neural-networks.html",
+      "/publications/pubs/juno-optimizing-high-dimensional-approximate-nearest-neighbour-search-with-sparsity-aware-algorithm-and-ray-tracing-core-mapping.html",
+      "/publications/pubs/characterizing-soft-error-resiliency-in-arm-s-ethos-u55-embedded-machine-learning-accelerator.html",
+      "/publications/pubs/olive-accelerating-large-language-models-via-hardware-friendly-outlier-victim-pair-quantization.html",
+      "/publications/pubs/thales-formulating-and-estimating-architectural-vulnerability-factors-for-dnn-accelerators.html",
+      "/publications/pubs/ant-exploiting-adaptive-numerical-data-type-for-low-bit-deep-neural-network-quantization.html",
+      "/publications/pubs/s2ta-exploiting-structured-sparsity-for-energy-efficient-mobile-cnn-acceleration.html",
+      "/publications/pubs/squant-on-the-fly-data-free-quantization-via-diagonal-hessian-approximation.html",
+      "/publications/pubs/characterizing-and-demystifying-the-implicit-convolution-algorithm-on-commercial-matrix-multiplication-accelerators.html",
+      "/publications/pubs/ptolemy-architecture-support-for-robust-deep-learning.html",
+      "/publications/pubs/automatic-neural-network-compression-by-sparsity-quantization-joint-learning-a-constrained-optimization-based-approach.html",
+      "/publications/pubs/accelerating-sparse-dnn-models-without-hardware-support-via-tile-wise-sparsity.html",
+      "/publications/pubs/a-systematic-methodology-for-characterizing-scalability-of-dnn-accelerators-using-scale-sim.html",
+      "/publications/pubs/balancing-efficiency-and-flexibility-for-dnn-acceleration-via-temporal-gpu-systolic-array-integration.html",
+      "/publications/pubs/energy-constrained-compression-for-deep-neural-networks-via-weighted-sparse-projection-and-layer-input-masking.html",
+      "/publications/pubs/ecc-platform-independent-energy-constrained-deep-neural-network-compression-via-a-bilinear-regression-model.html",
+      "/publications/pubs/adversarial-defense-through-network-profiling-based-path-extraction.html",
+      "/publications/pubs/demystifying-bayesian-inference-workloads.html",
+      "/publications/pubs/bitflow-exploiting-vector-parallelism-for-binary-neural-networks-on-cpu.html",
+      "/publications/pubs/mobile-machine-learning-hardware-at-arm-a-systems-on-chip-soc-perspective.html",
+      "/publications/pubs/cloud-no-longer-a-silver-bullet-edge-to-the-rescue.html",
+      "/publications/pubs/cognitive-computing-safety-the-new-horizon-for-reliability.html"
+    ]
+  },
+  {
+    "listing": "/research/visual_computing_systems/index.html",
+    "items": [
+      "/publications/pubs/modeling-and-exploiting-the-time-course-of-chromatic-adaptation-for-display-power-optimizations-in-virtual-reality.html",
+      "/publications/pubs/co-designed-pre-capture-privacy-optics-for-computer-vision.html",
+      "/publications/pubs/snappix-efficient-coding-inspired-in-sensor-compression-for-edge-vision.html",
+      "/publications/pubs/lumina-real-time-neural-rendering-by-exploiting-computational-redundancy.html",
+      "/publications/pubs/seal-a-single-event-architecture-for-in-sensor-visual-localization.html",
+      "/publications/pubs/streamgrid-streaming-point-cloud-analytics-via-compulsory-splitting-and-deterministic-termination.html",
+      "/publications/pubs/metasapiens-real-time-neural-rendering-with-efficiency-aware-pruning-and-accelerated-foveated-rendering.html",
+      "/publications/pubs/privateeye:-in-sensor-privacy-preservation-through-optical-feature-separation.html",
+      "/publications/pubs/coolerspace-a-language-for-physically-correct-and-computationally-efficient-color-programming.html",
+      "/publications/pubs/potamoi-accelerating-neural-rendering-via-a-unified-streaming-architecture.html",
+      "/publications/pubs/blisscam-boosting-eye-tracking-efficiency-with-learned-in-sensor-sparse-sampling.html",
+      "/publications/pubs/cicero-addressing-algorithmic-and-architectural-bottlenecks-in-neural-rendering-by-radiance-warping-and-memory-optimizations.html",
+      "/publications/pubs/exploiting-human-color-discrimination-for-memory-and-energy-efficient-image-encoding-in-virtual-reality.html",
+      "/publications/pubs/imperceptible-color-modulation-for-power-saving-in-vr-ar.html",
+      "/publications/pubs/invited-paper-learned-in-sensor-visual-computing-from-compression-to-eventification.html",
+      "/publications/pubs/camj-enabling-system-level-energy-modeling-and-architectural-exploration-for-in-sensor-visual-computing.html",
+      "/publications/pubs/imagen-a-general-framework-for-generating-memory-and-power-efficient-image-processing-accelerators.html",
+      "/publications/pubs/co-designed-metaoptoelectronic-deep-learning.html",
+      "/publications/pubs/color-perception-guided-display-power-reduction-for-virtual-reality.html",
+      "/publications/pubs/crescent-taming-memory-irregularities-for-accelerating-deep-point-cloud-analytics.html",
+      "/publications/pubs/real-time-gaze-tracking-with-event-driven-eye-segmentation.html",
+      "/publications/pubs/rtnn-accelerating-neighbor-search-using-hardware-ray-tracing.html",
+      "/publications/pubs/design-framework-for-metasurface-optics-based-convolutional-neural-networks.html",
+      "/publications/pubs/mesorasi-architecture-support-for-point-cloud-analytics-via-delayed-aggregation.html",
+      "/publications/pubs/real-time-spatio-temporal-lidar-point-cloud-compression.html",
+      "/publications/pubs/low-latency-proactive-continuous-vision.html",
+      "/publications/pubs/energy-efficient-360-degree-video-rendering-on-fpga-via-algorithm-architecture-co-design.html",
+      "/publications/pubs/asv-accelerated-stereo-vision-system.html",
+      "/publications/pubs/tigris-architecture-and-algorithms-for-3d-perception-in-point-clouds.html",
+      "/publications/pubs/energy-efficient-video-processing-for-virtual-reality.html",
+      "/publications/pubs/svsoc-speculative-vision-systems-on-a-chip.html",
+      "/publications/pubs/euphrates-algorithm-soc-co-design-for-low-power-mobile-continuous-vision.html",
+      "/publications/pubs/semantic-aware-virtual-reality-video-streaming.html"
+    ]
+  }
+]
