@@ -1,12 +1,9 @@
 [submodule "colorvis"]
-	path = colorvis
+	path = docs/colorvis
 	url = https://github.com/yuhao/colorvis.git
 [submodule "metasapiens"]
-	path = metasapiens
+	path = docs/metasapiens
 	url = https://github.com/linwk20/metasapiens.github.io.git
 [submodule "powergs"]
-	path = powergs
+	path = docs/powergs
 	url = https://github.com/linwk20/powergs_web.git
-[submodule "siggraphet2026"]
-	path = siggraphet2026
-	url = https://github.com/linwk20/siggraph_et_web.git
