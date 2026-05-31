@@ -7,3 +7,6 @@
 [submodule "powergs"]
 	path = docs/powergs
 	url = https://github.com/linwk20/powergs_web.git
+[submodule "docs/ctr"]
+	path = docs/ctr
+	url = https://github.com/horizon-research/ctr
