@@ -24,6 +24,11 @@
                     </a>&emsp;
                 <% } %>
 
+                <% if (item.website_source) { %>
+                    <a href="<%- item.website_source %>">Website <i class="bi bi-box-arrow-up-right"></i>
+                    </a>&emsp;
+                <% } %>
+
                 <% if (item.code_source) { %>
                     <a href="<%- item.code_source %>">Code <i class="bi bi-box-arrow-up-right"></i>
                     </a>&emsp;

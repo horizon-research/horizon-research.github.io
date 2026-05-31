@@ -418,6 +418,7 @@
     "listing": "/research/visual_computing_systems/index.html",
     "items": [
       "/publications/pubs/modeling-and-exploiting-the-time-course-of-chromatic-adaptation-for-display-power-optimizations-in-virtual-reality.html",
+      "/publications/pubs/powergs-display-rendering-power-co-optimization-for-neural-rendering-in-power-constrained-xr-systems.html",
       "/publications/pubs/co-designed-pre-capture-privacy-optics-for-computer-vision.html",
       "/publications/pubs/snappix-efficient-coding-inspired-in-sensor-compression-for-edge-vision.html",
       "/publications/pubs/lumina-real-time-neural-rendering-by-exploiting-computational-redundancy.html",

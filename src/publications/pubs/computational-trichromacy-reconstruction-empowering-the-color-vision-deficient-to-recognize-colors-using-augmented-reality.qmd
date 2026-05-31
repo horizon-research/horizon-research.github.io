@@ -12,8 +12,9 @@ categories:
 - Work (Co-)Led by Horizon Lab
 topics:
 - human_perception
-url_source: https://horizon-lab.org/pubs/uist24.pdf
-talk_source: https://www.youtube.com/watch?v=cVt3sZtmRQY&list=PLqhXYFYmZ-VfqlTc5EliOGQ591UoeFCZC&index=119&pp=iAQB
+url_source: https://dl.acm.org/doi/pdf/10.1145/3654777.3676415
+website_source: https://horizon-lab.org/ctr/
+talk_source: https://www.youtube.com/watch?v=cVt3sZtmRQY
 journ: UIST
 year: 2024
 contrib: Work (Co-)Led by Horizon Lab

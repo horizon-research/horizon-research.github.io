@@ -63,6 +63,11 @@ window.addEventListener("DOMContentLoaded", () => {
                         </a><br>
                     <% } %>
 
+                    <% if (item.website_source) { %>
+                        <a href="<%- item.website_source %>">website <i class="bi bi-box-arrow-up-right"></i>
+                        </a><br>
+                    <% } %>
+
                     <% if (item.code_source) { %>
                         <a href="<%- item.code_source %>">code <i class="bi bi-box-arrow-up-right"></i>
                         </a><br>
