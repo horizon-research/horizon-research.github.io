@@ -9,7 +9,7 @@ categories:
 - Work (Co-)Led by Horizon Lab
 topics:
 - visual_computing_systems
-url_source: https://horizon-lab.org/pubs/micro19-asv.pdf
+url_source: https://dl.acm.org/doi/pdf/10.1145/3352460.3358253
 talk_source: https://speakerdeck.com/horizonlab/asv-accelerated-stereo-vision-system
 journ: MICRO
 year: 2019

@@ -11,7 +11,7 @@ categories:
 topics:
 - visual_computing_systems
 - human_perception
-url_source: https://horizon-lab.org/pubs/oopsla24.pdf
+url_source: https://dl.acm.org/doi/pdf/10.1145/3689741
 talk_source: https://docs.google.com/presentation/d/1Shz3h5ETzx3dnAmKQtW48fsHVr30STvZZHwkBJ37eW4/edit#slide=id.g2d49fe845d4_0_155
 supp_source: https://horizon-lab.org/pubs/oopsla24-supp.pdf
 code_source: https://github.com/horizon-research/CoolerSpace

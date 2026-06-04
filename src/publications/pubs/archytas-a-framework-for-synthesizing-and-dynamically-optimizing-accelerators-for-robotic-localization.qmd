@@ -14,7 +14,7 @@ categories:
 - Work (Co-)Led by Horizon Lab
 topics:
 - robotics
-url_source: https://horizon-lab.org/pubs/micro21.pdf
+url_source: https://dl.acm.org/doi/pdf/10.1145/3466752.3480077
 code_source: https://github.com/horizon-research/Archytas
 journ: MICRO
 year: 2021

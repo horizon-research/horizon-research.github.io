@@ -11,7 +11,7 @@ categories:
 - Work We Contributed to
 topics:
 - robotics
-url_source: https://horizon-lab.org/pubs/iccad24-daa.pdf
+url_source: https://dl.acm.org/doi/pdf/10.1145/3676536.3697112
 journ: ICCAD
 year: 2024
 contrib: Work We Contributed to

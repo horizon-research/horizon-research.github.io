@@ -11,7 +11,7 @@ categories:
 - Work (Co-)Led by Horizon Lab
 topics:
 - visual_computing_systems
-url_source: https://horizon-lab.org/pubs/pact20.pdf
+url_source: https://dl.acm.org/doi/pdf/10.1145/3410463.3414650
 talk_source: https://speakerdeck.com/horizonlab/low-latency-proactive-continuous-vision
 journ: PACT
 year: 2020

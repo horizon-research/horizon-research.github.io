@@ -16,7 +16,7 @@ categories:
 - Work We Contributed to
 topics:
 - mlsys
-url_source: https://horizon-lab.org/pubs/isca23-olive.pdf
+url_source: https://dl.acm.org/doi/pdf/10.1145/3579371.3589038
 code_source: https://github.com/clevercool/ANT-Quantization
 journ: ISCA
 year: 2023

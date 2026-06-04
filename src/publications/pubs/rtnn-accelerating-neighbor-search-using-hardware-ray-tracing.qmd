@@ -7,7 +7,7 @@ categories:
 - Work (Co-)Led by Horizon Lab
 topics:
 - visual_computing_systems
-url_source: https://horizon-lab.org/pubs/ppopp22.pdf
+url_source: https://dl.acm.org/doi/pdf/10.1145/3503221.3508409
 talk_source: https://speakerdeck.com/queeten/rtnn-accelerating-neighbor-search-using-hardware-ray-tracing
 code_source: https://github.com/horizon-research/rtnn
 journ: PPoPP

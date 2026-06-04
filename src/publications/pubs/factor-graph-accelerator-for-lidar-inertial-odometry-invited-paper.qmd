@@ -11,7 +11,7 @@ categories:
 - Work We Contributed to
 topics:
 - robotics
-url_source: https://horizon-lab.org/pubs/iccad22.pdf
+url_source: https://dl.acm.org/doi/pdf/10.1145/3508352.3561112
 code_source: https://github.com/horizon-research/FGLIO
 journ: ICCAD
 year: 2022

@@ -7,7 +7,7 @@ author:
 categories:
 - Show All
 - Pre-2018 Work
-url_source: https://horizon-lab.org/pubs/dac11.pdf
+url_source: https://dl.acm.org/doi/pdf/10.1145/2024724.2024953
 talk_source: https://speakerdeck.com/queeten/gpu-microarchitecture-for-ip-routing
 journ: DAC
 year: 2011

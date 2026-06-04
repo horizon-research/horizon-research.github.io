@@ -8,7 +8,7 @@ categories:
 - Pre-2018 Work
 topics:
 - watt_wise_web
-url_source: https://horizon-lab.org/pubs/pldi16.pdf
+url_source: https://dl.acm.org/doi/pdf/10.1145/2908080.2908082
 talk_source: https://speakerdeck.com/queeten/greenweb-language-extensions-for-energy-efficient-mobile-web-computing
 code_source: https://github.com/yuhao/autogreen
 journ: PLDI

@@ -10,7 +10,7 @@ categories:
 - Pre-2018 Work
 topics:
 - watt_wise_web
-url_source: https://horizon-lab.org/pubs/rfp16.pdf
+url_source: https://spawn-queue.acm.org/doi/10.1145/2984629.3005356
 journ: ACM Queue
 year: 2016
 contrib: Pre-2018 Work

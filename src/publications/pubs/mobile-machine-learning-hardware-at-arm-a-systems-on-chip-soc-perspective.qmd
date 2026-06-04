@@ -9,8 +9,8 @@ categories:
 - Work (Co-)Led by Horizon Lab
 topics:
 - mlsys
-url_source: https://horizon-lab.org/pubs/sysml18.pdf
-journ: SysML
+url_source: https://mlsys.org/Conferences/doc/2018/48.pdf
+journ: MLSys
 year: 2018
 contrib: Work (Co-)Led by Horizon Lab
 image: featured.png

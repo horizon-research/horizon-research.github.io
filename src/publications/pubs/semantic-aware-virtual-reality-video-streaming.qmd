@@ -11,7 +11,7 @@ categories:
 - Work (Co-)Led by Horizon Lab
 topics:
 - visual_computing_systems
-url_source: https://horizon-lab.org/pubs/apsys18.pdf
+url_source: https://dl.acm.org/doi/pdf/10.1145/3265723.3265738
 journ: APSys
 year: 2018
 contrib: Work (Co-)Led by Horizon Lab

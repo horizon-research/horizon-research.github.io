@@ -19,7 +19,7 @@ categories:
 - Work We Contributed to
 topics:
 - mlsys
-url_source: https://horizon-lab.org/pubs/asplos24-amanda.pdf
+url_source: https://dl.acm.org/doi/pdf/10.1145/3617232.3624864
 code_source: https://github.com/uchuhimo/amanda
 journ: ASPLOS
 year: 2024

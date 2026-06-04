@@ -11,7 +11,7 @@ categories:
 topics:
 - visual_computing_systems
 - human_perception
-url_source: https://horizon-lab.org/pubs/asplos25.pdf
+url_source: https://dl.acm.org/doi/pdf/10.1145/3669940.3707227
 talk_source: https://docs.google.com/presentation/d/1z_GqK0imMH_fR48RaC76mAfAEnk5CgS2cuEwgBlbmsI/edit?usp=sharing
 website_source: https://horizon-lab.org/metasapiens/
 journ: ASPLOS

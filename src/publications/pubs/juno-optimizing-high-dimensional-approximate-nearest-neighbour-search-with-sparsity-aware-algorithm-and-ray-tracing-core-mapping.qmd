@@ -16,7 +16,7 @@ categories:
 - Work We Contributed to
 topics:
 - mlsys
-url_source: https://horizon-lab.org/pubs/asplos24-juno.pdf
+url_source: https://dl.acm.org/doi/pdf/10.1145/3620665.3640360
 code_source: https://github.com/SubjectNoi/RTANN
 journ: ASPLOS
 year: 2024

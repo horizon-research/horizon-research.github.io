@@ -15,7 +15,7 @@ categories:
 topics:
 - visual_computing_systems
 - human_perception
-url_source: https://horizon-lab.org/pubs/siggraph23-et.pdf
+url_source: https://dl.acm.org/doi/pdf/10.1145/3588037.3595388
 journ: SIGGRAPH Emerging Tech.
 year: 2023
 contrib: Work (Co-)Led by Horizon Lab

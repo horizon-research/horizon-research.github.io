@@ -11,7 +11,7 @@ categories:
 - Pre-2018 Work
 topics:
 - watt_wise_web
-url_source: https://horizon-lab.org/pubs/vee19.pdf
+url_source: https://dl.acm.org/doi/pdf/10.1145/3313808.3313823
 talk_source: https://speakerdeck.com/queeten/tail-latency-in-node-dot-js-energy-efficient-turbo-boosting-for-long-latency-requests-in-event-driven-web-services
 journ: VEE
 year: 2019

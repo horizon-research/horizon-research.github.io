@@ -9,7 +9,7 @@ categories:
 - Pre-2018 Work
 topics:
 - watt_wise_web
-url_source: https://horizon-lab.org/pubs/isca14.pdf
+url_source: https://dl.acm.org/doi/pdf/10.1145/2678373.2665749
 talk_source: https://speakerdeck.com/queeten/webcore-architectural-support-for-mobile-web-browsing
 journ: ISCA
 year: 2014

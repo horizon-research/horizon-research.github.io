@@ -9,7 +9,7 @@ categories:
 - Work (Co-)Led by Horizon Lab
 topics:
 - watt_wise_web
-url_source: https://horizon-lab.org/pubs/isca19-pes.pdf
+url_source: https://dl.acm.org/doi/pdf/10.1145/3307650.3322248
 talk_source: https://speakerdeck.com/horizonlab/pes-proactive-event-scheduling-for-responsive-and-energy-efficient-mobile-web-computing
 journ: ISCA
 year: 2019

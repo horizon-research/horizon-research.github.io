@@ -13,7 +13,7 @@ categories:
 topics:
 - visual_computing_systems
 - human_perception
-url_source: https://horizon-lab.org/pubs/sa22.pdf
+url_source: https://dl.acm.org/doi/pdf/10.1145/3550454.3555473
 code_source: https://github.com/NYU-ICL/vr-power-saver
 journ: SIGGRAPH Asia (TOG)
 year: 2022

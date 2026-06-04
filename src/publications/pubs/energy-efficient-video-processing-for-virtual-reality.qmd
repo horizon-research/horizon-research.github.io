@@ -11,7 +11,7 @@ categories:
 - Work (Co-)Led by Horizon Lab
 topics:
 - visual_computing_systems
-url_source: https://horizon-lab.org/pubs/isca19-evr.pdf
+url_source: https://dl.acm.org/doi/pdf/10.1145/3307650.3322264
 talk_source: https://horizon-lab.org/pubs/isca19-evr-talk.pdf
 journ: ISCA
 year: 2019

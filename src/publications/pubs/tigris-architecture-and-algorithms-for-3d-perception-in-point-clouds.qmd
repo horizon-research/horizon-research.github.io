@@ -9,7 +9,7 @@ categories:
 - Work (Co-)Led by Horizon Lab
 topics:
 - visual_computing_systems
-url_source: https://horizon-lab.org/pubs/micro19-tigris.pdf
+url_source: https://dl.acm.org/doi/pdf/10.1145/3352460.3358259
 talk_source: https://speakerdeck.com/horizonlab/tigris-architecture-and-algorithms-for-3d-perception-in-point-clouds
 code_source: https://github.com/horizon-research/PointCloud-pipeline
 journ: MICRO
