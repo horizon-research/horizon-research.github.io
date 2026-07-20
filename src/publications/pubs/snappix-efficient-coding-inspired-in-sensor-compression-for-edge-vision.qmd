@@ -13,7 +13,7 @@ categories:
 - Work (Co-)Led by Horizon Lab
 topics:
 - visual_computing_systems
-url_source: https://dl.acm.org/doi/pdf/10.1109/DAC63849.2025.11132672
+url_source: https://horizon-lab.org/pubs/dac25.pdf
 talk_source: https://docs.google.com/presentation/d/1Jk58LvVzjw7N9pajXXbuj96i6mIkgLpwlhIzwec6i1Q/edit?usp=sharing
 code_source: https://github.com/horizon-research/SnapPix
 journ: DAC
