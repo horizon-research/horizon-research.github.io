@@ -14,7 +14,7 @@ categories:
 - Work (Co-)Led by Horizon Lab
 topics:
 - robotics
-url_source: https://ieeexplore.ieee.org/abstract/document/9994649
+url_source: https://horizon-lab.org/pubs/tc22.pdf
 journ: TC
 year: 2022
 contrib: Work (Co-)Led by Horizon Lab

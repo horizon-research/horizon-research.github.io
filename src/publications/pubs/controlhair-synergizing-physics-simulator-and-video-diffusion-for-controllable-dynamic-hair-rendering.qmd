@@ -1,0 +1,18 @@
+---
+title: "ControlHair: Synergizing Physics Simulator and Video Diffusion for Controllable Dynamic Hair Rendering"
+author:
+- Wei-Kai Lin
+- Haoxiang Li
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+url_source: 
+talk_source: 
+code_source: 
+website_source: https://linwk20.github.io/controlhair-web/
+journ: ECCV
+year: 2026
+image: featured.png
+pub_number: 101
+---

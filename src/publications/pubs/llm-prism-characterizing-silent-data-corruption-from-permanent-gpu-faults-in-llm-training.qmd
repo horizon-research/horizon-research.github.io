@@ -1,0 +1,23 @@
+---
+title: "LLM-PRISM: Characterizing Silent Data Corruption from Permanent GPU Faults in LLM Training"
+author:
+- Abhishek Tyagi
+- Saurabh Hukerikar
+- Nirmal Saxena
+- Yanxiang Huang
+- Philip Shirvani
+- Chung-Hsuan Tung
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- mlsys
+url_source: 
+talk_source: 
+code_source: 
+journ: SC
+year: 2026
+image: featured.png
+pub_number: 103
+---

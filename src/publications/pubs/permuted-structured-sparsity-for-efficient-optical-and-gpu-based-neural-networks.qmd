@@ -1,0 +1,21 @@
+---
+title: "Permuted Structured Sparsity for Efficient Optical and GPU-based Neural Networks"
+author:
+- Abhishek Tyagi
+- Arjun Iyer
+- Liam Young
+- Christopher Kanan
+- William H Renninger
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- mlsys
+url_source: https://opg.optica.org/abstract.cfm?uri=CLEO_AT-2026-JTU.74
+talk_source: 
+journ: CLEO
+year: 2026
+image: featured.png
+pub_number: 104
+---

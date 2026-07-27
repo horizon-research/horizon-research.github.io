@@ -1,0 +1,20 @@
+---
+title: "Invited Paper: A Quantitative Approach to Exploring Novel Image Sensor Architecture Towards Autonomous Edge Machine Vision"
+author:
+- Han Yan
+- Yifei Zou
+- Wei-Kai Lin
+- Yuhao Zhu
+- Xuan Zhang
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- visual_computing_systems
+url_source: 
+talk_source: 
+journ: DAC
+year: 2026
+image: featured.png
+pub_number: 107
+---

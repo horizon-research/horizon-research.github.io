@@ -1,0 +1,24 @@
+---
+title: "HoloCode: Hybrid Optical-Electronic Edge Encoding for Privacy-Preserving Cloud Training"
+author:
+- Ruofan Xing
+- Arman Akbari
+- Wei-Kai Lin
+- Adith Boloor
+- Alexander Montes McNeil
+- Michael Moebius
+- Yongmin Liu
+- Yuhao Zhu
+- Xuan Zhang
+categories:
+- Show All
+- Work We Contributed to
+topics:
+- visual_computing_systems
+url_source: 
+talk_source: 
+journ: DAC
+year: 2026
+image: featured.png
+pub_number: 106
+---

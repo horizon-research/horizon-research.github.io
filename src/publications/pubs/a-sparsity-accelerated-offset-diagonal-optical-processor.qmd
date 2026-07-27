@@ -1,0 +1,20 @@
+---
+title: "A Sparsity-Accelerated Offset-Diagonal Optical Processor"
+author:
+- Arjun Iyer
+- Abhishek Tyagi
+- Liam Young
+- Yuhao Zhu
+- William H Renninger
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- mlsys
+url_source: https://opg.optica.org/abstract.cfm?uri=CLEO_AT-2026-JTU.72
+talk_source: 
+journ: CLEO
+year: 2026
+image: featured.png
+pub_number: 105
+---

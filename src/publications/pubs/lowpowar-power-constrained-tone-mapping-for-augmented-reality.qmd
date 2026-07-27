@@ -1,0 +1,24 @@
+---
+title: "LowPowAR: Power-Constrained Tone Mapping for Augmented Reality"
+author:
+- Wei-Kai Lin
+- Sheng Zhao
+- Ian Ross
+- Carl Marshall
+- Sushant Kondguli
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- visual_computing_systems
+- human_perception
+url_source: 
+talk_source: 
+code_source: 
+website_source: https://horizon-lab.org/lowpowar/
+journ: ISMAR (TVCG)
+year: 2026
+image: featured.png
+pub_number: 102
+---
