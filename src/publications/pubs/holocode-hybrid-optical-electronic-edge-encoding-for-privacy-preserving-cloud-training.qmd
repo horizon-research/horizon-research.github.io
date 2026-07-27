@@ -3,7 +3,7 @@ title: "HoloCode: Hybrid Optical-Electronic Edge Encoding for Privacy-Preserving
 author:
 - Ruofan Xing
 - Arman Akbari
-- Wei-Kai Lin
+- Weikai Lin
 - Adith Boloor
 - Alexander Montes McNeil
 - Michael Moebius

@@ -3,7 +3,7 @@ title: "Invited Paper: A Quantitative Approach to Exploring Novel Image Sensor A
 author:
 - Han Yan
 - Yifei Zou
-- Wei-Kai Lin
+- Weikai Lin
 - Yuhao Zhu
 - Xuan Zhang
 categories:

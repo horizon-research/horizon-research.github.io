@@ -1,7 +1,7 @@
 ---
 title: "ControlHair: Synergizing Physics Simulator and Video Diffusion for Controllable Dynamic Hair Rendering"
 author:
-- Wei-Kai Lin
+- Weikai Lin
 - Haoxiang Li
 - Yuhao Zhu
 categories:

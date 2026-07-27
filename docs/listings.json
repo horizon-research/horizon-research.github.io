@@ -261,6 +261,10 @@
   {
     "listing": "/people/weikai-lin/index.html",
     "items": [
+      "/publications/pubs/invited-paper-a-quantitative-approach-to-exploring-novel-image-sensor-architecture-towards-autonomous-edge-machine-vision.html",
+      "/publications/pubs/holocode-hybrid-optical-electronic-edge-encoding-for-privacy-preserving-cloud-training.html",
+      "/publications/pubs/lowpowar-power-constrained-tone-mapping-for-augmented-reality.html",
+      "/publications/pubs/controlhair-synergizing-physics-simulator-and-video-diffusion-for-controllable-dynamic-hair-rendering.html",
       "/publications/pubs/powergs-display-rendering-power-co-optimization-for-neural-rendering-in-power-constrained-xr-systems.html",
       "/publications/pubs/snappix-efficient-coding-inspired-in-sensor-compression-for-edge-vision.html",
       "/publications/pubs/lumina-real-time-neural-rendering-by-exploiting-computational-redundancy.html",
