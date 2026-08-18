@@ -21,8 +21,7 @@ Why do we care about image formation? First, it's a wonderfully rich topic that 
 
 The course was most recently offered in [Fall 2025](https://cs.rochester.edu/courses/259/fall2025/index.html), and is expected to be offered every Fall.
 
-### CSC 5xx Computational Vision
+### CSC 572 Advanced Topics in Computation, Vision, and Intelligence
 
-This is a planned new course that will be offered for the first time in Spring 2027.
-It will most likely combine lectures, paper readings/presentations, and small-group projects.
-And, once again, this is not a computer vision course --- the focus will instead be on human vision, or more broadly, animal vision.
+This is an advanced seminar course exploring how intelligence emerges through the lens of computation.  We will approach intelligence from three complementary angles: evolution, development, and learning.  The overarching goals of the course is to both understand how natural intelligence emerges and how we can take inspiration from it to design computational systems that possess actual intelligence.  While we will take a broad view of intelligence, we will be particularly concerned with visual intelligence, discussing eyes, retina, and visual processing in the brain.  The format will be a combination of instructor-led lectures, student-led paper critiquing and presentations, as well as semester-long projects.
+
