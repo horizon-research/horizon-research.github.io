@@ -1,0 +1,27 @@
+---
+title: 'HoOPOE: A Holography-Optimized Perceptual ObjectivE function'
+author:
+- Ethan Chen
+- Xi Peng
+- Alexandre Chapiro
+- Dario Seyb
+- Michael Grundmann
+- Carll Marshall
+- Sushant Kondguli
+- Praneeth Chakravarthula
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- visual_computing_systems
+- human_perception
+url_source: 
+talk_source: 
+supp_source: https://horizon-lab.org/pubs/sa26-hoopoe-supp.pdf
+journ: SIGGRAPH Asia
+year: 2026
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 104
+---

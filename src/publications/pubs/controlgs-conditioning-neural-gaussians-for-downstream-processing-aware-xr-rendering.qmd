@@ -1,0 +1,24 @@
+---
+title: 'ControlGS: Conditioning Neural Gaussians for Downstream-Processing–Aware XR Rendering'
+author:
+- Weikai Lin
+- Junjie Zhao
+- Sushant Kondguli
+- Carll Marshall
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- visual_computing_systems
+- human_perception
+url_source: 
+talk_source: 
+supp_source: https://horizon-lab.org/pubs/sa26-controlgs-supp.pdf
+website_source: https://horizon-lab.org/controlgs/
+journ: SIGGRAPH Asia
+year: 2026
+contrib: Work (Co-)Led by Horizon Lab
+image: featured.png
+pub_number: 103
+---

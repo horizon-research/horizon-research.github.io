@@ -54,6 +54,8 @@
   {
     "listing": "/research/human/index.html",
     "items": [
+      "/publications/pubs/hoopoe-a-holography-optimized-perceptual-objective-function.html",
+      "/publications/pubs/controlgs-conditioning-neural-gaussians-for-downstream-processing-aware-xr-rendering.html",
       "/publications/pubs/lowpowar-power-constrained-tone-mapping-for-augmented-reality.html",
       "/publications/pubs/modeling-and-exploiting-the-time-course-of-chromatic-adaptation-for-display-power-optimizations-in-virtual-reality.html",
       "/publications/pubs/powergs-display-rendering-power-co-optimization-for-neural-rendering-in-power-constrained-xr-systems.html",
@@ -171,6 +173,7 @@
   {
     "listing": "/people/ethan-chen/index.html",
     "items": [
+      "/publications/pubs/hoopoe-a-holography-optimized-perceptual-objective-function.html",
       "/publications/pubs/modeling-and-exploiting-the-time-course-of-chromatic-adaptation-for-display-power-optimizations-in-virtual-reality.html",
       "/publications/pubs/coolerspace-a-language-for-physically-correct-and-computationally-efficient-color-programming.html",
       "/publications/pubs/computational-trichromacy-reconstruction-empowering-the-color-vision-deficient-to-recognize-colors-using-augmented-reality.html"
@@ -263,6 +266,7 @@
     "items": [
       "/publications/pubs/invited-paper-a-quantitative-approach-to-exploring-novel-image-sensor-architecture-towards-autonomous-edge-machine-vision.html",
       "/publications/pubs/holocode-hybrid-optical-electronic-edge-encoding-for-privacy-preserving-cloud-training.html",
+      "/publications/pubs/controlgs-conditioning-neural-gaussians-for-downstream-processing-aware-xr-rendering.html",
       "/publications/pubs/lowpowar-power-constrained-tone-mapping-for-augmented-reality.html",
       "/publications/pubs/controlhair-synergizing-physics-simulator-and-video-diffusion-for-controllable-dynamic-hair-rendering.html",
       "/publications/pubs/powergs-display-rendering-power-co-optimization-for-neural-rendering-in-power-constrained-xr-systems.html",
@@ -284,7 +288,9 @@
       "/publications/pubs/invited-paper-a-quantitative-approach-to-exploring-novel-image-sensor-architecture-towards-autonomous-edge-machine-vision.html",
       "/publications/pubs/holocode-hybrid-optical-electronic-edge-encoding-for-privacy-preserving-cloud-training.html",
       "/publications/pubs/a-sparsity-accelerated-offset-diagonal-optical-processor.html",
+      "/publications/pubs/hoopoe-a-holography-optimized-perceptual-objective-function.html",
       "/publications/pubs/permuted-structured-sparsity-for-efficient-optical-and-gpu-based-neural-networks.html",
+      "/publications/pubs/controlgs-conditioning-neural-gaussians-for-downstream-processing-aware-xr-rendering.html",
       "/publications/pubs/llm-prism-characterizing-silent-data-corruption-from-permanent-gpu-faults-in-llm-training.html",
       "/publications/pubs/lowpowar-power-constrained-tone-mapping-for-augmented-reality.html",
       "/publications/pubs/controlhair-synergizing-physics-simulator-and-video-diffusion-for-controllable-dynamic-hair-rendering.html",
@@ -441,6 +447,8 @@
     "items": [
       "/publications/pubs/invited-paper-a-quantitative-approach-to-exploring-novel-image-sensor-architecture-towards-autonomous-edge-machine-vision.html",
       "/publications/pubs/holocode-hybrid-optical-electronic-edge-encoding-for-privacy-preserving-cloud-training.html",
+      "/publications/pubs/hoopoe-a-holography-optimized-perceptual-objective-function.html",
+      "/publications/pubs/controlgs-conditioning-neural-gaussians-for-downstream-processing-aware-xr-rendering.html",
       "/publications/pubs/lowpowar-power-constrained-tone-mapping-for-augmented-reality.html",
       "/publications/pubs/modeling-and-exploiting-the-time-course-of-chromatic-adaptation-for-display-power-optimizations-in-virtual-reality.html",
       "/publications/pubs/powergs-display-rendering-power-co-optimization-for-neural-rendering-in-power-constrained-xr-systems.html",
