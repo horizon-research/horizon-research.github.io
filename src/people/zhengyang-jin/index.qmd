@@ -1,9 +1,10 @@
 ---
-title: &TITLE Jun Dai
-last: Dai
-first: Jun
+title: &TITLE Zhengyang Jin
+last: Jin
+first: Zhengyang
 people_group: alumni
-education: M.E. | Zhejiang University | 2024<br>B.E. | Tianjin University | 2021
+education: M.S. | University of Sussex | 2022<br>B.S. | University of Sussex | 2021
+current_pos: Ph.D. Student | Boston College
 subtitle: Former Colab. Student
 image: avatar.jpg
 listing:
@@ -26,7 +27,7 @@ about:
   links:
     - text: Website
       icon: house
-      href: https://daijun10086.github.io/
+      href: https://dashpulsar.github.io/
 ---
 
 <hr>

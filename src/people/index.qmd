@@ -33,8 +33,7 @@ page-layout: full
 ## Principal Investigator
 ### [Yuhao Zhu](https://yuhaozhu.com/)
 Associate Professor | Asaro Biggar Family Fellow in Data Science<br>
-Computer Science | Brain and Cognitive Sciences<br>
-Center for Visual Science | Goergen Institute for Data Science and Artificial Intelligence<br>
+Computer Science | Brain and Cognitive Sciences | Center for Visual Science<br>
 University of Rochester
 
 

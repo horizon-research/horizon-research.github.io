@@ -23,5 +23,5 @@ journ: SIGGRAPH Asia
 year: 2026
 contrib: Work (Co-)Led by Horizon Lab
 image: featured.png
-pub_number: 104
+pub_number: 109
 ---

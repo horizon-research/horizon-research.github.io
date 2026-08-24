@@ -146,7 +146,6 @@
       "/people/ethan-chen/index.html",
       "/people/weikai-lin/index.html",
       "/people/han-yan/index.html",
-      "/people/jun-dai/index.html",
       "/people/sheng-zhao/index.html",
       "/people/yiming-gan/index.html",
       "/people/yu-feng/index.html",
@@ -154,6 +153,8 @@
       "/people/chi-chun-chen/index.html",
       "/people/tiancheng-xu/index.html",
       "/people/tianqi-yang/index.html",
+      "/people/jun-dai/index.html",
+      "/people/zhengyang-jin/index.html",
       "/people/colin-hascup/index.html",
       "/people/elias-neuman-donihue/index.html",
       "/people/ethan-shahan/index.html",
@@ -285,12 +286,12 @@
   {
     "listing": "/publications/index.html",
     "items": [
+      "/publications/pubs/hoopoe-a-holography-optimized-perceptual-objective-function.html",
+      "/publications/pubs/controlgs-conditioning-neural-gaussians-for-downstream-processing-aware-xr-rendering.html",
       "/publications/pubs/invited-paper-a-quantitative-approach-to-exploring-novel-image-sensor-architecture-towards-autonomous-edge-machine-vision.html",
       "/publications/pubs/holocode-hybrid-optical-electronic-edge-encoding-for-privacy-preserving-cloud-training.html",
       "/publications/pubs/a-sparsity-accelerated-offset-diagonal-optical-processor.html",
-      "/publications/pubs/hoopoe-a-holography-optimized-perceptual-objective-function.html",
       "/publications/pubs/permuted-structured-sparsity-for-efficient-optical-and-gpu-based-neural-networks.html",
-      "/publications/pubs/controlgs-conditioning-neural-gaussians-for-downstream-processing-aware-xr-rendering.html",
       "/publications/pubs/llm-prism-characterizing-silent-data-corruption-from-permanent-gpu-faults-in-llm-training.html",
       "/publications/pubs/lowpowar-power-constrained-tone-mapping-for-augmented-reality.html",
       "/publications/pubs/controlhair-synergizing-physics-simulator-and-video-diffusion-for-controllable-dynamic-hair-rendering.html",
@@ -445,10 +446,10 @@
   {
     "listing": "/research/visual_computing_systems/index.html",
     "items": [
-      "/publications/pubs/invited-paper-a-quantitative-approach-to-exploring-novel-image-sensor-architecture-towards-autonomous-edge-machine-vision.html",
-      "/publications/pubs/holocode-hybrid-optical-electronic-edge-encoding-for-privacy-preserving-cloud-training.html",
       "/publications/pubs/hoopoe-a-holography-optimized-perceptual-objective-function.html",
       "/publications/pubs/controlgs-conditioning-neural-gaussians-for-downstream-processing-aware-xr-rendering.html",
+      "/publications/pubs/invited-paper-a-quantitative-approach-to-exploring-novel-image-sensor-architecture-towards-autonomous-edge-machine-vision.html",
+      "/publications/pubs/holocode-hybrid-optical-electronic-edge-encoding-for-privacy-preserving-cloud-training.html",
       "/publications/pubs/lowpowar-power-constrained-tone-mapping-for-augmented-reality.html",
       "/publications/pubs/modeling-and-exploiting-the-time-course-of-chromatic-adaptation-for-display-power-optimizations-in-virtual-reality.html",
       "/publications/pubs/powergs-display-rendering-power-co-optimization-for-neural-rendering-in-power-constrained-xr-systems.html",
@@ -484,6 +485,12 @@
       "/publications/pubs/svsoc-speculative-vision-systems-on-a-chip.html",
       "/publications/pubs/euphrates-algorithm-soc-co-design-for-low-power-mobile-continuous-vision.html",
       "/publications/pubs/semantic-aware-virtual-reality-video-streaming.html"
+    ]
+  },
+  {
+    "listing": "/people/zhengyang-jin/index.html",
+    "items": [
+      "/publications/pubs/latent-speech-representations-learned-through-self-supervised-learning-predict-listeners-generalization-of-adaptation-across-talkers.html"
     ]
   }
 ]
