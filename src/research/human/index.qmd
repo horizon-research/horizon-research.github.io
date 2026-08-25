@@ -31,7 +31,7 @@ First and foremost, for the science itself --- for the [pleasure of finding thin
 As Edwin H. Land once put it, the true application of science is that “we finally know what we are doing.”
 Second, many visual computing systems (such as smartphones, AR glasses, VR headsets, and image generation models) generate images that are ultimately consumed by humans, so understanding how the HVS processes and interprets these signals allows us to better engineer such systems.
 
-Going beyond vision, how do humans generalize so easily to speakers with different accents, how does our immediate and past experience shape our memory, and, ultimately, why and how do we possess intelligence?
+Going beyond vision, how do humans generalize so easily to speakers with different accents, how do our immediate and past experience shape our memory, and, ultimately, why and how do we possess intelligence?
 We are interested in fundamentally understanding human perception, cognition, and intelligence, and using the understanding to build better algorithms, systems, and agents.
 
 ## Related Publications
