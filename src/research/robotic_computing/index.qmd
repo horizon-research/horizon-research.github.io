@@ -1,5 +1,5 @@
 ---
-title: "Robotic Computing"
+title: "Architectures for Embodied AI"
 order: 4
 alias: &ALIAS robotics
 image: featured.jpg

@@ -2,7 +2,6 @@
 title: 'WebCore: Architectural Support for Mobile Web Browsing'
 author:
 - Yuhao Zhu
-- Matthew Halpern
 - Vijay Janapa Reddi
 categories:
 - Show All
