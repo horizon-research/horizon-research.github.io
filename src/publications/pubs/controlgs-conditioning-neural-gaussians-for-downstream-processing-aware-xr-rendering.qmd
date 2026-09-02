@@ -4,7 +4,7 @@ author:
 - Weikai Lin
 - Junjie Zhao
 - Sushant Kondguli
-- Carll Marshall
+- Carl Marshall
 - Yuhao Zhu
 categories:
 - Show All

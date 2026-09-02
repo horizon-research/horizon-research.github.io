@@ -19,7 +19,7 @@ It is *not* a computer vision class. Computer vision is concerned with understan
 
 Why do we care about image formation? First, it's a wonderfully rich topic that covers sciences (e.g., physics, optics, visual neuroscience), engineering (e.g., camera/display design, Augmented/Virtual Reality glass design), computation (e.g., rendering algorithms, computational photography, image/video compression algorithms), art (e.g., paintings, pentimento), and mathematics (e.g., linear systems, Fourier analysis). Second, understanding image formation allows us to better design vision systems (both computer vision and human vision) — if we don't understand how an image is formed in the first place, how can we analyze it to extract useful information?
 
-The course was most recently offered in [Fall 2025](https://cs.rochester.edu/courses/259/fall2025/index.html), and is expected to be offered every Fall.
+The course was most recently offered in [Fall 2026](https://cs.rochester.edu/courses/259/fall2026/index.html), and is expected to be offered every Fall.
 
 ### CSC 572 Advanced Topics in Computation, Vision, and Intelligence
 

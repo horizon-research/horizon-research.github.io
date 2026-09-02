@@ -6,7 +6,7 @@ author:
 - Alexandre Chapiro
 - Dario Seyb
 - Michael Grundmann
-- Carll Marshall
+- Carl Marshall
 - Sushant Kondguli
 - Praneeth Chakravarthula
 - Yuhao Zhu

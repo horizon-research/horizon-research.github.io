@@ -4,7 +4,7 @@ title: 'PowerGS: Display-Rendering Power Co-Optimization for Neural Rendering in
 author:
 - Weikai Lin
 - Sushant Kondguli
-- Carll Marshall
+- Carl Marshall
 - Yuhao Zhu
 categories:
 - Show All
