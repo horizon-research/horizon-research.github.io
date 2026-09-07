@@ -1,6 +1,6 @@
 ---
 title: "Computational Humanities"
-order: 3
+order: 4
 alias: &ALIAS comp_human
 image: featured.jpg
 listing:

@@ -1,6 +1,6 @@
 ---
 title: "Architectures for Embodied AI"
-order: 4
+order: 3
 alias: &ALIAS robotics
 image: featured.jpg
 listing:
