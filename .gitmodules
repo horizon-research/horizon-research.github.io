@@ -13,3 +13,6 @@
 [submodule "docs/lowpowar"]
 	path = docs/lowpowar
 	url = https://github.com/linwk20/LowPowAR-web.git
+[submodule "controlgs"]
+	path = docs/controlgs
+	url = https://github.com/linwk20/ControlGS-Web.git
