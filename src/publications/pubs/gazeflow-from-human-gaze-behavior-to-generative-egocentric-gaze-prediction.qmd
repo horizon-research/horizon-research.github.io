@@ -1,0 +1,20 @@
+---
+title: "GazeFlow: From Human Gaze Behavior to Generative Egocentric Gaze Prediction"
+author:
+- Sheng Zhao
+- Weikai Lin
+- Yuhao Zhu
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- human_perception
+url_source: 
+talk_source: 
+code_source: 
+website_source: 
+journ: NeurIPS
+year: 2026
+image: featured.png
+pub_number: 110
+---

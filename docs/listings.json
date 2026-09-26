@@ -54,6 +54,8 @@
   {
     "listing": "/research/human/index.html",
     "items": [
+      "/publications/pubs/multidimensional-observer-model-and-perceptual-dimensions-of-human-image-quality-assessment.html",
+      "/publications/pubs/gazeflow-from-human-gaze-behavior-to-generative-egocentric-gaze-prediction.html",
       "/publications/pubs/hoopoe-a-holography-optimized-perceptual-objective-function.html",
       "/publications/pubs/controlgs-conditioning-neural-gaussians-for-downstream-processing-aware-xr-rendering.html",
       "/publications/pubs/lowpowar-power-constrained-tone-mapping-for-augmented-reality.html",
@@ -83,6 +85,8 @@
   {
     "listing": "/people/weikai-lin/index.html",
     "items": [
+      "/publications/pubs/multidimensional-observer-model-and-perceptual-dimensions-of-human-image-quality-assessment.html",
+      "/publications/pubs/gazeflow-from-human-gaze-behavior-to-generative-egocentric-gaze-prediction.html",
       "/publications/pubs/controlgs-conditioning-neural-gaussians-for-downstream-processing-aware-xr-rendering.html",
       "/publications/pubs/invited-paper-a-quantitative-approach-to-exploring-novel-image-sensor-architecture-towards-autonomous-edge-machine-vision.html",
       "/publications/pubs/holocode-hybrid-optical-electronic-edge-encoding-for-privacy-preserving-cloud-training.html",
@@ -107,6 +111,8 @@
   {
     "listing": "/people/sheng-zhao/index.html",
     "items": [
+      "/publications/pubs/multidimensional-observer-model-and-perceptual-dimensions-of-human-image-quality-assessment.html",
+      "/publications/pubs/gazeflow-from-human-gaze-behavior-to-generative-egocentric-gaze-prediction.html",
       "/publications/pubs/lowpowar-power-constrained-tone-mapping-for-augmented-reality.html"
     ]
   },
@@ -119,34 +125,66 @@
     ]
   },
   {
-    "listing": "/people/jun-dai/index.html",
-    "items": []
-  },
-  {
-    "listing": "/people/han-yan/index.html",
+    "listing": "/people/junjie-zhao/index.html",
     "items": [
-      "/publications/pubs/invited-paper-a-quantitative-approach-to-exploring-novel-image-sensor-architecture-towards-autonomous-edge-machine-vision.html"
+      "/publications/pubs/controlgs-conditioning-neural-gaussians-for-downstream-processing-aware-xr-rendering.html"
     ]
   },
   {
-    "listing": "/people/ethan-shahan/index.html",
+    "listing": "/people/index.html",
     "items": [
-      "/publications/pubs/exploiting-human-color-discrimination-for-memory-and-energy-efficient-image-encoding-in-virtual-reality.html",
-      "/publications/pubs/imperceptible-color-modulation-for-power-saving-in-vr-ar.html"
+      "/people/abhishek-tyagi/index.html",
+      "/people/nisarg-ujjainkar/index.html",
+      "/people/ethan-chen/index.html",
+      "/people/weikai-lin/index.html",
+      "/people/han-yan/index.html",
+      "/people/sheng-zhao/index.html",
+      "/people/junjie-zhao/index.html",
+      "/people/yiming-gan/index.html",
+      "/people/yu-feng/index.html",
+      "/people/boyuan-tian/index.html",
+      "/people/chi-chun-chen/index.html",
+      "/people/tiancheng-xu/index.html",
+      "/people/tianqi-yang/index.html",
+      "/people/jun-dai/index.html",
+      "/people/zhengyang-jin/index.html",
+      "/people/colin-hascup/index.html",
+      "/people/elias-neuman-donihue/index.html",
+      "/people/ethan-shahan/index.html",
+      "/people/gunnar-hammonds/index.html",
+      "/people/qiuyue-sun/index.html",
+      "/people/sam-triest/index.html",
+      "/people/sifan-ye/index.html",
+      "/people/yongzhao-wu/index.html"
     ]
   },
   {
-    "listing": "/people/elias-neuman-donihue/index.html",
+    "listing": "/people/gunnar-hammonds/index.html",
     "items": [
-      "/publications/pubs/fastpoints-a-state-of-the-art-point-cloud-renderer-for-unity.html",
-      "/publications/pubs/resurrect3d-an-open-and-customizable-platform-for-visualizing-and-analyzing-cultural-heritage-artifacts.html"
+      "/publications/pubs/crescent-taming-memory-irregularities-for-accelerating-deep-point-cloud-analytics.html"
     ]
   },
   {
-    "listing": "/people/chi-chun-chen/index.html",
+    "listing": "/people/ethan-chen/index.html",
     "items": [
-      "/publications/pubs/energy-efficient-video-processing-for-virtual-reality.html",
-      "/publications/pubs/semantic-aware-virtual-reality-video-streaming.html"
+      "/publications/pubs/hoopoe-a-holography-optimized-perceptual-objective-function.html",
+      "/publications/pubs/modeling-and-exploiting-the-time-course-of-chromatic-adaptation-for-display-power-optimizations-in-virtual-reality.html",
+      "/publications/pubs/coolerspace-a-language-for-physically-correct-and-computationally-efficient-color-programming.html",
+      "/publications/pubs/computational-trichromacy-reconstruction-empowering-the-color-vision-deficient-to-recognize-colors-using-augmented-reality.html"
+    ]
+  },
+  {
+    "listing": "/people/colin-hascup/index.html",
+    "items": [
+      "/publications/pubs/computational-trichromacy-reconstruction-empowering-the-color-vision-deficient-to-recognize-colors-using-augmented-reality.html"
+    ]
+  },
+  {
+    "listing": "/people/boyuan-tian/index.html",
+    "items": [
+      "/publications/pubs/eudoxus-characterizing-and-accelerating-localization-in-autonomous-machines.html",
+      "/publications/pubs/mesorasi-architecture-support-for-point-cloud-analytics-via-delayed-aggregation.html",
+      "/publications/pubs/tigris-architecture-and-algorithms-for-3d-perception-in-point-clouds.html"
     ]
   },
   {
@@ -166,60 +204,35 @@
     ]
   },
   {
-    "listing": "/people/boyuan-tian/index.html",
+    "listing": "/people/chi-chun-chen/index.html",
     "items": [
-      "/publications/pubs/eudoxus-characterizing-and-accelerating-localization-in-autonomous-machines.html",
-      "/publications/pubs/mesorasi-architecture-support-for-point-cloud-analytics-via-delayed-aggregation.html",
-      "/publications/pubs/tigris-architecture-and-algorithms-for-3d-perception-in-point-clouds.html"
+      "/publications/pubs/energy-efficient-video-processing-for-virtual-reality.html",
+      "/publications/pubs/semantic-aware-virtual-reality-video-streaming.html"
     ]
   },
   {
-    "listing": "/people/colin-hascup/index.html",
+    "listing": "/people/elias-neuman-donihue/index.html",
     "items": [
-      "/publications/pubs/computational-trichromacy-reconstruction-empowering-the-color-vision-deficient-to-recognize-colors-using-augmented-reality.html"
+      "/publications/pubs/fastpoints-a-state-of-the-art-point-cloud-renderer-for-unity.html",
+      "/publications/pubs/resurrect3d-an-open-and-customizable-platform-for-visualizing-and-analyzing-cultural-heritage-artifacts.html"
     ]
   },
   {
-    "listing": "/people/ethan-chen/index.html",
+    "listing": "/people/ethan-shahan/index.html",
     "items": [
-      "/publications/pubs/hoopoe-a-holography-optimized-perceptual-objective-function.html",
-      "/publications/pubs/modeling-and-exploiting-the-time-course-of-chromatic-adaptation-for-display-power-optimizations-in-virtual-reality.html",
-      "/publications/pubs/coolerspace-a-language-for-physically-correct-and-computationally-efficient-color-programming.html",
-      "/publications/pubs/computational-trichromacy-reconstruction-empowering-the-color-vision-deficient-to-recognize-colors-using-augmented-reality.html"
+      "/publications/pubs/exploiting-human-color-discrimination-for-memory-and-energy-efficient-image-encoding-in-virtual-reality.html",
+      "/publications/pubs/imperceptible-color-modulation-for-power-saving-in-vr-ar.html"
     ]
   },
   {
-    "listing": "/people/gunnar-hammonds/index.html",
+    "listing": "/people/han-yan/index.html",
     "items": [
-      "/publications/pubs/crescent-taming-memory-irregularities-for-accelerating-deep-point-cloud-analytics.html"
+      "/publications/pubs/invited-paper-a-quantitative-approach-to-exploring-novel-image-sensor-architecture-towards-autonomous-edge-machine-vision.html"
     ]
   },
   {
-    "listing": "/people/index.html",
-    "items": [
-      "/people/abhishek-tyagi/index.html",
-      "/people/nisarg-ujjainkar/index.html",
-      "/people/ethan-chen/index.html",
-      "/people/weikai-lin/index.html",
-      "/people/han-yan/index.html",
-      "/people/sheng-zhao/index.html",
-      "/people/yiming-gan/index.html",
-      "/people/yu-feng/index.html",
-      "/people/boyuan-tian/index.html",
-      "/people/chi-chun-chen/index.html",
-      "/people/tiancheng-xu/index.html",
-      "/people/tianqi-yang/index.html",
-      "/people/jun-dai/index.html",
-      "/people/zhengyang-jin/index.html",
-      "/people/colin-hascup/index.html",
-      "/people/elias-neuman-donihue/index.html",
-      "/people/ethan-shahan/index.html",
-      "/people/gunnar-hammonds/index.html",
-      "/people/qiuyue-sun/index.html",
-      "/people/sam-triest/index.html",
-      "/people/sifan-ye/index.html",
-      "/people/yongzhao-wu/index.html"
-    ]
+    "listing": "/people/jun-dai/index.html",
+    "items": []
   },
   {
     "listing": "/people/nisarg-ujjainkar/index.html",
@@ -292,6 +305,8 @@
   {
     "listing": "/publications/index.html",
     "items": [
+      "/publications/pubs/multidimensional-observer-model-and-perceptual-dimensions-of-human-image-quality-assessment.html",
+      "/publications/pubs/gazeflow-from-human-gaze-behavior-to-generative-egocentric-gaze-prediction.html",
       "/publications/pubs/hoopoe-a-holography-optimized-perceptual-objective-function.html",
       "/publications/pubs/controlgs-conditioning-neural-gaussians-for-downstream-processing-aware-xr-rendering.html",
       "/publications/pubs/invited-paper-a-quantitative-approach-to-exploring-novel-image-sensor-architecture-towards-autonomous-edge-machine-vision.html",

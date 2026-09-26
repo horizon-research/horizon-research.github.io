@@ -18,6 +18,15 @@ listing:
     sort: order
     type: grid
     fields: [title, subtitle, image, education]
+  - id: ugstudent
+    include: 
+      people_group: "ugstudent"
+    exclude:
+      external: true
+    template: ../_ejs/people-box.ejs
+    sort: order
+    type: grid
+    fields: [title, subtitle, image, education]
   - id: alumni
     include: 
       people_group: "alumni"
@@ -48,7 +57,8 @@ University of Rochester
 
 
 ## Undergraduate Students
-##### [Junjie Zhao](https://www.linkedin.com/in/junjie-zhao-53808228b/) (AR displays)
+::: {#ugstudent}
+:::
 
 
 ## Alumni
