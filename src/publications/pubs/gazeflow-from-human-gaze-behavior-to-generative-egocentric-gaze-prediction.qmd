@@ -9,7 +9,7 @@ categories:
 - Work (Co-)Led by Horizon Lab
 topics:
 - human_perception
-url_source: 
+url_source: https://horizon-lab.org/pubs/neurips26-gazeflow.pdf
 talk_source: 
 code_source: 
 website_source: 

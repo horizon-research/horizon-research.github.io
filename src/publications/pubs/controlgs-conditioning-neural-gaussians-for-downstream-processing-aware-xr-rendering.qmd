@@ -12,7 +12,7 @@ categories:
 topics:
 - visual_computing_systems
 - human_perception
-url_source: 
+url_source:  https://horizon-lab.org/pubs/sa26-controlgs.pdf
 talk_source: 
 supp_source: https://horizon-lab.org/pubs/sa26-controlgs-supp.pdf
 website_source: https://horizon-lab.org/controlgs/

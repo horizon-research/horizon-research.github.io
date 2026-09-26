@@ -13,7 +13,7 @@ categories:
 - Work (Co-)Led by Horizon Lab
 topics:
 - mlsys
-url_source: 
+url_source: https://arxiv.org/pdf/2604.10390
 talk_source: 
 code_source: 
 journ: SC

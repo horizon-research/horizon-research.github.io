@@ -7,7 +7,7 @@ author:
 categories:
 - Show All
 - Work (Co-)Led by Horizon Lab
-url_source: 
+url_source: https://link.springer.com/chapter/10.1007/978-3-032-37461-5_13
 talk_source: 
 code_source: 
 website_source: https://linwk20.github.io/controlhair-web/
