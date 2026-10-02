@@ -1,0 +1,21 @@
+---
+title: "An Invitation to Computational Visual Humanities"
+author:
+- Yuhao Zhu
+- Anne Hunnel Chen
+- Lauren Tilton
+- Holly Rushmeier
+categories:
+- Show All
+- Work (Co-)Led by Horizon Lab
+topics:
+- comp_human
+url_source: https://horizon-lab.org/pubs/com-vis-hum.pdf
+talk_source: 
+code_source: 
+website_source: 
+journ: Preprint
+year: 2026
+image: featured.png
+pub_number: 112
+---
