@@ -19,9 +19,11 @@ listing:
 ---
 ![](featured.jpg)
 
-Visual computing systems have to simultaneously: 1) *capture* massive amount of visual data (through image sensors), 2) *interpret* the visual data to provide intelligent services to us (through computer vision algorithms running on hardware silicon), and 3) *generate* visual data from the display that ultimately interacts with our visual system (eye, retina, and brain).
-Our work holistically designs and optimizes across the entire visual computing pipeline, spanning imaging optics, sensors, computer systems, displays, and the human visual systems.
-Ultimately, the goal is to deliver an immersive experience to human observers under a usually tight power and energy budget while protecting user privacy.
+Two characteristics of emerging applications such as extended reality (XR), embodied/physical AI, and autonomous agents are reshaping the foundations of computer systems design:
+- First, computing systems will increasingly sense and interpret the physical world, pushing computation beyond digital processors into optics, sensors, and analog circuits.
+- Second, computing systems increasingly interact, and collaborate, closely with humans. Human perception and cognition impose constraints on system design while also revealing opportunities to reduce computation, communication, and energy consumption.
+
+My group addresses these challenges by co-designing programming languages, run-time systems, and hardware architectures.  We translate models of human perception and cognition into principled abstractions, and use these new abstractions to design compiler/run-time system techniques across the physical-to-digital stack.
 
 ## Related Publications
 
