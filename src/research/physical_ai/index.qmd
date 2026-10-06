@@ -1,0 +1,32 @@
+---
+title: "Computer Systems for Physical AI"
+order: 1
+alias: &ALIAS physical_ai
+image: featured.jpg
+listing:
+  id: pubs
+  template: ../../_ejs/publications-people.ejs 
+  contents: 
+    - "../../publications/pubs/*.qmd"
+  sort: "pub_number desc"
+  page-size: 300
+  # sort-ui: true
+  filter-ui: true
+  include:
+    topics: *ALIAS
+  fields: [publication, title, categories, image, date, author] 
+
+---
+![](featured.jpg)
+
+Two characteristics of emerging applications such as extended reality (XR), embodied/physical AI, and autonomous agents are reshaping the foundations of computer systems design:
+
+- First, computing systems will increasingly sense and interpret the physical world, pushing computation beyond digital processors into optics, sensors, and analog circuits.
+- Second, computing systems increasingly interact, and collaborate, closely with humans. Human perception and cognition impose constraints on system design while also revealing opportunities to reduce computation, communication, and energy consumption.
+
+We address these challenges by co-designing programming languages, run-time systems, and hardware architectures. We translate models of human perception and cognition into principled abstractions, and use these new abstractions to design compiler/run-time system techniques across the physical-to-digital stack.
+
+## Related Publications
+
+:::{#pubs}
+:::

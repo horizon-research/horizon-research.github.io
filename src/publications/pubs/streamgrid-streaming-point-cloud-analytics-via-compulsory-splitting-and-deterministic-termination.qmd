@@ -15,6 +15,7 @@ categories:
 - Show All
 - Work We Contributed to
 topics:
+- physical_ai
 - visual_computing_systems
 url_source: https://dl.acm.org/doi/pdf/10.1145/3676641.3716021
 journ: ASPLOS

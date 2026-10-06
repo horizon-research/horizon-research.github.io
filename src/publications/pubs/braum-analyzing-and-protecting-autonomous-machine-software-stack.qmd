@@ -11,7 +11,7 @@ categories:
 - Show All
 - Work (Co-)Led by Horizon Lab
 topics:
-- robotics
+- physical_ai
 url_source: https://horizon-lab.org/pubs/issre22.pdf
 journ: ISSRE
 year: 2022

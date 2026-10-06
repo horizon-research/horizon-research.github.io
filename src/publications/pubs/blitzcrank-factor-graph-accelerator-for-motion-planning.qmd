@@ -11,7 +11,7 @@ categories:
 - Show All
 - Work (Co-)Led by Horizon Lab
 topics:
-- robotics
+- physical_ai
 url_source: https://horizon-lab.org/pubs/dac23.pdf
 code_source: https://github.com/horizon-research/BLITZCRANK
 journ: DAC

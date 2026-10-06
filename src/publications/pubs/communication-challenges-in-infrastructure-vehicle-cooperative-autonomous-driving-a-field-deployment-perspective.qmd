@@ -11,7 +11,7 @@ categories:
 - Show All
 - Work We Contributed to
 topics:
-- robotics
+- physical_ai
 url_source: https://ieeexplore.ieee.org/document/9770087
 journ: IEEE Wireless Comm.
 year: 2022

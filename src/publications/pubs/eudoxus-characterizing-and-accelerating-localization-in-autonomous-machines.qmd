@@ -15,7 +15,7 @@ categories:
 - Show All
 - Work (Co-)Led by Horizon Lab
 topics:
-- robotics
+- physical_ai
 url_source: https://horizon-lab.org/pubs/hpca21.pdf
 journ: HPCA
 year: 2021

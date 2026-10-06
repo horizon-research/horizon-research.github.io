@@ -1,6 +1,6 @@
 ---
 title: "Human Perception and Cognition"
-order: 2
+order: 3
 alias: &ALIAS human_perception
 image: featured.jpg
 listing:

@@ -10,7 +10,7 @@ categories:
 - Show All
 - Work We Contributed to
 topics:
-- robotics
+- physical_ai
 url_source: https://dl.acm.org/doi/pdf/10.1145/3508352.3561112
 code_source: https://github.com/horizon-research/FGLIO
 journ: ICCAD

@@ -14,7 +14,7 @@ categories:
 - Show All
 - Work We Contributed to
 topics:
-- robotics
+- physical_ai
 url_source: https://arxiv.org/pdf/2103.16045.pdf
 journ: RTAS
 year: 2021

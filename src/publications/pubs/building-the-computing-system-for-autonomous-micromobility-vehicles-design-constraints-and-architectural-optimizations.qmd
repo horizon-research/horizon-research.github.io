@@ -12,7 +12,7 @@ categories:
 - Show All
 - Work (Co-)Led by Horizon Lab
 topics:
-- robotics
+- physical_ai
 url_source: https://horizon-lab.org/pubs/micro20-amv.pdf
 talk_source: https://speakerdeck.com/horizonlab/building-the-computing-system-for-autonomous-micromobility-vehicles-design-constraints-and-architectural-optimizations
 journ: MICRO

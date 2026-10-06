@@ -11,6 +11,7 @@ categories:
 - Show All
 - Work We Contributed to
 topics:
+- physical_ai
 - visual_computing_systems
 url_source: https://openaccess.thecvf.com/content/WACV2025/papers/Boloor_PrivateEye_In-Sensor_Privacy_Preservation_Through_Optical_Feature_Separation_WACV_2025_paper.pdf
 journ: WACV

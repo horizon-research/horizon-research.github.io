@@ -13,7 +13,7 @@ categories:
 - Show All
 - Work We Contributed to
 topics:
-- robotics
+- physical_ai
 url_source: https://horizon-lab.org/pubs/cas21-fpga.pdf
 journ: IEEE CAS-M
 year: 2021
