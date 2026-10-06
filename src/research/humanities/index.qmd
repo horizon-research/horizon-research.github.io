@@ -19,9 +19,13 @@ listing:
 ---
 ![](featured.jpg)
 
-Art and culture, at their best, lie in the act of discovery: seeing what is hidden and rejecting the fallacy that what we see is all there is. Almost every great piece of art, artifact, or site has something hidden within it, invisible to the naked eye. Paintings have pentimenti — those rough drafts that the artist regrets and paints over; manuscripts have palimpsests or scratch-outs — text that is covered up or overwritten; and buildings and archaeological sites are a world of unexpected labyrinths. Discovery is central to culture and art but is under-supported technology-wise.
-We develop photogrammetry, 3D imaging, visualization, and machine learning systems to enable knowledge discovery in art, history, and culture.
-Our tools allow for user-centric exploration in both casual consumption and scientific research of cultural heritage.
+Like virtually every other field, the humanities have been profoundly transformed by technologies.
+Digital humanities as a broad scholarly enterprise emerged during the 2000s, when large-scale digitization initiatives, dedicated funding, and shared infrastructure transformed the field.
+
+We are once again at the cusp of a new phase: the *computational humanities*.
+The transition from digitization to computation is profound.
+The focus is no longer just to digitize artifacts, but to computationally analyze, and to gain knowledge from, the artifacts --- through advances in computer vision, graphics, imaging, and artificial intelligence (AI).
+Computational humanities offer the computing community not only impactful research problems and compelling motivations for developing new computational methods, but also intellectual interlocutors that challenge, refine, and expand the questions that computation can address.
 
 ## Related Publications
 
