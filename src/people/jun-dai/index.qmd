@@ -1,10 +1,11 @@
 ---
 title: &TITLE Jun Dai
+order: 4
 last: Dai
 first: Jun
 people_group: alumni
 education: M.E. | Zhejiang University | 2024<br>B.E. | Tianjin University | 2021
-subtitle: Former Colab. Student
+subtitle: Former PreDoc Student
 image: avatar.jpg
 listing:
   id: pubs

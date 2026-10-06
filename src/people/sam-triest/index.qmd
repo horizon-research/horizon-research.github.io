@@ -1,5 +1,6 @@
 ---
 title: &TITLE Samuel Triest
+order: 3
 last: Triest
 first: Samuel
 people_group: alumni

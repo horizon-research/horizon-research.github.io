@@ -1,5 +1,6 @@
 ---
 title: &TITLE Yiming Gan
+order: 1
 last: Gan
 first: Yiming
 people_group: alumni

@@ -1,5 +1,6 @@
 ---
 title: &TITLE Boyuan Tian
+order: 2
 last: Tian
 first: Boyuan
 people_group: alumni

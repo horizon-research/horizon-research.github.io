@@ -1,5 +1,6 @@
 ---
 title: &TITLE Tianqi Yang
+order: 2
 last: Yang
 first: Tianqi
 people_group: alumni

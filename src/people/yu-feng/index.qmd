@@ -1,5 +1,6 @@
 ---
 title: &TITLE Yu Feng
+order: 1
 last: Feng
 first: Yu
 people_group: alumni
