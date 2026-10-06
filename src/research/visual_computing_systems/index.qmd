@@ -1,5 +1,5 @@
 ---
-title: "Visual Computing Systems"
+title: "Computer Systems for Physical AI"
 order: 1
 alias: &ALIAS visual_computing_systems
 image: featured.jpg
@@ -20,6 +20,7 @@ listing:
 ![](featured.jpg)
 
 Two characteristics of emerging applications such as extended reality (XR), embodied/physical AI, and autonomous agents are reshaping the foundations of computer systems design:
+
 - First, computing systems will increasingly sense and interpret the physical world, pushing computation beyond digital processors into optics, sensors, and analog circuits.
 - Second, computing systems increasingly interact, and collaborate, closely with humans. Human perception and cognition impose constraints on system design while also revealing opportunities to reduce computation, communication, and energy consumption.
 
