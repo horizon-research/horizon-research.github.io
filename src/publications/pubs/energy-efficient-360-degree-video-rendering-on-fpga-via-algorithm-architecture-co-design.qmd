@@ -10,6 +10,7 @@ categories:
 - Show All
 - Work (Co-)Led by Horizon Lab
 topics:
+- physical_ai
 - visual_computing_systems
 url_source: https://dl.acm.org/doi/pdf/10.1145/3373087.3375317
 talk_source: https://speakerdeck.com/horizonlab/energy-efficient-360-degree-video-rendering-on-fpga-via-algorithm-architecture-co-design

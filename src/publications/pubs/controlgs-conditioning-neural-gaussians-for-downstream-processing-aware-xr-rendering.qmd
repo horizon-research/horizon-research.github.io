@@ -10,6 +10,7 @@ categories:
 - Show All
 - Work (Co-)Led by Horizon Lab
 topics:
+- physical_ai
 - visual_computing_systems
 - human_perception
 url_source:  https://horizon-lab.org/pubs/sa26-controlgs.pdf

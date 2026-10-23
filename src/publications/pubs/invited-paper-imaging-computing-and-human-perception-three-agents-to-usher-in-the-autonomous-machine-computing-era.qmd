@@ -7,7 +7,7 @@ categories:
 - Show All
 - Work (Co-)Led by Horizon Lab
 topics:
-- robotics
+- physical_ai
 - human_perception
 url_source: https://dl.acm.org/doi/pdf/10.1145/3676536.3697113
 journ: ICCAD

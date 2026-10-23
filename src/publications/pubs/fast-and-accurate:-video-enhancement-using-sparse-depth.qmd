@@ -10,7 +10,7 @@ categories:
 - Show All
 - Work (Co-)Led by Horizon Lab
 topics:
-- robotics
+- physical_ai
 url_source: https://openaccess.thecvf.com/content/WACV2023/papers/Feng_Fast_and_Accurate_Video_Enhancement_Using_Sparse_Depth_WACV_2023_paper.pdf
 journ: WACV
 year: 2023

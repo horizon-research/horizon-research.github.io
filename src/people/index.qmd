@@ -15,7 +15,7 @@ listing:
     exclude:
       external: true
     template: ../_ejs/people-box.ejs
-    sort: order
+    sort: "start_year"
     type: grid
     fields: [title, subtitle, image, education]
   - id: ugstudent
@@ -24,7 +24,7 @@ listing:
     exclude:
       external: true
     template: ../_ejs/people-box.ejs
-    sort: order
+    #sort: order
     type: grid
     fields: [title, subtitle, image, education]
   - id: alumni
@@ -33,7 +33,7 @@ listing:
     exclude:
       external: true
     template: ../_ejs/alumni-box.ejs
-    sort: "subtitle desc"
+    sort: "order subtitle desc"
     type: grid
     fields: [title, subtitle, image, education, altsubtitle, alteducation]
 page-layout: full

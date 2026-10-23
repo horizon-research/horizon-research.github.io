@@ -1,5 +1,6 @@
 ---
 title: &TITLE Ethan Shahan
+order: 3
 last: Shahan
 first: Ethan
 people_group: alumni

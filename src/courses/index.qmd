@@ -12,6 +12,17 @@ We have developed a set of [interactive Web tutorials](https://horizon-lab.org/c
 
 ## Courses
 
+### CSC 252 Computer Organization
+
+This is an undergraduate-level introductory course on computer systems.
+CSC 252 will teach you how human-readable programs actually run on a computer.
+We will explain how to transform a human-readable program to a computer-understandable program, how the computer-understandable program is organized and interfaced with the underlying hardware processor, and how to design hardware processors that can execute programs as fast, safe, and efficient as possible.
+
+Ultimately, our objective is to remove a good deal of the mystery of how modern computers work.
+We expect you to come out of this course not only knowing how modern computers work, having a deeper understanding of why they work as they are, but more importantly, why computers don't have to be built that way!
+
+My most recent offering of this course was in [Spring 2026](https://www.cs.rochester.edu/courses/252/spring2026/).
+
 ### CSC 259 Computer Imaging and Graphics
 
 This is an undergraduate-level course on computer imaging and graphics.

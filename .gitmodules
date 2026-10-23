@@ -16,3 +16,9 @@
 [submodule "controlgs"]
 	path = docs/controlgs
 	url = https://github.com/linwk20/ControlGS-Web.git
+[submodule "docs/gazeflow"]
+	path = docs/gazeflow
+	url = https://github.com/zhaosheng-thu/gazeflow_web.git
+[submodule "docs/specialist"]
+	path = docs/specialist
+	url = https://github.com/zhaosheng-thu/specialist_web.git

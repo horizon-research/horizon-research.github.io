@@ -1,11 +1,12 @@
 ---
 title: &TITLE Zhengyang Jin
+order: 4
 last: Jin
 first: Zhengyang
 people_group: alumni
 education: M.S. | University of Sussex | 2022<br>B.S. | University of Sussex | 2021
 current_pos: Ph.D. Student | Boston College
-subtitle: Former Colab. Student
+subtitle: Former PreDoc Student
 image: avatar.jpg
 listing:
   id: pubs

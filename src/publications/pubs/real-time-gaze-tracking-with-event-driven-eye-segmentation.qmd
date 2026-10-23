@@ -10,6 +10,7 @@ categories:
 - Show All
 - Work (Co-)Led by Horizon Lab
 topics:
+- physical_ai
 - visual_computing_systems
 url_source: https://horizon-lab.org/pubs/vr22.pdf
 talk_source: https://www.youtube.com/watch?v=7jctvusephY

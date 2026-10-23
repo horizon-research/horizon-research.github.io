@@ -1,5 +1,6 @@
 ---
 title: &TITLE Colin Hascup
+order: 3
 last: Hascup
 first: Colin
 people_group: alumni

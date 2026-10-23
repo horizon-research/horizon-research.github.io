@@ -1,5 +1,6 @@
 ---
 title: &TITLE Elias Neuman-Donihue
+order: 3
 last: Neuman-Donihue
 first: Elias
 people_group: alumni

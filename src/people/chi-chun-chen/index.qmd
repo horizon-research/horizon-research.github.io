@@ -1,5 +1,6 @@
 ---
 title: &TITLE Chi-Chun Chen
+order: 2
 last: Chen
 first: Chi-Chun
 people_group: alumni

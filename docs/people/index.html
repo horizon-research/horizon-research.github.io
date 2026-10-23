@@ -109,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-title','listing-subtitle','listing-image','listing-education',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-title","listing-order","listing-last","listing-first","listing-people_group","listing-education","listing-subtitle","listing-image","listing-listing","listing-page-layout","listing-about","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-title","listing-order","listing-start_year","listing-last","listing-first","listing-people_group","listing-education","listing-subtitle","listing-image","listing-listing","listing-page-layout","listing-about","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -137,7 +137,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-title','listing-subtitle','listing-image','listing-education',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-title","listing-last","listing-first","listing-people_group","listing-education","listing-current_pos","listing-subtitle","listing-image","listing-listing","listing-page-layout","listing-about","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-title","listing-order","listing-last","listing-first","listing-people_group","listing-education","listing-current_pos","listing-subtitle","listing-image","listing-listing","listing-page-layout","listing-about","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -165,7 +165,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-title','listing-subtitle','listing-image','listing-education','listing-altsubtitle','listing-alteducation',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-title","listing-last","listing-first","listing-people_group","listing-education","listing-current_pos","listing-subtitle","listing-image","listing-listing","listing-page-layout","listing-about","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-title","listing-order","listing-last","listing-first","listing-people_group","listing-education","listing-current_pos","listing-subtitle","listing-image","listing-listing","listing-page-layout","listing-about","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -944,100 +944,6 @@ window.Quarto = {
       
       
       
-      <a href="../people/jun-dai/index.html" role="button" class="quarto-grid-link">
-        <div class="quarto-grid-item card h-100 card-left">
-          
-          
-          <p class="card-img-top">
-            <img alt="Jun Dai" src="../people/jun-dai/avatar.jpg" class="thumbnail-image card-img listing-box-image" style="height" 150px;"="">
-          </p>
-          
-          <div class="card-body post-contents">
-            
-            <div class="listing-box-title">
-              Jun Dai<br> 
-            </div>
-               
-            <div class="listing-box-subtitle">
-
-              
-                  Former Colab. Student<br>
-                  
-
-            </div>
-                
-            
-              
-              <div class="listing-box-education">
-                
-                
-                    M.E. | Zhejiang University | 2024<br>B.E. | Tianjin University | 2021<br>
-                    
-                    
-              </div>  
-                  
-
-            
-            
-          </div>  
-        </div>  
-      </a>
-      
-    </div>
-  
-     
-    
-    <div class="g-col-1 listing-box">
-      
-      
-      
-      <a href="../people/zhengyang-jin/index.html" role="button" class="quarto-grid-link">
-        <div class="quarto-grid-item card h-100 card-left">
-          
-          
-          <p class="card-img-top">
-            <img alt="Zhengyang Jin" src="../people/zhengyang-jin/avatar.jpg" class="thumbnail-image card-img listing-box-image" style="height" 150px;"="">
-          </p>
-          
-          <div class="card-body post-contents">
-            
-            <div class="listing-box-title">
-              Zhengyang Jin<br> 
-            </div>
-               
-            <div class="listing-box-subtitle">
-
-              
-                  Former Colab. Student<br>
-                  
-
-            </div>
-                
-            
-              
-              <div class="listing-box-education">
-                
-                
-                    M.S. | University of Sussex | 2022<br>B.S. | University of Sussex | 2021<br>
-                    
-                    
-              </div>  
-                  
-
-            
-            
-          </div>  
-        </div>  
-      </a>
-      
-    </div>
-  
-     
-    
-    <div class="g-col-1 listing-box">
-      
-      
-      
       <a href="../people/colin-hascup/index.html" role="button" class="quarto-grid-link">
         <div class="quarto-grid-item card h-100 card-left">
           
@@ -1395,6 +1301,100 @@ window.Quarto = {
                 
                 
                     B.S. | University of Rochester | 2025<br>
+                    
+                    
+              </div>  
+                  
+
+            
+            
+          </div>  
+        </div>  
+      </a>
+      
+    </div>
+  
+     
+    
+    <div class="g-col-1 listing-box">
+      
+      
+      
+      <a href="../people/jun-dai/index.html" role="button" class="quarto-grid-link">
+        <div class="quarto-grid-item card h-100 card-left">
+          
+          
+          <p class="card-img-top">
+            <img alt="Jun Dai" src="../people/jun-dai/avatar.jpg" class="thumbnail-image card-img listing-box-image" style="height" 150px;"="">
+          </p>
+          
+          <div class="card-body post-contents">
+            
+            <div class="listing-box-title">
+              Jun Dai<br> 
+            </div>
+               
+            <div class="listing-box-subtitle">
+
+              
+                  Former PreDoc Student<br>
+                  
+
+            </div>
+                
+            
+              
+              <div class="listing-box-education">
+                
+                
+                    M.E. | Zhejiang University | 2024<br>B.E. | Tianjin University | 2021<br>
+                    
+                    
+              </div>  
+                  
+
+            
+            
+          </div>  
+        </div>  
+      </a>
+      
+    </div>
+  
+     
+    
+    <div class="g-col-1 listing-box">
+      
+      
+      
+      <a href="../people/zhengyang-jin/index.html" role="button" class="quarto-grid-link">
+        <div class="quarto-grid-item card h-100 card-left">
+          
+          
+          <p class="card-img-top">
+            <img alt="Zhengyang Jin" src="../people/zhengyang-jin/avatar.jpg" class="thumbnail-image card-img listing-box-image" style="height" 150px;"="">
+          </p>
+          
+          <div class="card-body post-contents">
+            
+            <div class="listing-box-title">
+              Zhengyang Jin<br> 
+            </div>
+               
+            <div class="listing-box-subtitle">
+
+              
+                  Former PreDoc Student<br>
+                  
+
+            </div>
+                
+            
+              
+              <div class="listing-box-education">
+                
+                
+                    M.S. | University of Sussex | 2022<br>B.S. | University of Sussex | 2021<br>
                     
                     
               </div>  

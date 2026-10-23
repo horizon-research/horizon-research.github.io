@@ -10,7 +10,7 @@ categories:
 - Show All
 - Work We Contributed to
 topics:
-- robotics
+- physical_ai
 url_source: https://dl.acm.org/doi/pdf/10.1145/3676536.3697112
 journ: ICCAD
 year: 2024

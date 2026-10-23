@@ -1,5 +1,6 @@
 ---
 title: &TITLE Gunnar Hammonds
+order: 3
 last: Hammonds
 first: Gunnar
 people_group: alumni

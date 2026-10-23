@@ -8,6 +8,7 @@ categories:
 - Show All
 - Work (Co-)Led by Horizon Lab
 topics:
+- physical_ai
 - visual_computing_systems
 url_source: https://horizon-lab.org/pubs/iros20.pdf
 talk_source: https://speakerdeck.com/horizonlab/real-time-spatio-temporal-lidar-point-cloud-compression

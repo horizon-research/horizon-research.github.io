@@ -1,5 +1,6 @@
 ---
 title: &TITLE Sifan Ye
+order: 3
 last: Ye
 first: Sifan
 people_group: alumni

@@ -9,6 +9,7 @@ categories:
 - Show All
 - Work (Co-)Led by Horizon Lab
 topics:
+- physical_ai
 - visual_computing_systems
 url_source: https://horizon-lab.org/pubs/isca18.pdf
 talk_source: https://speakerdeck.com/queeten/algorithm-soc-co-design-for-mobile-continuous-vision

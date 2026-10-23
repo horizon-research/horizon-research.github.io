@@ -1,5 +1,6 @@
 ---
 title: &TITLE Qiuyue Sun
+order: 3
 last: Sun
 first: Qiuyue
 people_group: alumni

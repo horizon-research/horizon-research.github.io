@@ -1,5 +1,6 @@
 ---
 title: &TITLE Tiancheng Xu
+order: 2
 last: Xu
 first: Tiancheng
 people_group: alumni

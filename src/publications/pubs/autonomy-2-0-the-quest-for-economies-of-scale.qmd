@@ -9,7 +9,7 @@ categories:
 - Show All
 - Work (Co-)Led by Horizon Lab
 topics:
-- robotics
+- physical_ai
 url_source: https://cacm.acm.org/opinion/autonomy-2-0-the-quest-for-economies-of-scale/
 journ: CACM
 year: 2025

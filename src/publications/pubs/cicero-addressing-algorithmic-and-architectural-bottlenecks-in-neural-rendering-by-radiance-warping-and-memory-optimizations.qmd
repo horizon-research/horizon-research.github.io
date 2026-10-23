@@ -11,6 +11,7 @@ categories:
 - Show All
 - Work (Co-)Led by Horizon Lab
 topics:
+- physical_ai
 - visual_computing_systems
 url_source: https://horizon-lab.org/pubs/isca24-cicero.pdf
 code_source: https://github.com/SJTU-MVCLab/SpaRW-NeRF-Acceleration
