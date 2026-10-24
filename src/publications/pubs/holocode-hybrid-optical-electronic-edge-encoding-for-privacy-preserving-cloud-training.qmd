@@ -16,7 +16,7 @@ categories:
 topics:
 - physical_ai
 - visual_computing_systems
-url_source: 
+url_source: https://dl.acm.org/doi/pdf/10.1145/3770743.3804411
 talk_source: 
 journ: DAC
 year: 2026
