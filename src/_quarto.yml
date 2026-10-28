@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: ../docs
+  resources:
+    - "fonts/**"
   render:
     - "*.qmd"
     - "!publications/_template/"
@@ -31,6 +33,7 @@ format:
       - cosmo
       - brand
     mainfont: Red Hat Text #Nunito Sans #Optima #
+    include-in-header: _includes/fonts.html
     # css: styles.css
     toc: true
 
