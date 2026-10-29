@@ -8,6 +8,8 @@ const categoryOrder = [
   "Show All",
 ];
 
+const defaultCategory = "Work (Co-)Led by Horizon Lab";
+
 const allCategoriesRaw = [
   ...new Set(items.flatMap(item => item.categories || []))
 ];
@@ -19,7 +21,8 @@ const allCategories = categoryOrder.filter(
 
 <script>
 window.addEventListener("DOMContentLoaded", () => {
-  const category = "Work (Co-)Led by Horizon Lab";
+  const hash = new URLSearchParams(window.location.hash.slice(1));
+  const category = hash.get("category") || <%- JSON.stringify(defaultCategory) %>;
 
   window.quartoListingCategory(
     btoa(category)
@@ -48,7 +51,7 @@ window.addEventListener("DOMContentLoaded", () => {
 <div class="list quarto-listing-default">
     <% for (const item of items) { %>
     
-    <div class="quarto-post image-right" <%= metadataAttrs(item) %> >
+    <div class="quarto-post image-right" <%= metadataAttrs(item) %><% if (!(item.categories || []).includes(defaultCategory)) { %> style="display: none;"<% } %> >
         <div class="thumbnail">
 
                 <!-- <p>

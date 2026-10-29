@@ -134,6 +134,7 @@ div.lightgreen {
 .navbar {
   padding-top: 0;
   padding-bottom: 0;
+  min-height: 64px;
   font-size: 1.2em;
   // font-family: 'Arsenal', sans-serif;
   //font-family: 'Bebas Neue', sans-serif;
@@ -144,12 +145,24 @@ div.lightgreen {
 
 .navbar-brand {
   margin-left: 1rem;
+  padding-top: 0;
+  padding-bottom: 0;
   font-size: 3rem;
+  line-height: 1;
 }
 
 .navbar .navbar-brand-container {
+  min-height: 64px;
+  display: flex;
+  align-items: center;
   background-color: #71c200;
   font-family: 'Economica', sans-serif;
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    height: 64px;
+  }
 }
 
 .navbar .navbar-brand .navbar-title {
