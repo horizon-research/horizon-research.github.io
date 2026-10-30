@@ -22,7 +22,16 @@ const allCategories = categoryOrder.filter(
 <script>
 window.addEventListener("DOMContentLoaded", () => {
   const hash = new URLSearchParams(window.location.hash.slice(1));
-  const category = hash.get("category") || <%- JSON.stringify(defaultCategory) %>;
+  const category = hash.get("category") || "Work (Co-)Led by Horizon Lab";
+
+  const listing = window["quarto-listings"]?.["listing-pubs"];
+  if (listing) {
+    listing.items.forEach(item => item.elm?.style.removeProperty("display"));
+  } else {
+    document.querySelectorAll("#listing-pubs .quarto-post").forEach(post => {
+      post.style.removeProperty("display");
+    });
+  }
 
   window.quartoListingCategory(
     btoa(category)
