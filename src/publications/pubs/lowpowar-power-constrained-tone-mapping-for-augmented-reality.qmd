@@ -14,7 +14,7 @@ topics:
 - physical_ai
 - visual_computing_systems
 - human_perception
-url_source: 
+url_source: https://arxiv.org/pdf/2607.19509
 talk_source: 
 code_source: 
 website_source: https://horizon-lab.org/lowpowar/
