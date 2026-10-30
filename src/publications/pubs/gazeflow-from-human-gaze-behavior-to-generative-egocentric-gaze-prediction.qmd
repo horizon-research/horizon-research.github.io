@@ -12,7 +12,7 @@ topics:
 url_source: https://arxiv.org/pdf/2609.38519
 talk_source: 
 code_source: 
-website_source: 
+website_source: https://horizon-lab.org/gazeflow/
 journ: NeurIPS
 year: 2026
 image: featured.png
